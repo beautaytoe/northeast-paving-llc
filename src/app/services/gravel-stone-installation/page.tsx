@@ -106,6 +106,7 @@ export default function GravelStoneInstallationPage() {
       ]}
       slug="gravel-stone-installation"
       heroImage="/images/gallery/gravel-stone-base-installation-ct-01.webp"
+      serviceCitySlug="gravel-stone"
     />
   );
 }

@@ -121,9 +121,9 @@ export default function Home() {
               Southeastern Connecticut&apos;s Trusted Paving Contractor
             </p>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight tracking-wide mb-6">
-              Quality Asphalt Paving
+              Asphalt Paving Contractor
               <br />
-              <span className="text-blue">For Over 30 Years</span>
+              <span className="text-blue">in Southeastern Connecticut</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-xl">
               From driveways to parking lots, Northeast Paving delivers
@@ -171,7 +171,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-4">
-              Our Services
+              Driveway & Parking Lot Paving Services
             </h2>
             <p className="text-gray-warm text-lg max-w-2xl mx-auto">
               Comprehensive paving and site work solutions for residential,

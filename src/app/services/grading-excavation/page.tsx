@@ -106,6 +106,7 @@ export default function GradingExcavationPage() {
       ]}
       slug="grading-excavation"
       heroImage="/images/gallery/excavation-site-work-ct-01.webp"
+      serviceCitySlug="grading-excavation"
     />
   );
 }

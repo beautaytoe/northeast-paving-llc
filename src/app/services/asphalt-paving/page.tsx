@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function AsphaltPavingPage() {
   return (
     <ServicePageLayout
-      heroTitle="Asphalt Paving"
+      heroTitle="Driveway & Parking Lot Paving"
       heroHighlight="Services"
       heroDescription="Professional driveway and parking lot paving for residential, commercial, and municipal projects throughout Southeastern Connecticut."
       overviewTitle="Expert Asphalt Paving in Southeastern CT"
@@ -106,6 +106,7 @@ export default function AsphaltPavingPage() {
       ]}
       slug="asphalt-paving"
       heroImage="/images/gallery/residential-driveway-paving-ct-01.webp"
+      serviceCitySlug="driveway-paving"
     />
   );
 }

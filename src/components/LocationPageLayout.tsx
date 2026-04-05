@@ -15,6 +15,14 @@ const services = [
   { title: "Gravel & Stone Installation", href: "/services/gravel-stone-installation", icon: PackageOpen },
 ];
 
+const serviceCityLinks = [
+  { title: "Driveway Paving", slug: "driveway-paving", description: "New driveway installation, repaving, and widening" },
+  { title: "Parking Lot Paving", slug: "parking-lot-paving", description: "Commercial parking lot construction and resurfacing" },
+  { title: "Sealcoating", slug: "sealcoating", description: "Protective sealcoat application for driveways and lots" },
+  { title: "Grading & Excavation", slug: "grading-excavation", description: "Site prep, drainage solutions, and excavation work" },
+  { title: "Gravel & Stone", slug: "gravel-stone", description: "Gravel driveways, stone bases, and recycled millings" },
+];
+
 interface LocationPageLayoutProps {
   location: LocationData;
 }
@@ -76,7 +84,7 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-              Paving Services in{" "}
+              Asphalt Paving & Driveway Contractor in{" "}
               <span className="text-blue">{location.town}, CT</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl">
@@ -127,7 +135,7 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-6">
-            Your Trusted {location.town} Paving Contractor
+            Driveway & Parking Lot Paving in {location.town}
           </h2>
           {location.intro.map((paragraph, i) => (
             <p key={i} className="text-gray-warm leading-relaxed mb-4">
@@ -156,7 +164,7 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
       <section className="py-16 md:py-24 bg-gray-light">
         <div className="max-w-3xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-6">
-            Paving Throughout {location.town}
+            Neighborhoods We Pave in {location.town}
           </h2>
           <p className="text-gray-warm leading-relaxed mb-6">
             We provide paving services throughout {location.town}, including these neighborhoods and areas:
@@ -190,21 +198,41 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
         </div>
       </section>
 
-      {/* Services */}
+      {/* Available Paving Services — cards linking to service+city pages */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-10 text-center">
-            Services Available in {location.town}
+          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-4 text-center">
+            Paving Services in {location.town}
           </h2>
+          <p className="text-gray-warm text-center mb-10 max-w-2xl mx-auto">
+            Click any service below to learn more about how we can help with your specific {location.town} project.
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {services.map((service) => (
-              <Link key={service.href} href={service.href} className="flex items-center gap-4 bg-white rounded-lg p-5 hover:shadow-md hover:border-blue/30 border border-gray-200 transition-all">
-                <div className="w-10 h-10 bg-blue/10 rounded-lg flex items-center justify-center shrink-0">
-                  <service.icon className="w-5 h-5 text-blue" />
-                </div>
-                <span className="font-heading text-base font-bold uppercase tracking-wide text-charcoal">{service.title}</span>
-              </Link>
-            ))}
+            {serviceCityLinks.map((sc) => {
+              const townSlug = location.slug.replace("asphalt-paving-", "");
+              return (
+                <Link
+                  key={sc.slug}
+                  href={`/services/${sc.slug}/${townSlug}`}
+                  className="group bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-blue/30 transition-all"
+                >
+                  <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-2">
+                    {sc.title}
+                  </h3>
+                  <p className="text-sm text-gray-warm leading-relaxed mb-3">
+                    {sc.description} in {location.town}
+                  </p>
+                  <span className="text-sm font-semibold text-blue group-hover:translate-x-1 transition-transform inline-block">
+                    Learn More →
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/services" className="text-blue hover:text-blue-dark font-bold uppercase tracking-wide text-sm transition-colors">
+              View All Services →
+            </Link>
           </div>
         </div>
       </section>
@@ -213,7 +241,7 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
       <section className="py-16 md:py-24 bg-gray-light">
         <div className="max-w-3xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-8 text-center">
-            Why {location.town} Residents Choose Us
+            Why {location.town} Homeowners Choose Northeast Paving
           </h2>
           <div className="space-y-4">
             {location.whyChooseUs.map((reason) => (

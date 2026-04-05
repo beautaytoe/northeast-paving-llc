@@ -74,4 +74,48 @@ export const serviceCityConfigs: ServiceCityConfig[] = [
       `We sealcoat residential driveways and commercial parking lots of all sizes in ${town}. Whether you need a single-driveway application or a multi-phase commercial lot project, Northeast Paving delivers professional results with minimal disruption. Call 860-447-1518 for your free sealcoating estimate.`,
     ],
   },
+  {
+    serviceSlug: "grading-excavation",
+    serviceName: "Grading & Excavation",
+    serviceDescription: "site grading, excavation, and drainage solutions",
+    mainServicePage: "/services/grading-excavation",
+    faqs: (town) => [
+      {
+        question: `How much does site grading cost in ${town}, CT?`,
+        answer: `Site grading costs in ${town} vary based on lot size, terrain, soil conditions, and scope of work. Residential grading for a driveway or yard typically ranges from $1,500 to $5,000. Larger commercial projects depend on acreage and complexity. Call 860-447-1518 for a free on-site evaluation.`,
+      },
+      {
+        question: `Do I need grading before paving in ${town}?`,
+        answer: `In most cases, yes. Proper grading in ${town} ensures correct drainage slope, a stable subbase, and prevents water pooling that leads to premature pavement failure. Our team assesses your ${town} site and recommends the appropriate grading for long-lasting results.`,
+      },
+    ],
+    getContent: (town) => [
+      `Northeast Paving provides professional grading and excavation services throughout ${town}, CT. Proper site preparation is the foundation of every successful paving, construction, or landscaping project, and our experienced operators have been preparing sites across Southeastern Connecticut for over 30 years.`,
+      `Our ${town} grading services include complete site clearing, precision grading for drainage, subbase preparation for paving projects, foundation excavation, and utility trench work. We use modern excavators, skid steers, and motor graders to achieve precise elevations and slopes on every ${town} project.`,
+      `Drainage is a critical concern for ${town} properties. Improperly graded lots lead to water pooling, foundation damage, erosion, and pavement failure. Our team designs grading plans that direct water away from structures and pavement, meeting local stormwater requirements while protecting your investment.`,
+      `Whether you need site prep for a new ${town} driveway, parking lot base installation, lot clearing for new construction, or drainage correction on an existing property, Northeast Paving has the equipment and expertise to handle it. Licensed, insured, and W.B.E. certified. Call 860-447-1518.`,
+    ],
+  },
+  {
+    serviceSlug: "gravel-stone",
+    serviceName: "Gravel & Stone Installation",
+    serviceDescription: "gravel driveway and stone base installation",
+    mainServicePage: "/services/gravel-stone-installation",
+    faqs: (town) => [
+      {
+        question: `How much does a gravel driveway cost in ${town}, CT?`,
+        answer: `Gravel driveway installation in ${town} typically costs $2 to $5 per square foot including materials, grading, and compaction. A standard two-car gravel driveway runs $1,500 to $4,000 — significantly less than asphalt. Recycled asphalt millings are an even more affordable option. Call 860-447-1518 for a free estimate.`,
+      },
+      {
+        question: `Is a gravel driveway a good choice in ${town}, CT?`,
+        answer: `Gravel driveways are an excellent choice for many ${town} properties, especially longer rural driveways where asphalt costs would be prohibitive. They provide excellent drainage, require minimal maintenance, and can last indefinitely with periodic top-offs. Many ${town} homeowners later upgrade to asphalt using the gravel as a base.`,
+      },
+    ],
+    getContent: (town) => [
+      `Northeast Paving installs gravel driveways, stone bases, and recycled asphalt millings throughout ${town}, CT. Not every surface needs asphalt — gravel and stone provide a durable, cost-effective alternative that performs beautifully for driveways, parking areas, access roads, and construction staging.`,
+      `Our ${town} gravel installation process starts with proper site preparation: clearing, grading for drainage, and subsoil compaction. We install geotextile fabric where needed, then layer and compact your chosen material — crushed stone, processed gravel, or recycled asphalt millings — to create a firm, well-draining surface.`,
+      `Recycled asphalt millings are increasingly popular with ${town} property owners. They compact and bind together over time, creating a semi-hard surface similar to asphalt at a fraction of the cost. Millings are also an environmentally friendly option that keeps material out of landfills.`,
+      `From single-car driveways to large commercial lots in ${town}, we handle gravel and stone projects of every size. Our 30+ years of experience means we know which materials work best for ${town}'s soil conditions and your specific needs. Call 860-447-1518 for a free estimate.`,
+    ],
+  },
 ];

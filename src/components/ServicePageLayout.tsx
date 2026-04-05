@@ -51,6 +51,8 @@ interface ServicePageLayoutProps {
   faqs: FAQItem[];
   slug: string;
   heroImage?: string;
+  /** Slug used for service+city pages (e.g. "driveway-paving") */
+  serviceCitySlug?: string;
 }
 
 export default function ServicePageLayout({
@@ -64,6 +66,7 @@ export default function ServicePageLayout({
   faqs,
   slug,
   heroImage,
+  serviceCitySlug,
 }: ServicePageLayoutProps) {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -171,7 +174,7 @@ export default function ServicePageLayout({
       <section className="py-16 md:py-24 bg-gray-light">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-12 text-center">
-            Our Process
+            Our Paving Process
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {processSteps.map((step, i) => (
@@ -248,22 +251,28 @@ export default function ServicePageLayout({
       <section className="py-16 md:py-24 bg-gray-light">
         <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center">
           <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide text-charcoal mb-4">
-            We Serve These Areas
+            Where We Provide {heroTitle}
           </h2>
           <p className="text-gray-warm mb-8">
             We provide {heroTitle.toLowerCase()} services throughout Southeastern Connecticut.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {serviceAreaLinks.map((area) => (
-              <Link
-                key={area.slug}
-                href={`/service-areas/${area.slug}`}
-                className="flex items-center gap-1.5 bg-white hover:bg-blue/10 text-charcoal hover:text-blue px-4 py-2 rounded-md transition-colors text-sm font-medium border border-gray-200"
-              >
-                <MapPin className="w-3.5 h-3.5" />
-                {area.name}
-              </Link>
-            ))}
+            {serviceAreaLinks.map((area) => {
+              const townSlug = area.slug.replace("asphalt-paving-", "");
+              const href = serviceCitySlug
+                ? `/services/${serviceCitySlug}/${townSlug}`
+                : `/service-areas/${area.slug}`;
+              return (
+                <Link
+                  key={area.slug}
+                  href={href}
+                  className="flex items-center gap-1.5 bg-white hover:bg-blue/10 text-charcoal hover:text-blue px-4 py-2 rounded-md transition-colors text-sm font-medium border border-gray-200"
+                >
+                  <MapPin className="w-3.5 h-3.5" />
+                  {area.name}
+                </Link>
+              );
+            })}
           </div>
           <Link
             href="/service-areas"

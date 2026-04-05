@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Phone, CheckCircle } from "lucide-react";
-import ContactForm from "@/components/ContactForm";
+import GHLForm from "@/components/GHLForm";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 export const metadata: Metadata = {
@@ -41,12 +41,12 @@ export default function FreeEstimatePage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-            {/* Form */}
+            {/* GHL Form */}
             <div className="lg:col-span-3">
               <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal mb-6">
                 Tell Us About Your Project
               </h2>
-              <ContactForm variant="estimate" />
+              <GHLForm />
             </div>
 
             {/* Sidebar */}

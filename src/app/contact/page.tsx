@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import ContactForm from "@/components/ContactForm";
+import { Phone, MapPin, Clock } from "lucide-react";
+import GHLForm from "@/components/GHLForm";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 export const metadata: Metadata = {
@@ -31,12 +31,12 @@ export default function ContactPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-            {/* Form */}
+            {/* GHL Form */}
             <div className="lg:col-span-3">
               <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal mb-6">
                 Send Us a Message
               </h2>
-              <ContactForm variant="contact" />
+              <GHLForm />
             </div>
 
             {/* Contact Info */}
@@ -119,7 +119,6 @@ export default function ContactPage() {
           <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal mb-6 text-center">
             Find Us
           </h2>
-          {/* TODO: Replace with actual Google Maps embed */}
           <div className="w-full h-80 bg-gray-300 rounded-lg flex items-center justify-center">
             <div className="text-center text-gray-warm">
               <MapPin className="w-10 h-10 mx-auto mb-2 text-blue" />

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand Colors */
+  --color-charcoal: #1C1C1C;
+  --color-orange: #FF6B00;
+  --color-orange-dark: #E55E00;
+  --color-orange-light: #FF8533;
+  --color-gray-warm: #4A4A4A;
+  --color-gray-light: #F5F5F5;
+  --color-white: #FFFFFF;
+
+  /* Fonts — CSS variables injected by next/font */
+  --font-heading: var(--font-oswald), sans-serif;
+  --font-body: var(--font-source-sans), sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  background: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}

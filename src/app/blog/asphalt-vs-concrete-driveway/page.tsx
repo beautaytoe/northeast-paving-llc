@@ -24,7 +24,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
           </div>
           <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
             Asphalt vs. Concrete Driveway:{" "}
-            <span className="text-orange">Which Is Right for You?</span>
+            <span className="text-blue">Which Is Right for You?</span>
           </h1>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
               into regular{" "}
               <Link
                 href="/services/sealcoating-repair"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 sealcoating and maintenance
               </Link>{" "}
@@ -95,7 +95,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
               Learn more about what affects pavement longevity in our guide on{" "}
               <Link
                 href="/blog/how-long-does-asphalt-driveway-last"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 how long an asphalt driveway lasts
               </Link>
@@ -129,7 +129,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
               Northeast Paving offers professional{" "}
               <Link
                 href="/services/sealcoating-repair"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 sealcoating and repair services
               </Link>{" "}
@@ -183,7 +183,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
               asphalt driveway from{" "}
               <Link
                 href="/services/asphalt-paving"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 Northeast Paving
               </Link>{" "}
@@ -209,7 +209,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
               process, from{" "}
               <Link
                 href="/services/asphalt-paving"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 site preparation to final paving
               </Link>
@@ -369,7 +369,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
                   </tr>
                   <tr>
                     <td className="py-3 px-4 font-semibold">Best for CT?</td>
-                    <td className="py-3 px-4 text-orange font-bold">Yes ✓</td>
+                    <td className="py-3 px-4 text-blue font-bold">Yes ✓</td>
                     <td className="py-3 px-4">Not ideal</td>
                   </tr>
                 </tbody>
@@ -401,10 +401,41 @@ export default function AsphaltVsConcreteDrivewayPage() {
             </p>
           </div>
 
+          {/* Related Articles */}
+          <section className="py-12 mt-16 bg-gray-light rounded-2xl">
+            <div className="max-w-4xl mx-auto px-4 lg:px-8">
+              <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal mb-6 text-center">
+                Related Articles
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link href="/blog/how-long-does-asphalt-driveway-last" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">How Long Does an Asphalt Driveway Last?</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+                <Link href="/blog/how-to-prepare-for-paving-project" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">How to Prepare for Your Paving Project</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+                <Link href="/blog/when-to-sealcoat-driveway" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">When to Sealcoat Your Driveway</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+              </div>
+              <p className="text-center text-sm text-gray-warm mt-8">
+                Northeast Paving serves{" "}
+                <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark">New London</Link>,{" "}
+                <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark">Groton</Link>,{" "}
+                <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark">Waterford</Link>,{" "}
+                and{" "}
+                <Link href="/service-areas" className="text-blue hover:text-blue-dark">15+ towns across Southeastern CT</Link>.
+              </p>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-16 bg-charcoal rounded-2xl p-8 md:p-12 text-center text-white">
             <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide mb-4">
-              Ready for a New <span className="text-orange">Asphalt Driveway</span>?
+              Ready for a New <span className="text-blue">Asphalt Driveway</span>?
             </h2>
             <p className="text-gray-300 leading-relaxed max-w-xl mx-auto mb-8">
               Get a free, no-obligation estimate for your driveway project.
@@ -414,7 +445,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:860-447-1518"
-                className="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-blue hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors"
               >
                 <Phone className="w-5 h-5" />
                 Call 860-447-1518

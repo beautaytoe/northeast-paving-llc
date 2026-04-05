@@ -28,7 +28,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
               {item.question}
             </span>
             <ChevronDown
-              className={`w-5 h-5 text-orange shrink-0 transition-transform duration-200 ${
+              className={`w-5 h-5 text-blue shrink-0 transition-transform duration-200 ${
                 openIndex === i ? "rotate-180" : ""
               }`}
             />

@@ -24,7 +24,7 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
           </div>
           <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
             How Long Does an Asphalt{" "}
-            <span className="text-orange">Driveway Last?</span>
+            <span className="text-blue">Driveway Last?</span>
           </h1>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
               The quality of the initial{" "}
               <Link
                 href="/services/asphalt-paving"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 asphalt paving installation
               </Link>{" "}
@@ -173,7 +173,7 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
               your asphalt driveway&apos;s lifespan. Homeowners who invest in{" "}
               <Link
                 href="/services/sealcoating-repair"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 sealcoating and crack repair
               </Link>{" "}
@@ -207,7 +207,7 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
               in our guide on{" "}
               <Link
                 href="/blog/when-to-sealcoat-driveway"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 when to sealcoat your driveway
               </Link>
@@ -313,7 +313,7 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
               full repaving. Read our detailed guide on{" "}
               <Link
                 href="/blog/signs-you-need-driveway-repaving"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 signs you need driveway repaving
               </Link>{" "}
@@ -405,14 +405,14 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
               test of time. Whether you need a brand-new{" "}
               <Link
                 href="/services/asphalt-paving"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 asphalt driveway installation
               </Link>{" "}
               or{" "}
               <Link
                 href="/services/sealcoating-repair"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 sealcoating and repair services
               </Link>{" "}
@@ -423,12 +423,43 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
         </div>
       </article>
 
+      {/* Related Articles */}
+      <section className="py-12 bg-gray-light">
+        <div className="max-w-4xl mx-auto px-4 lg:px-8">
+          <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal mb-6 text-center">
+            Related Articles
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/blog/when-to-sealcoat-driveway" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+              <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">When to Sealcoat Your Driveway</span>
+              <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+            </Link>
+            <Link href="/blog/signs-you-need-driveway-repaving" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+              <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">5 Signs You Need Driveway Repaving</span>
+              <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+            </Link>
+            <Link href="/blog/asphalt-vs-concrete-driveway" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+              <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">Asphalt vs. Concrete Driveway</span>
+              <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+            </Link>
+          </div>
+          <p className="text-center text-sm text-gray-warm mt-8">
+            Northeast Paving serves{" "}
+            <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark">New London</Link>,{" "}
+            <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark">Groton</Link>,{" "}
+            <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark">Waterford</Link>,{" "}
+            and{" "}
+            <Link href="/service-areas" className="text-blue hover:text-blue-dark">15+ towns across Southeastern CT</Link>.
+          </p>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-charcoal text-white py-16 md:py-20">
         <div className="max-w-3xl mx-auto px-4 lg:px-8 text-center">
           <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide mb-4">
             Ready to Invest in a Driveway{" "}
-            <span className="text-orange">That Lasts?</span>
+            <span className="text-blue">That Lasts?</span>
           </h2>
           <p className="text-gray-300 leading-relaxed mb-8 max-w-xl mx-auto">
             Whether you need a new asphalt driveway or want to extend the life
@@ -438,7 +469,7 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:860-447-1518"
-              className="inline-flex items-center gap-2 bg-orange text-white px-8 py-4 rounded font-heading font-bold uppercase tracking-wide hover:bg-orange/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-blue text-white px-8 py-4 rounded font-heading font-bold uppercase tracking-wide hover:bg-blue/90 transition-colors"
             >
               <Phone className="w-5 h-5" />
               Call 860-447-1518

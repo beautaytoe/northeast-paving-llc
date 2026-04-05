@@ -24,7 +24,7 @@ export default function SignsYouNeedDrivewayRepavingPage() {
           </div>
           <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
             5 Signs You Need{" "}
-            <span className="text-orange">Driveway Repaving</span>
+            <span className="text-blue">Driveway Repaving</span>
           </h1>
         </div>
       </section>
@@ -60,7 +60,7 @@ export default function SignsYouNeedDrivewayRepavingPage() {
               addressed with{" "}
               <Link
                 href="/services/sealcoating-repair"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 crack sealing and sealcoating
               </Link>
@@ -136,7 +136,7 @@ export default function SignsYouNeedDrivewayRepavingPage() {
               is the only real fix. Our team at Northeast Paving includes{" "}
               <Link
                 href="/services/asphalt-paving"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 proper grading and drainage design
               </Link>{" "}
@@ -154,7 +154,7 @@ export default function SignsYouNeedDrivewayRepavingPage() {
               dull gray. While{" "}
               <Link
                 href="/blog/when-to-sealcoat-driveway"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 regular sealcoating
               </Link>{" "}
@@ -199,7 +199,7 @@ export default function SignsYouNeedDrivewayRepavingPage() {
               look at asphalt longevity, check out our guide on{" "}
               <Link
                 href="/blog/how-long-does-asphalt-driveway-last"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 how long an asphalt driveway lasts
               </Link>
@@ -341,7 +341,7 @@ export default function SignsYouNeedDrivewayRepavingPage() {
               and W.B.E. certified. Learn more about{" "}
               <Link
                 href="/why-choose-us"
-                className="text-orange hover:underline font-medium"
+                className="text-blue hover:underline font-medium"
               >
                 why homeowners and businesses choose us
               </Link>
@@ -387,10 +387,41 @@ export default function SignsYouNeedDrivewayRepavingPage() {
             </ul>
           </div>
 
+          {/* Related Articles */}
+          <section className="py-12 mt-16 bg-gray-light rounded-2xl">
+            <div className="max-w-4xl mx-auto px-4 lg:px-8">
+              <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal mb-6 text-center">
+                Related Articles
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link href="/blog/how-long-does-asphalt-driveway-last" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">How Long Does an Asphalt Driveway Last?</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+                <Link href="/blog/when-to-sealcoat-driveway" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">When to Sealcoat Your Driveway</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+                <Link href="/blog/how-to-prepare-for-paving-project" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">How to Prepare for Your Paving Project</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+              </div>
+              <p className="text-center text-sm text-gray-warm mt-8">
+                Northeast Paving serves{" "}
+                <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark">New London</Link>,{" "}
+                <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark">Groton</Link>,{" "}
+                <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark">Waterford</Link>,{" "}
+                and{" "}
+                <Link href="/service-areas" className="text-blue hover:text-blue-dark">15+ towns across Southeastern CT</Link>.
+              </p>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-16 bg-charcoal rounded-2xl p-8 md:p-12 text-center">
             <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide text-white mb-4">
-              Ready to Repave Your <span className="text-orange">Driveway</span>?
+              Ready to Repave Your <span className="text-blue">Driveway</span>?
             </h2>
             <p className="text-gray-300 leading-relaxed max-w-xl mx-auto mb-8">
               If your driveway is showing any of these warning signs, don&apos;t
@@ -402,7 +433,7 @@ export default function SignsYouNeedDrivewayRepavingPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="tel:860-447-1518"
-                className="inline-flex items-center gap-2 bg-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg"
+                className="inline-flex items-center gap-2 bg-blue hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg"
               >
                 <Phone className="w-5 h-5" />
                 Call 860-447-1518

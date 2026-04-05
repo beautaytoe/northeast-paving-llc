@@ -104,8 +104,8 @@ export default function Home() {
       <section className="relative bg-charcoal text-white overflow-hidden">
         {/* Background image */}
         <Image
-          src={heroImages.pavingCrew.src}
-          alt={heroImages.pavingCrew.alt}
+          src="/images/gallery/commercial-parking-lot-paving-ct-01.webp"
+          alt="Professional asphalt parking lot paving by Northeast Paving in Southeastern Connecticut"
           fill
           priority
           className="object-cover opacity-30"
@@ -114,13 +114,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/70 to-charcoal/40" />
         <div className="relative max-w-7xl mx-auto px-4 py-24 md:py-32 lg:py-40 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-orange font-semibold uppercase tracking-widest text-sm mb-4">
+            <p className="text-blue font-semibold uppercase tracking-widest text-sm mb-4">
               Southeastern Connecticut&apos;s Trusted Paving Contractor
             </p>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight tracking-wide mb-6">
               Quality Asphalt Paving
               <br />
-              <span className="text-orange">For Over 30 Years</span>
+              <span className="text-blue">For Over 30 Years</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 max-w-xl">
               From driveways to parking lots, Northeast Paving delivers
@@ -130,7 +130,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/free-estimate"
-                className="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg uppercase tracking-wide"
+                className="inline-flex items-center justify-center bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg uppercase tracking-wide"
               >
                 Get a Free Estimate
               </Link>
@@ -147,7 +147,7 @@ export default function Home() {
       </section>
 
       {/* Trust Signals Bar */}
-      <section className="bg-orange text-white py-4">
+      <section className="bg-blue text-white py-4">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm font-semibold uppercase tracking-wide">
             <span>30+ Years Experience</span>
@@ -183,7 +183,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/services"
-              className="inline-flex items-center text-orange hover:text-orange-dark font-bold uppercase tracking-wide transition-colors"
+              className="inline-flex items-center text-blue hover:text-blue-dark font-bold uppercase tracking-wide transition-colors"
             >
               View All Services →
             </Link>
@@ -207,7 +207,7 @@ export default function Home() {
           <div className="text-center mt-10">
             <Link
               href="/reviews"
-              className="inline-flex items-center text-orange hover:text-orange-dark font-bold uppercase tracking-wide transition-colors"
+              className="inline-flex items-center text-blue hover:text-blue-dark font-bold uppercase tracking-wide transition-colors"
             >
               Read More Reviews →
             </Link>

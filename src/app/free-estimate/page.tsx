@@ -27,7 +27,7 @@ export default function FreeEstimatePage() {
       <section className="bg-charcoal text-white py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-            Get Your <span className="text-orange">Free Estimate</span>
+            Get Your <span className="text-blue">Free Estimate</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-xl">
             Fill out the form below and we&apos;ll provide a detailed,
@@ -58,7 +58,7 @@ export default function FreeEstimatePage() {
                 <ul className="space-y-4">
                   {benefits.map((benefit) => (
                     <li key={benefit} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-orange shrink-0 mt-0.5" />
+                      <CheckCircle className="w-5 h-5 text-blue shrink-0 mt-0.5" />
                       <span className="text-gray-warm">{benefit}</span>
                     </li>
                   ))}
@@ -70,7 +70,7 @@ export default function FreeEstimatePage() {
                   </p>
                   <a
                     href="tel:860-447-1518"
-                    className="flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-bold px-6 py-4 rounded-md transition-colors text-lg w-full"
+                    className="flex items-center justify-center gap-2 bg-blue hover:bg-blue-dark text-white font-bold px-6 py-4 rounded-md transition-colors text-lg w-full"
                   >
                     <Phone className="w-5 h-5" />
                     860-447-1518
@@ -78,7 +78,7 @@ export default function FreeEstimatePage() {
                 </div>
               </div>
 
-              <div className="mt-6 bg-orange/5 border border-orange/20 rounded-lg p-6">
+              <div className="mt-6 bg-blue/5 border border-blue/20 rounded-lg p-6">
                 <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-2">
                   Serving Southeastern CT
                 </h3>

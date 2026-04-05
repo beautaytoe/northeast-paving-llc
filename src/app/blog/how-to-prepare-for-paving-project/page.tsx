@@ -24,7 +24,7 @@ export default function HowToPrepareForPavingProjectPage() {
           </div>
           <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide">
             How to Prepare for Your{" "}
-            <span className="text-orange">Paving Project</span>
+            <span className="text-blue">Paving Project</span>
           </h1>
         </div>
       </section>
@@ -38,7 +38,7 @@ export default function HowToPrepareForPavingProjectPage() {
               Whether you are getting a brand-new driveway installed or
               resurfacing an aging parking lot, a little preparation goes a long
               way toward a smooth, successful paving project. At{" "}
-              <Link href="/why-choose-us" className="text-orange hover:underline">
+              <Link href="/why-choose-us" className="text-blue hover:underline">
                 Northeast Paving LLC
               </Link>
               , we have been serving homeowners and businesses across Southeastern
@@ -67,7 +67,7 @@ export default function HowToPrepareForPavingProjectPage() {
               estimate at no charge. Be wary of quotes that seem unusually low —
               they often signal subpar materials, thin asphalt layers, or hidden
               costs that appear later. When you{" "}
-              <Link href="/free-estimate" className="text-orange hover:underline">
+              <Link href="/free-estimate" className="text-blue hover:underline">
                 request a free estimate from Northeast Paving
               </Link>
               , we walk you through every line item so there are no surprises on
@@ -85,7 +85,7 @@ export default function HowToPrepareForPavingProjectPage() {
               reviews, check the Better Business Bureau, and ask neighbors who
               they have used. At Northeast Paving, we are fully licensed,
               insured, and{" "}
-              <Link href="/why-choose-us" className="text-orange hover:underline">
+              <Link href="/why-choose-us" className="text-blue hover:underline">
                 W.B.E. certified
               </Link>
               , giving you peace of mind on every project.
@@ -143,7 +143,7 @@ export default function HowToPrepareForPavingProjectPage() {
               runoff, and may recommend{" "}
               <Link
                 href="/services/grading-excavation"
-                className="text-orange hover:underline"
+                className="text-blue hover:underline"
               >
                 grading and excavation work
               </Link>{" "}
@@ -162,7 +162,7 @@ export default function HowToPrepareForPavingProjectPage() {
               On the day of your{" "}
               <Link
                 href="/services/asphalt-paving"
-                className="text-orange hover:underline"
+                className="text-blue hover:underline"
               >
                 asphalt paving project
               </Link>
@@ -252,7 +252,7 @@ export default function HowToPrepareForPavingProjectPage() {
               our guide on{" "}
               <Link
                 href="/blog/when-to-sealcoat-driveway"
-                className="text-orange hover:underline"
+                className="text-blue hover:underline"
               >
                 when to sealcoat your driveway
               </Link>{" "}
@@ -260,7 +260,7 @@ export default function HowToPrepareForPavingProjectPage() {
               asphalt driveway can last{" "}
               <Link
                 href="/blog/how-long-does-asphalt-driveway-last"
-                className="text-orange hover:underline"
+                className="text-blue hover:underline"
               >
                 20 to 30 years or more
               </Link>{" "}
@@ -368,11 +368,42 @@ export default function HowToPrepareForPavingProjectPage() {
             </p>
           </div>
 
+          {/* Related Articles */}
+          <section className="py-12 mt-16 bg-gray-light rounded-2xl">
+            <div className="max-w-4xl mx-auto px-4 lg:px-8">
+              <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal mb-6 text-center">
+                Related Articles
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link href="/blog/how-long-does-asphalt-driveway-last" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">How Long Does an Asphalt Driveway Last?</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+                <Link href="/blog/asphalt-vs-concrete-driveway" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">Asphalt vs. Concrete Driveway</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+                <Link href="/blog/signs-you-need-driveway-repaving" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">5 Signs You Need Driveway Repaving</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+              </div>
+              <p className="text-center text-sm text-gray-warm mt-8">
+                Northeast Paving serves{" "}
+                <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark">New London</Link>,{" "}
+                <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark">Groton</Link>,{" "}
+                <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark">Waterford</Link>,{" "}
+                and{" "}
+                <Link href="/service-areas" className="text-blue hover:text-blue-dark">15+ towns across Southeastern CT</Link>.
+              </p>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-16 bg-charcoal rounded-2xl p-8 md:p-12 text-center">
             <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide text-white mb-4">
               Ready to Start Your{" "}
-              <span className="text-orange">Paving Project</span>?
+              <span className="text-blue">Paving Project</span>?
             </h2>
             <p className="text-gray-300 leading-relaxed mb-8 max-w-xl mx-auto">
               Northeast Paving LLC has been delivering quality paving across
@@ -382,7 +413,7 @@ export default function HowToPrepareForPavingProjectPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="tel:860-447-1518"
-                className="inline-flex items-center gap-2 bg-orange hover:bg-orange/90 text-white font-bold py-3 px-8 rounded-lg transition-colors"
+                className="inline-flex items-center gap-2 bg-blue hover:bg-blue/90 text-white font-bold py-3 px-8 rounded-lg transition-colors"
               >
                 <Phone className="w-5 h-5" />
                 Call 860-447-1518

@@ -59,7 +59,7 @@ export default function AboutPage() {
         <div className="relative max-w-7xl mx-auto px-4 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-              About <span className="text-orange">Northeast Paving</span>
+              About <span className="text-blue">Northeast Paving</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed">
               For over three decades, we&apos;ve been building and maintaining
@@ -135,8 +135,8 @@ export default function AboutPage() {
                 key={item.title}
                 className="bg-white rounded-lg p-6 text-center"
               >
-                <div className="w-14 h-14 bg-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="w-7 h-7 text-orange" />
+                <div className="w-14 h-14 bg-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <item.icon className="w-7 h-7 text-blue" />
                 </div>
                 <h3 className="font-heading text-xl font-bold uppercase tracking-wide text-charcoal mb-2">
                   {item.title}
@@ -164,7 +164,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/services"
-              className="bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors uppercase tracking-wide"
+              className="bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors uppercase tracking-wide"
             >
               View Our Services
             </Link>

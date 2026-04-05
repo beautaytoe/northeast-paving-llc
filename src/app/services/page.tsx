@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   HardHat,
   Layers,
@@ -64,7 +65,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-              Our <span className="text-orange">Services</span>
+              Our <span className="text-blue">Services</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed max-w-xl">
               From new asphalt paving to complete site work, Northeast Paving
@@ -86,8 +87,25 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Service Areas Link */}
+      <section className="py-12 bg-gray-light">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-gray-warm mb-4">
+            We provide all of these services across{" "}
+            <Link href="/service-areas" className="text-blue hover:text-blue-dark font-semibold transition-colors">
+              15+ towns in Southeastern Connecticut
+            </Link>
+            , including{" "}
+            <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark transition-colors">New London</Link>,{" "}
+            <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark transition-colors">Groton</Link>,{" "}
+            <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark transition-colors">Waterford</Link>,{" "}
+            <Link href="/service-areas/mystic-ct" className="text-blue hover:text-blue-dark transition-colors">Mystic</Link>, and more.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="bg-orange text-white py-12 px-4">
+      <section className="bg-blue text-white py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide mb-4">
             Not Sure What You Need?

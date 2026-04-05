@@ -21,7 +21,7 @@ export default function ServiceAreasPage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-              Our <span className="text-orange">Service Areas</span>
+              Our <span className="text-blue">Service Areas</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl">
               Northeast Paving proudly serves 15+ towns across Southeastern
@@ -30,7 +30,7 @@ export default function ServiceAreasPage() {
             </p>
             <a
               href="tel:860-447-1518"
-              className="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
+              className="inline-flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
               Call 860-447-1518
@@ -71,7 +71,7 @@ export default function ServiceAreasPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:860-447-1518"
-              className="flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
+              className="flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
               Call 860-447-1518

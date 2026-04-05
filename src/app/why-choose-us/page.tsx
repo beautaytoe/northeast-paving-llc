@@ -77,7 +77,7 @@ export default function WhyChooseUsPage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-              Why Choose <span className="text-orange">Northeast Paving</span>
+              Why Choose <span className="text-blue">Northeast Paving</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed">
               When you choose us, you&apos;re choosing 30+ years of proven
@@ -94,8 +94,8 @@ export default function WhyChooseUsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {differentiators.map((item) => (
               <div key={item.title} className="bg-gray-light rounded-lg p-8">
-                <div className="w-12 h-12 bg-orange/10 rounded-lg flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-orange" />
+                <div className="w-12 h-12 bg-blue/10 rounded-lg flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-blue" />
                 </div>
                 <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-3">
                   {item.title}
@@ -122,7 +122,7 @@ export default function WhyChooseUsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-xl mx-auto">
             {guarantees.map((item) => (
               <div key={item} className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-orange shrink-0 mt-0.5" />
+                <CheckCircle className="w-5 h-5 text-blue shrink-0 mt-0.5" />
                 <span className="text-gray-warm">{item}</span>
               </div>
             ))}
@@ -135,7 +135,7 @@ export default function WhyChooseUsPage() {
         <div className="max-w-3xl mx-auto px-4 lg:px-8 text-center">
           <div className="flex justify-center gap-1 mb-4">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="w-6 h-6 fill-orange text-orange" />
+              <Star key={i} className="w-6 h-6 fill-blue text-blue" />
             ))}
           </div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-4">
@@ -148,7 +148,7 @@ export default function WhyChooseUsPage() {
           </p>
           <Link
             href="/reviews"
-            className="inline-flex items-center bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors uppercase tracking-wide"
+            className="inline-flex items-center bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors uppercase tracking-wide"
           >
             Read Customer Reviews
           </Link>

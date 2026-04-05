@@ -35,7 +35,7 @@ export default function BreadcrumbNav({ items }: BreadcrumbNavProps) {
               {item.href ? (
                 <Link
                   href={item.href}
-                  className="hover:text-orange transition-colors"
+                  className="hover:text-blue transition-colors"
                 >
                   {item.label}
                 </Link>

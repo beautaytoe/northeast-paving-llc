@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-charcoal text-white shadow-lg">
       {/* Top bar */}
-      <div className="bg-orange text-white text-sm py-1.5 px-4 text-center font-medium">
+      <div className="bg-blue text-white text-sm py-1.5 px-4 text-center font-medium">
         Serving Southeastern CT for 30+ Years — Licensed & Insured — W.B.E.
         Certified
       </div>
@@ -44,7 +44,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium uppercase tracking-wide hover:text-orange transition-colors"
+              className="text-sm font-medium uppercase tracking-wide hover:text-blue transition-colors"
             >
               {link.label}
             </Link>
@@ -55,14 +55,14 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <a
             href="tel:860-447-1518"
-            className="hidden sm:flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-bold px-5 py-2.5 rounded-md transition-colors text-sm"
+            className="hidden sm:flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-bold px-5 py-2.5 rounded-md transition-colors text-sm"
           >
             <Phone className="w-4 h-4" />
             860-447-1518
           </a>
           <a
             href="tel:860-447-1518"
-            className="sm:hidden flex items-center justify-center w-10 h-10 bg-orange rounded-md"
+            className="sm:hidden flex items-center justify-center w-10 h-10 bg-blue rounded-md"
             aria-label="Call 860-447-1518"
           >
             <Phone className="w-5 h-5" />
@@ -105,7 +105,7 @@ export default function Header() {
               <Link
                 href="/free-estimate"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 text-center bg-orange hover:bg-orange-dark text-white font-bold py-3 px-4 rounded-md transition-colors uppercase tracking-wide text-sm"
+                className="mt-2 text-center bg-blue hover:bg-blue-dark text-white font-bold py-3 px-4 rounded-md transition-colors uppercase tracking-wide text-sm"
               >
                 Get a Free Estimate
               </Link>

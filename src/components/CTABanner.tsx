@@ -22,7 +22,7 @@ export default function CTABanner({
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="tel:860-447-1518"
-            className="flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
+            className="flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
           >
             <Phone className="w-5 h-5" />
             Call 860-447-1518

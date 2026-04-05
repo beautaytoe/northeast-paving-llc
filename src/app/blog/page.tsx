@@ -60,7 +60,7 @@ export default function BlogPage() {
       <section className="bg-charcoal text-white py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-            Paving <span className="text-orange">Blog</span>
+            Paving <span className="text-blue">Blog</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-xl">
             Expert tips, guides, and advice from our team of paving
@@ -84,13 +84,13 @@ export default function BlogPage() {
                     <span>·</span>
                     <span>{post.readTime}</span>
                   </div>
-                  <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal group-hover:text-orange transition-colors mb-3">
+                  <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal group-hover:text-blue transition-colors mb-3">
                     {post.title}
                   </h2>
                   <p className="text-gray-warm leading-relaxed">
                     {post.excerpt}
                   </p>
-                  <span className="inline-block mt-3 text-sm font-semibold text-orange group-hover:translate-x-1 transition-transform">
+                  <span className="inline-block mt-3 text-sm font-semibold text-blue group-hover:translate-x-1 transition-transform">
                     Read More →
                   </span>
                 </Link>

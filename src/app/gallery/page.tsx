@@ -53,7 +53,7 @@ export default function GalleryPage() {
       <section className="bg-charcoal text-white py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-            Project <span className="text-orange">Gallery</span>
+            Project <span className="text-blue">Gallery</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-xl">
             See the quality of our work firsthand. Browse photos from paving
@@ -105,7 +105,7 @@ export default function GalleryPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:860-447-1518"
-              className="flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
+              className="flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
               Call 860-447-1518

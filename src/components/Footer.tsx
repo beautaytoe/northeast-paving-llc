@@ -50,17 +50,17 @@ export default function Footer() {
             <div className="flex flex-col gap-3 text-sm text-gray-300">
               <a
                 href="tel:860-447-1518"
-                className="flex items-center gap-2 hover:text-orange transition-colors"
+                className="flex items-center gap-2 hover:text-blue transition-colors"
               >
-                <Phone className="w-4 h-4 text-orange shrink-0" />
+                <Phone className="w-4 h-4 text-blue shrink-0" />
                 860-447-1518
               </a>
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-orange shrink-0" />
+                <Phone className="w-4 h-4 text-blue shrink-0" />
                 <span>Fax: 860-447-1535</span>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-orange shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-blue shrink-0 mt-0.5" />
                 <span>
                   419 Montauk Avenue
                   <br />
@@ -84,7 +84,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="hover:text-orange transition-colors"
+                    className="hover:text-blue transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="hover:text-orange transition-colors"
+                    className="hover:text-blue transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -122,7 +122,7 @@ export default function Footer() {
             </div>
             <Link
               href="/service-areas"
-              className="inline-block mt-3 text-sm text-orange hover:text-orange-light transition-colors font-medium"
+              className="inline-block mt-3 text-sm text-blue hover:text-blue-light transition-colors font-medium"
             >
               View All Areas →
             </Link>
@@ -136,10 +136,10 @@ export default function Footer() {
             reserved.
           </p>
           <div className="flex gap-4">
-            <Link href="/free-estimate" className="hover:text-orange transition-colors">
+            <Link href="/free-estimate" className="hover:text-blue transition-colors">
               Free Estimate
             </Link>
-            <Link href="/contact" className="hover:text-orange transition-colors">
+            <Link href="/contact" className="hover:text-blue transition-colors">
               Contact
             </Link>
           </div>

@@ -42,7 +42,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
             id="name"
             name="name"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-colors"
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue focus:border-blue outline-none transition-colors"
             placeholder="John Smith"
           />
         </div>
@@ -55,7 +55,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
             id="phone"
             name="phone"
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-colors"
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue focus:border-blue outline-none transition-colors"
             placeholder="(860) 555-1234"
           />
         </div>
@@ -69,7 +69,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
           type="email"
           id="email"
           name="email"
-          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-colors"
+          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue focus:border-blue outline-none transition-colors"
           placeholder="john@example.com"
         />
       </div>
@@ -85,7 +85,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
               id="address"
               name="address"
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue focus:border-blue outline-none transition-colors"
               placeholder="123 Main Street, Groton, CT"
             />
           </div>
@@ -97,7 +97,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
               id="service"
               name="service"
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-colors bg-white"
+              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue focus:border-blue outline-none transition-colors bg-white"
             >
               <option value="">Select a service...</option>
               <option value="asphalt-paving">Asphalt Paving</option>
@@ -115,7 +115,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
             <select
               id="projectType"
               name="projectType"
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-colors bg-white"
+              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue focus:border-blue outline-none transition-colors bg-white"
             >
               <option value="">Select type...</option>
               <option value="residential">Residential</option>
@@ -135,7 +135,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
           name="message"
           required
           rows={5}
-          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-colors resize-y"
+          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue focus:border-blue outline-none transition-colors resize-y"
           placeholder={
             variant === "estimate"
               ? "Tell us about your project — approximate size, current condition, timeline, etc."
@@ -146,7 +146,7 @@ export default function ContactForm({ variant = "contact" }: ContactFormProps) {
 
       <button
         type="submit"
-        className="w-full sm:w-auto bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg uppercase tracking-wide"
+        className="w-full sm:w-auto bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg uppercase tracking-wide"
       >
         {variant === "estimate" ? "Request Free Estimate" : "Send Message"}
       </button>

@@ -138,11 +138,11 @@ export default function ReviewsPage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8 text-center">
           <div className="flex justify-center gap-1 mb-4">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} className="w-7 h-7 fill-orange text-orange" />
+              <Star key={i} className="w-7 h-7 fill-blue text-blue" />
             ))}
           </div>
           <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-            Customer <span className="text-orange">Reviews</span>
+            Customer <span className="text-blue">Reviews</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             {avgRating} out of 5 stars based on {reviews.length} reviews.
@@ -165,7 +165,7 @@ export default function ReviewsPage() {
                   {Array.from({ length: review.rating }).map((_, j) => (
                     <Star
                       key={j}
-                      className="w-4 h-4 fill-orange text-orange"
+                      className="w-4 h-4 fill-blue text-blue"
                     />
                   ))}
                 </div>
@@ -177,7 +177,7 @@ export default function ReviewsPage() {
                     {review.name}
                   </p>
                   <p className="text-xs text-gray-warm">{review.location}</p>
-                  <span className="inline-block mt-2 text-xs bg-orange/10 text-orange px-2 py-0.5 rounded font-medium">
+                  <span className="inline-block mt-2 text-xs bg-blue/10 text-blue px-2 py-0.5 rounded font-medium">
                     {review.service}
                   </span>
                 </div>
@@ -200,7 +200,7 @@ export default function ReviewsPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:860-447-1518"
-              className="flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
+              className="flex items-center gap-2 bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
             >
               <Phone className="w-5 h-5" />
               Call 860-447-1518

@@ -18,7 +18,7 @@ export default function ContactPage() {
       <section className="bg-charcoal text-white py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
-            Contact <span className="text-orange">Us</span>
+            Contact <span className="text-blue">Us</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-xl">
             Have a question or ready to get started? Reach out by phone, visit
@@ -46,14 +46,14 @@ export default function ContactPage() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-orange/10 rounded-lg flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-orange" />
+                  <div className="w-10 h-10 bg-blue/10 rounded-lg flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5 text-blue" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-charcoal mb-1">Phone</h3>
                     <a
                       href="tel:860-447-1518"
-                      className="text-orange hover:text-orange-dark transition-colors font-bold text-lg"
+                      className="text-blue hover:text-blue-dark transition-colors font-bold text-lg"
                     >
                       860-447-1518
                     </a>
@@ -64,8 +64,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-orange/10 rounded-lg flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-orange" />
+                  <div className="w-10 h-10 bg-blue/10 rounded-lg flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5 text-blue" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-charcoal mb-1">
@@ -80,8 +80,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-orange/10 rounded-lg flex items-center justify-center shrink-0">
-                    <Clock className="w-5 h-5 text-orange" />
+                  <div className="w-10 h-10 bg-blue/10 rounded-lg flex items-center justify-center shrink-0">
+                    <Clock className="w-5 h-5 text-blue" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-charcoal mb-1">Hours</h3>
@@ -122,7 +122,7 @@ export default function ContactPage() {
           {/* TODO: Replace with actual Google Maps embed */}
           <div className="w-full h-80 bg-gray-300 rounded-lg flex items-center justify-center">
             <div className="text-center text-gray-warm">
-              <MapPin className="w-10 h-10 mx-auto mb-2 text-orange" />
+              <MapPin className="w-10 h-10 mx-auto mb-2 text-blue" />
               <p className="font-semibold">419 Montauk Avenue</p>
               <p>New London, CT 06320</p>
               <p className="text-sm mt-2 text-gray-400">

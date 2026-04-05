@@ -1,10 +1,30 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import CTABanner from "@/components/CTABanner";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import SchemaMarkup from "@/components/SchemaMarkup";
+
+const serviceAreaLinks = [
+  { name: "New London", slug: "new-london-ct" },
+  { name: "Groton", slug: "groton-ct" },
+  { name: "Waterford", slug: "waterford-ct" },
+  { name: "Mystic", slug: "mystic-ct" },
+  { name: "East Lyme", slug: "east-lyme-ct" },
+  { name: "Old Saybrook", slug: "old-saybrook-ct" },
+  { name: "Stonington", slug: "stonington-ct" },
+  { name: "Ledyard", slug: "ledyard-ct" },
+  { name: "Montville", slug: "montville-ct" },
+];
+
+const allServices = [
+  { title: "Asphalt Paving", href: "/services/asphalt-paving" },
+  { title: "Sealcoating & Repair", href: "/services/sealcoating-repair" },
+  { title: "Grading & Excavation", href: "/services/grading-excavation" },
+  { title: "Material Delivery", href: "/services/material-delivery" },
+  { title: "Gravel & Stone Installation", href: "/services/gravel-stone-installation" },
+];
 
 interface ProcessStep {
   step: string;
@@ -104,7 +124,7 @@ export default function ServicePageLayout({
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
               {heroTitle}{" "}
-              <span className="text-orange">{heroHighlight}</span>
+              <span className="text-blue">{heroHighlight}</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl">
               {heroDescription}
@@ -112,7 +132,7 @@ export default function ServicePageLayout({
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/free-estimate"
-                className="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-md transition-colors uppercase tracking-wide"
+                className="inline-flex items-center justify-center bg-blue hover:bg-blue-dark text-white font-bold px-8 py-4 rounded-md transition-colors uppercase tracking-wide"
               >
                 Get a Free Estimate
               </Link>
@@ -153,7 +173,7 @@ export default function ServicePageLayout({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {processSteps.map((step, i) => (
               <div key={i} className="text-center">
-                <div className="w-14 h-14 bg-orange text-white rounded-full flex items-center justify-center text-xl font-bold font-heading mx-auto mb-4">
+                <div className="w-14 h-14 bg-blue text-white rounded-full flex items-center justify-center text-xl font-bold font-heading mx-auto mb-4">
                   {step.step}
                 </div>
                 <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-2">
@@ -196,6 +216,58 @@ export default function ServicePageLayout({
             Frequently Asked Questions
           </h2>
           <FAQAccordion items={faqs} />
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-3xl mx-auto px-4 lg:px-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-8">
+            Related Services
+          </h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {allServices
+              .filter((s) => !s.href.endsWith(slug))
+              .map((s) => (
+                <Link
+                  key={s.href}
+                  href={s.href}
+                  className="bg-gray-light hover:bg-blue/10 text-charcoal hover:text-blue px-5 py-2.5 rounded-md transition-colors font-medium text-sm"
+                >
+                  {s.title} →
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-16 md:py-24 bg-gray-light">
+        <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide text-charcoal mb-4">
+            We Serve These Areas
+          </h2>
+          <p className="text-gray-warm mb-8">
+            We provide {heroTitle.toLowerCase()} services throughout Southeastern Connecticut.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {serviceAreaLinks.map((area) => (
+              <Link
+                key={area.slug}
+                href={`/service-areas/${area.slug}`}
+                className="flex items-center gap-1.5 bg-white hover:bg-blue/10 text-charcoal hover:text-blue px-4 py-2 rounded-md transition-colors text-sm font-medium border border-gray-200"
+              >
+                <MapPin className="w-3.5 h-3.5" />
+                {area.name}
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/service-areas"
+            className="inline-block mt-6 text-blue hover:text-blue-dark font-bold uppercase tracking-wide text-sm transition-colors"
+          >
+            View All Service Areas →
+          </Link>
         </div>
       </section>
 

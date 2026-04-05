@@ -74,7 +74,7 @@ export default function TestimonialSlider() {
             {Array.from({ length: testimonial.rating }).map((_, i) => (
               <Star
                 key={i}
-                className="w-5 h-5 fill-orange text-orange"
+                className="w-5 h-5 fill-blue text-blue"
               />
             ))}
           </div>
@@ -117,7 +117,7 @@ export default function TestimonialSlider() {
             key={i}
             onClick={() => setCurrent(i)}
             className={`w-2.5 h-2.5 rounded-full transition-colors ${
-              i === current ? "bg-orange" : "bg-gray-300"
+              i === current ? "bg-blue" : "bg-gray-300"
             }`}
             aria-label={`Go to testimonial ${i + 1}`}
           />

@@ -26,7 +26,7 @@ export default function WhenToSealcoatDrivewayPage() {
             </div>
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-wide text-charcoal">
               When to Sealcoat Your Driveway:{" "}
-              <span className="text-orange">A Complete Guide</span>
+              <span className="text-blue">A Complete Guide</span>
             </h1>
           </div>
 
@@ -70,7 +70,7 @@ export default function WhenToSealcoatDrivewayPage() {
               ones. For a full look at our process and products, visit our{" "}
               <Link
                 href="/services/sealcoating-repair"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 sealcoating and repair services
               </Link>{" "}
@@ -85,7 +85,7 @@ export default function WhenToSealcoatDrivewayPage() {
               If you have just had a brand-new{" "}
               <Link
                 href="/services/asphalt-paving"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 asphalt driveway installed
               </Link>
@@ -127,7 +127,7 @@ export default function WhenToSealcoatDrivewayPage() {
               expensive repairs or full{" "}
               <Link
                 href="/blog/signs-you-need-driveway-repaving"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 driveway repaving
               </Link>
@@ -238,7 +238,7 @@ export default function WhenToSealcoatDrivewayPage() {
               our guide on{" "}
               <Link
                 href="/blog/signs-you-need-driveway-repaving"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 signs you need driveway repaving
               </Link>{" "}
@@ -248,7 +248,7 @@ export default function WhenToSealcoatDrivewayPage() {
               about expected lifespans in our post on{" "}
               <Link
                 href="/blog/how-long-does-asphalt-driveway-last"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 how long an asphalt driveway lasts
               </Link>
@@ -354,7 +354,7 @@ export default function WhenToSealcoatDrivewayPage() {
               way to get an accurate price for your specific driveway is to{" "}
               <Link
                 href="/free-estimate"
-                className="text-orange hover:underline font-semibold"
+                className="text-blue hover:underline font-semibold"
               >
                 request a free estimate
               </Link>
@@ -413,11 +413,42 @@ export default function WhenToSealcoatDrivewayPage() {
             </p>
           </div>
 
+          {/* Related Articles */}
+          <section className="py-12 mt-16 bg-gray-light rounded-2xl">
+            <div className="max-w-4xl mx-auto px-4 lg:px-8">
+              <h2 className="font-heading text-2xl font-bold uppercase tracking-wide text-charcoal mb-6 text-center">
+                Related Articles
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link href="/blog/how-long-does-asphalt-driveway-last" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">How Long Does an Asphalt Driveway Last?</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+                <Link href="/blog/signs-you-need-driveway-repaving" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">5 Signs You Need Driveway Repaving</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+                <Link href="/blog/how-to-prepare-for-paving-project" className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md hover:border-blue/30 transition-all">
+                  <span className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal">How to Prepare for Your Paving Project</span>
+                  <span className="block mt-1 text-xs text-blue font-medium">Read Article →</span>
+                </Link>
+              </div>
+              <p className="text-center text-sm text-gray-warm mt-8">
+                Northeast Paving serves{" "}
+                <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark">New London</Link>,{" "}
+                <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark">Groton</Link>,{" "}
+                <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark">Waterford</Link>,{" "}
+                and{" "}
+                <Link href="/service-areas" className="text-blue hover:text-blue-dark">15+ towns across Southeastern CT</Link>.
+              </p>
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-16 bg-charcoal rounded-2xl p-8 md:p-12 text-center">
             <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide text-white mb-4">
               Ready to Protect Your{" "}
-              <span className="text-orange">Driveway?</span>
+              <span className="text-blue">Driveway?</span>
             </h2>
             <p className="text-gray-300 leading-relaxed mb-8 max-w-xl mx-auto">
               Whether your driveway needs its first sealcoat or is overdue for
@@ -428,7 +459,7 @@ export default function WhenToSealcoatDrivewayPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="tel:860-447-1518"
-                className="inline-flex items-center gap-2 bg-orange hover:bg-orange/90 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                className="inline-flex items-center gap-2 bg-blue hover:bg-blue/90 text-white font-bold py-3 px-6 rounded-lg transition-colors"
               >
                 <Phone className="w-5 h-5" />
                 Call 860-447-1518

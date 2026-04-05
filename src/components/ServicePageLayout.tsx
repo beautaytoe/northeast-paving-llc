@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone } from "lucide-react";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import CTABanner from "@/components/CTABanner";
@@ -26,6 +27,7 @@ interface ServicePageLayoutProps {
   benefits: Benefit[];
   faqs: FAQItem[];
   slug: string;
+  heroImage?: string;
 }
 
 export default function ServicePageLayout({
@@ -38,6 +40,7 @@ export default function ServicePageLayout({
   benefits,
   faqs,
   slug,
+  heroImage,
 }: ServicePageLayoutProps) {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -83,8 +86,21 @@ export default function ServicePageLayout({
       />
 
       {/* Hero */}
-      <section className="bg-charcoal text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+      <section className="relative bg-charcoal text-white py-16 md:py-24 overflow-hidden">
+        {heroImage && (
+          <>
+            <Image
+              src={heroImage}
+              alt={`${heroTitle} ${heroHighlight} in Southeastern Connecticut`}
+              fill
+              priority
+              className="object-cover opacity-20"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/70 to-charcoal/40" />
+          </>
+        )}
+        <div className="relative max-w-7xl mx-auto px-4 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
               {heroTitle}{" "}

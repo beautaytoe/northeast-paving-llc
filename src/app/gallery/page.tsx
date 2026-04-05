@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone } from "lucide-react";
-import BeforeAfter from "@/components/BeforeAfter";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import { galleryImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "Project Gallery — Before & After Photos",
@@ -10,68 +11,43 @@ export const metadata: Metadata = {
     "View before and after photos of Northeast Paving LLC projects. Driveways, parking lots, sealcoating, and more across Southeastern CT. Call 860-447-1518.",
 };
 
-const projects = [
+const sections = [
   {
-    title: "Residential Driveway — Groton, CT",
-    category: "Driveway Paving",
-    description:
-      "Complete tear-out and repave of a deteriorated asphalt driveway. New gravel base, proper grading for drainage, and fresh hot-mix asphalt.",
-    beforeAlt: "Cracked and deteriorated driveway in Groton CT before repaving",
-    afterAlt: "Smooth new asphalt driveway in Groton CT after professional paving",
+    title: "Driveway Paving",
+    images: galleryImages.drivewayPaving,
   },
   {
-    title: "Commercial Parking Lot — Waterford, CT",
-    category: "Commercial Paving",
-    description:
-      "Full parking lot paving for a retail plaza including grading, base installation, paving, and line striping.",
-    beforeAlt: "Gravel lot in Waterford CT before commercial asphalt paving",
-    afterAlt: "Finished commercial parking lot in Waterford CT with fresh asphalt",
+    title: "Parking Lot Paving",
+    images: galleryImages.parkingLotPaving,
   },
   {
-    title: "Driveway Sealcoating — Mystic, CT",
-    category: "Sealcoating",
-    description:
-      "Professional sealcoat application restoring the rich, dark finish and protecting against UV, water, and oil damage.",
-    beforeAlt: "Faded gray asphalt driveway in Mystic CT before sealcoating",
-    afterAlt: "Dark rich sealcoated driveway in Mystic CT after professional treatment",
+    title: "Road Paving & Specialty",
+    images: [...galleryImages.roadPaving, ...galleryImages.specialtyPaving],
   },
   {
-    title: "Gravel Driveway — Ledyard, CT",
-    category: "Gravel Installation",
-    description:
-      "New gravel driveway installation with recycled asphalt millings. Includes grading, geotextile fabric, and compaction.",
-    beforeAlt: "Muddy unpaved driveway in Ledyard CT before gravel installation",
-    afterAlt: "Compacted gravel driveway in Ledyard CT after professional installation",
+    title: "Sealcoating & Repair",
+    images: galleryImages.sealcoating,
   },
   {
-    title: "Site Grading — New London, CT",
-    category: "Grading & Excavation",
-    description:
-      "Complete site grading and drainage correction for a residential property with persistent water pooling issues.",
-    beforeAlt: "Uneven yard with water pooling in New London CT before grading",
-    afterAlt: "Properly graded and drained residential lot in New London CT",
+    title: "Grading & Excavation",
+    images: galleryImages.excavation,
   },
   {
-    title: "Driveway Repaving — Old Saybrook, CT",
-    category: "Driveway Paving",
-    description:
-      "Removal of old failing asphalt, re-grading for improved drainage, and installation of new asphalt driveway.",
-    beforeAlt: "Broken asphalt driveway with potholes in Old Saybrook CT",
-    afterAlt: "Newly paved smooth asphalt driveway in Old Saybrook CT",
+    title: "Material Delivery",
+    images: galleryImages.trucking,
+  },
+  {
+    title: "Gravel & Stone Installation",
+    images: galleryImages.gravelStone,
   },
 ];
-
-// Placeholder image generator for before/after pairs
-function placeholderImage(label: string, shade: string) {
-  return `data:image/svg+xml,${encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect fill="${shade}" width="800" height="600"/><text x="400" y="300" text-anchor="middle" fill="white" font-family="sans-serif" font-size="28" font-weight="bold">${label}</text></svg>`
-  )}`;
-}
 
 export default function GalleryPage() {
   return (
     <>
-      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Gallery" }]} />
+      <BreadcrumbNav
+        items={[{ label: "Home", href: "/" }, { label: "Gallery" }]}
+      />
 
       {/* Hero */}
       <section className="bg-charcoal text-white py-16 md:py-20">
@@ -80,40 +56,41 @@ export default function GalleryPage() {
             Project <span className="text-orange">Gallery</span>
           </h1>
           <p className="text-lg text-gray-300 max-w-xl">
-            See the quality of our work firsthand. Browse before and after
-            photos from paving projects across Southeastern Connecticut.
+            See the quality of our work firsthand. Browse photos from paving
+            projects across Southeastern Connecticut.
           </p>
         </div>
       </section>
 
-      {/* Gallery Grid */}
-      <section className="py-16 md:py-24 bg-gray-light">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {projects.map((project, i) => (
-              <div key={i} className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200">
-                <BeforeAfter
-                  beforeSrc={placeholderImage("Before", "#6B7280")}
-                  afterSrc={placeholderImage("After", "#1C1C1C")}
-                  beforeAlt={project.beforeAlt}
-                  afterAlt={project.afterAlt}
-                />
-                <div className="p-6">
-                  <span className="inline-block text-xs bg-orange/10 text-orange px-2 py-0.5 rounded font-medium uppercase tracking-wide mb-2">
-                    {project.category}
-                  </span>
-                  <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-gray-warm leading-relaxed">
-                    {project.description}
-                  </p>
+      {/* Gallery Sections */}
+      {sections.map((section) => (
+        <section
+          key={section.title}
+          className="py-12 md:py-16 odd:bg-white even:bg-gray-light"
+        >
+          <div className="max-w-7xl mx-auto px-4 lg:px-8">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide text-charcoal mb-8">
+              {section.title}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {section.images.map((img, i) => (
+                <div
+                  key={i}
+                  className="relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-200"
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       {/* CTA */}
       <section className="bg-charcoal text-white py-16 px-4">

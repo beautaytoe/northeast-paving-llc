@@ -105,6 +105,7 @@ export default function AsphaltPavingPage() {
         },
       ]}
       slug="asphalt-paving"
+      heroImage="/images/gallery/residential-driveway-paving-ct-01.webp"
     />
   );
 }

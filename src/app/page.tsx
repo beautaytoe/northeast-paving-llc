@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Phone,
   Truck,
@@ -11,6 +12,7 @@ import ServiceCard from "@/components/ServiceCard";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import CTABanner from "@/components/CTABanner";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import { heroImages } from "@/lib/images";
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -100,8 +102,16 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative bg-charcoal text-white overflow-hidden">
-        {/* Background overlay pattern */}
-        <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-gray-warm/40" />
+        {/* Background image */}
+        <Image
+          src={heroImages.pavingCrew.src}
+          alt={heroImages.pavingCrew.alt}
+          fill
+          priority
+          className="object-cover opacity-30"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/70 to-charcoal/40" />
         <div className="relative max-w-7xl mx-auto px-4 py-24 md:py-32 lg:py-40 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-orange font-semibold uppercase tracking-widest text-sm mb-4">

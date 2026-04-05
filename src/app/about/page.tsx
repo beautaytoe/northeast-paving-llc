@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Award, Shield, Users, Clock, MapPin } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import { aboutImages, heroImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "About Us — 30+ Years of Paving Excellence",
@@ -44,8 +46,17 @@ export default function AboutPage() {
       <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "About Us" }]} />
 
       {/* Hero */}
-      <section className="bg-charcoal text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+      <section className="relative bg-charcoal text-white py-16 md:py-24 overflow-hidden">
+        <Image
+          src={heroImages.pavingCrew.src}
+          alt={heroImages.pavingCrew.alt}
+          fill
+          priority
+          className="object-cover opacity-20"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/70 to-charcoal/40" />
+        <div className="relative max-w-7xl mx-auto px-4 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
               About <span className="text-orange">Northeast Paving</span>
@@ -61,7 +72,9 @@ export default function AboutPage() {
 
       {/* Story */}
       <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-3xl mx-auto px-4 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-8">
             Our Story
           </h2>
@@ -95,6 +108,17 @@ export default function AboutPage() {
               working with your neighbors — people who care about this community
               as much as you do.
             </p>
+          </div>
+          </div>
+          <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+            <Image
+              src={aboutImages.waterfordTeam.src}
+              alt={aboutImages.waterfordTeam.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
           </div>
         </div>
       </section>

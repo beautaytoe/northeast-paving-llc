@@ -105,6 +105,7 @@ export default function SealcoatingRepairPage() {
         },
       ]}
       slug="sealcoating-repair"
+      heroImage="/images/gallery/parking-lot-sealcoating-ct-01.webp"
     />
   );
 }

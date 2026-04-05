@@ -105,6 +105,7 @@ export default function MaterialDeliveryPage() {
         },
       ]}
       slug="material-delivery"
+      heroImage="/images/gallery/northeast-paving-delivery-truck-ct.webp"
     />
   );
 }

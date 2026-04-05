@@ -1,0 +1,110 @@
+import type { Metadata } from "next";
+import {
+  HardHat,
+  Layers,
+  Shovel,
+  Truck,
+  PackageOpen,
+  Phone,
+} from "lucide-react";
+import ServiceCard from "@/components/ServiceCard";
+import BreadcrumbNav from "@/components/BreadcrumbNav";
+
+export const metadata: Metadata = {
+  title: "Paving & Site Work Services — Southeastern CT",
+  description:
+    "Full-service asphalt paving, sealcoating, grading, excavation, and material delivery in Southeastern CT. 30+ years experience. Call 860-447-1518.",
+};
+
+const services = [
+  {
+    title: "Asphalt Paving",
+    description:
+      "Professional driveway and parking lot paving for residential, commercial, and municipal projects throughout Southeastern Connecticut.",
+    href: "/services/asphalt-paving",
+    icon: HardHat,
+  },
+  {
+    title: "Sealcoating & Repair",
+    description:
+      "Extend the life of your asphalt with expert sealcoating, crack repair, and patching services that protect your investment.",
+    href: "/services/sealcoating-repair",
+    icon: Layers,
+  },
+  {
+    title: "Grading & Excavation",
+    description:
+      "Complete site preparation including grading, drainage solutions, and excavation work for projects of all sizes.",
+    href: "/services/grading-excavation",
+    icon: Shovel,
+  },
+  {
+    title: "Material Delivery & Trucking",
+    description:
+      "Fast, reliable delivery of mulch, topsoil, gravel, and stone throughout Southeastern CT with our fleet of trucks.",
+    href: "/services/material-delivery",
+    icon: Truck,
+  },
+  {
+    title: "Gravel & Stone Installation",
+    description:
+      "Base materials, recycled asphalt millings, and stone installation for driveways, parking areas, and construction sites.",
+    href: "/services/gravel-stone-installation",
+    icon: PackageOpen,
+  },
+];
+
+export default function ServicesPage() {
+  return (
+    <>
+      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
+
+      {/* Hero */}
+      <section className="bg-charcoal text-white py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl">
+            <h1 className="font-heading text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">
+              Our <span className="text-orange">Services</span>
+            </h1>
+            <p className="text-lg text-gray-300 leading-relaxed max-w-xl">
+              From new asphalt paving to complete site work, Northeast Paving
+              delivers comprehensive solutions for residential, commercial, and
+              municipal clients across Southeastern Connecticut.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service) => (
+              <ServiceCard key={service.href} {...service} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-orange text-white py-12 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide mb-4">
+            Not Sure What You Need?
+          </h2>
+          <p className="text-lg mb-6 opacity-90">
+            Call us for a free consultation. We&apos;ll assess your project and
+            recommend the best solution.
+          </p>
+          <a
+            href="tel:860-447-1518"
+            className="inline-flex items-center gap-2 bg-charcoal hover:bg-gray-warm text-white font-bold px-8 py-4 rounded-md transition-colors text-lg"
+          >
+            <Phone className="w-5 h-5" />
+            Call 860-447-1518
+          </a>
+        </div>
+      </section>
+    </>
+  );
+}

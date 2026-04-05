@@ -10,6 +10,50 @@ import {
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import CTABanner from "@/components/CTABanner";
+import SchemaMarkup from "@/components/SchemaMarkup";
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Northeast Paving, LLC",
+  description:
+    "Southeast Connecticut's trusted paving contractor for 30+ years. Asphalt paving, sealcoating, grading & excavation.",
+  telephone: "860-447-1518",
+  faxNumber: "860-447-1535",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "419 Montauk Avenue",
+    addressLocality: "New London",
+    addressRegion: "CT",
+    postalCode: "06320",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 41.3473,
+    longitude: -72.1012,
+  },
+  url: "https://northeastpavingllc.com",
+  priceRange: "$$",
+  openingHours: "Mo-Fr 07:00-17:00",
+  areaServed: [
+    "New London, CT", "Groton, CT", "Waterford, CT", "Mystic, CT",
+    "East Lyme, CT", "Old Saybrook, CT", "Stonington, CT", "Ledyard, CT",
+    "Montville, CT", "Niantic, CT", "Old Lyme, CT", "Essex, CT",
+    "Salem, CT", "North Stonington, CT", "Lyme, CT",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Paving Services",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Asphalt Paving" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sealcoating & Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Grading & Excavation" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Material Delivery" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gravel & Stone Installation" } },
+    ],
+  },
+};
 
 const services = [
   {
@@ -52,6 +96,8 @@ const services = [
 export default function Home() {
   return (
     <>
+      <SchemaMarkup schema={localBusinessSchema} />
+
       {/* Hero Section */}
       <section className="relative bg-charcoal text-white overflow-hidden">
         {/* Background overlay pattern */}

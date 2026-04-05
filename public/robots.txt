@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://northeastpavingllc.com
+
+# Sitemaps
+Sitemap: https://northeastpavingllc.com/sitemap.xml

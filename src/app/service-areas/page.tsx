@@ -8,7 +8,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Service Areas — Southeastern CT Paving",
   description:
-    "Northeast Paving serves 15+ towns in Southeastern CT including New London, Groton, Waterford, Mystic, East Lyme, and Old Saybrook. Call 860-447-1518.",
+    "Northeast Paving serves 25+ towns in Southeastern CT including New London, Groton, Waterford, Mystic, East Lyme, and Old Saybrook. Call 860-447-1518.",
 };
 
 export default function ServiceAreasPage() {
@@ -24,7 +24,7 @@ export default function ServiceAreasPage() {
               Our <span className="text-blue">Service Areas</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl">
-              Northeast Paving proudly serves 15+ towns across Southeastern
+              Northeast Paving proudly serves 25+ towns across Southeastern
               Connecticut. Based in New London, we&apos;re just a short drive
               from every community we serve.
             </p>

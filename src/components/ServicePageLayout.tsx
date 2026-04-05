@@ -16,6 +16,9 @@ const serviceAreaLinks = [
   { name: "Stonington", slug: "stonington-ct" },
   { name: "Ledyard", slug: "ledyard-ct" },
   { name: "Montville", slug: "montville-ct" },
+  { name: "Norwich", slug: "norwich-ct" },
+  { name: "Colchester", slug: "colchester-ct" },
+  { name: "East Haddam", slug: "east-haddam-ct" },
 ];
 
 const allServices = [

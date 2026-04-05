@@ -43,6 +43,9 @@ const localBusinessSchema = {
     "East Lyme, CT", "Old Saybrook, CT", "Stonington, CT", "Ledyard, CT",
     "Montville, CT", "Niantic, CT", "Old Lyme, CT", "Essex, CT",
     "Salem, CT", "North Stonington, CT", "Lyme, CT",
+    "Norwich, CT", "Preston, CT", "Griswold, CT", "Lisbon, CT",
+    "Bozrah, CT", "Franklin, CT", "Sprague, CT", "Voluntown, CT",
+    "Colchester, CT", "East Haddam, CT",
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",

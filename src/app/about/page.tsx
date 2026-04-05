@@ -35,7 +35,7 @@ const milestones = [
   },
   {
     icon: MapPin,
-    title: "15+ Towns Served",
+    title: "25+ Towns Served",
     description: "Covering all of Southeastern Connecticut",
   },
 ];
@@ -103,7 +103,7 @@ export default function AboutPage() {
             </p>
             <p>
               We&apos;re headquartered at 419 Montauk Avenue in New London, CT,
-              and our service area covers 15+ towns throughout Southeastern
+              and our service area covers 25+ towns throughout Southeastern
               Connecticut. When you work with Northeast Paving, you&apos;re
               working with your neighbors — people who care about this community
               as much as you do.

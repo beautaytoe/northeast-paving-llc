@@ -186,6 +186,8 @@ export const locationsBatch3: LocationData[] = [
       { name: "Montville", slug: "montville-ct" },
       { name: "Ledyard", slug: "ledyard-ct" },
       { name: "Lyme", slug: "lyme-ct" },
+      { name: "Colchester", slug: "colchester-ct" },
+      { name: "Bozrah", slug: "bozrah-ct" },
     ],
     permitsInfo:
       "Salem's zoning regulations require permits for new driveway construction, and driveways connecting to town roads need approval from the Road Foreman. Properties near Gardner Lake and other water bodies may be subject to Inland Wetlands Commission review, particularly if work involves grading or soil disturbance within regulated setback areas. Salem's agricultural zones may have specific driveway width and surface requirements. Northeast Paving can help Salem property owners navigate the town's permitting process, which is typically straightforward given the rural nature of most projects.",

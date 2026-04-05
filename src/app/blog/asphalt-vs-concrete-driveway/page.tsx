@@ -427,7 +427,7 @@ export default function AsphaltVsConcreteDrivewayPage() {
                 <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark">Groton</Link>,{" "}
                 <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark">Waterford</Link>,{" "}
                 and{" "}
-                <Link href="/service-areas" className="text-blue hover:text-blue-dark">15+ towns across Southeastern CT</Link>.
+                <Link href="/service-areas" className="text-blue hover:text-blue-dark">25+ towns across Southeastern CT</Link>.
               </p>
             </div>
           </section>

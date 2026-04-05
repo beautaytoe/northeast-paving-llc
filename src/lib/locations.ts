@@ -33,9 +33,13 @@ export interface LocationData {
 import { locationsBatch1 } from "./locations-batch1";
 import { locationsBatch2 } from "./locations-batch2";
 import { locationsBatch3 } from "./locations-batch3";
+import { locationsBatch4 } from "./locations-batch4";
+import { locationsBatch5 } from "./locations-batch5";
 
 export const locations: LocationData[] = [
   ...locationsBatch1,
   ...locationsBatch2,
   ...locationsBatch3,
+  ...locationsBatch4,
+  ...locationsBatch5,
 ];

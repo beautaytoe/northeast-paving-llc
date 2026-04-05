@@ -93,7 +93,7 @@ export default function ServicesPage() {
           <p className="text-gray-warm mb-4">
             We provide all of these services across{" "}
             <Link href="/service-areas" className="text-blue hover:text-blue-dark font-semibold transition-colors">
-              15+ towns in Southeastern Connecticut
+              25+ towns in Southeastern Connecticut
             </Link>
             , including{" "}
             <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark transition-colors">New London</Link>,{" "}

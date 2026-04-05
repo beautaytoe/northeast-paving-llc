@@ -56,6 +56,7 @@ export const locationsBatch2: LocationData[] = [
       { name: "Salem", slug: "salem-ct" },
       { name: "Ledyard", slug: "ledyard-ct" },
       { name: "Waterford", slug: "waterford-ct" },
+      { name: "Norwich", slug: "norwich-ct" },
     ],
     permitsInfo:
       "Montville requires a driveway permit for new driveway installations or significant modifications to existing driveway aprons connecting to town roads. Applications are handled through the Montville Public Works Department. Commercial paving projects may also require site plan approval from the Planning and Zoning Commission, particularly for new construction or changes to existing lot layouts. Northeast Paving assists Montville clients with understanding permit requirements and can coordinate with town offices on your behalf.",
@@ -294,6 +295,7 @@ export const locationsBatch2: LocationData[] = [
       { name: "Stonington", slug: "stonington-ct" },
       { name: "Ledyard", slug: "ledyard-ct" },
       { name: "Salem", slug: "salem-ct" },
+      { name: "Voluntown", slug: "voluntown-ct" },
     ],
     permitsInfo:
       "North Stonington requires a driveway permit for new driveway installations connecting to town roads, obtained through the Road Foreman or Selectman's office. Given the town's rural character, many projects involve private roads or long driveways entirely on private property, which typically have fewer permitting requirements. Wetland setback regulations apply to properties near Wyassup Lake, streams, and mapped wetland areas — the North Stonington Inland Wetlands Commission reviews projects within regulated areas. Northeast Paving advises North Stonington clients on applicable requirements and coordinates with town offices as needed.",

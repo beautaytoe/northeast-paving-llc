@@ -35,6 +35,16 @@ const serviceAreas = [
   "Salem",
   "North Stonington",
   "Lyme",
+  "Norwich",
+  "Preston",
+  "Griswold",
+  "Lisbon",
+  "Bozrah",
+  "Franklin",
+  "Sprague",
+  "Voluntown",
+  "Colchester",
+  "East Haddam",
 ];
 
 export default function Footer() {

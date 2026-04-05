@@ -109,7 +109,8 @@ export const locationsBatch1: LocationData[] = [
     neighbors: [
       { name: "Old Saybrook", slug: "old-saybrook-ct" },
       { name: "Old Lyme", slug: "old-lyme-ct" },
-      { name: "Lyme", slug: "lyme-ct" }
+      { name: "Lyme", slug: "lyme-ct" },
+      { name: "East Haddam", slug: "east-haddam-ct" }
     ],
     permitsInfo:
       "Paving projects in Essex may require review by the Essex Building Department, particularly if the work changes the impervious surface area on the property or involves grading near wetlands or watercourses. Properties within the Essex Village Historic District should check with the Essex Historic District Commission, as exterior changes — including driveway modifications — may require a Certificate of Appropriateness. We recommend contacting the Essex Building Department early in the planning process to determine what approvals are needed.",
@@ -223,7 +224,8 @@ export const locationsBatch1: LocationData[] = [
       { name: "Groton", slug: "groton-ct" },
       { name: "North Stonington", slug: "north-stonington-ct" },
       { name: "Montville", slug: "montville-ct" },
-      { name: "Salem", slug: "salem-ct" }
+      { name: "Salem", slug: "salem-ct" },
+      { name: "Preston", slug: "preston-ct" }
     ],
     permitsInfo:
       "Ledyard generally does not require permits for straightforward residential driveway repaving, but projects that involve new driveway construction, changes to drainage patterns, or work near wetlands or watercourses may require approval from the Ledyard Building Department or the Ledyard Inland Wetlands and Watercourses Commission. New driveway cuts onto town roads require an encroachment permit from the Ledyard Highway Department. We recommend checking with the Ledyard Building Department before beginning any project to confirm whether permits are required.",
@@ -280,7 +282,8 @@ export const locationsBatch1: LocationData[] = [
       { name: "Old Lyme", slug: "old-lyme-ct" },
       { name: "East Lyme", slug: "east-lyme-ct" },
       { name: "Salem", slug: "salem-ct" },
-      { name: "Essex", slug: "essex-ct" }
+      { name: "Essex", slug: "essex-ct" },
+      { name: "East Haddam", slug: "east-haddam-ct" }
     ],
     permitsInfo:
       "Lyme's zoning and wetlands regulations may require permits or approvals for driveway construction and significant repaving projects, particularly those near wetlands, watercourses, or within the coastal boundary. The Lyme Inland Wetlands and Conservation Commission reviews activities within regulated areas, and the Lyme Zoning Commission may need to approve new driveway locations or expansions. Even routine repaving projects should be discussed with the Lyme Building Official to confirm whether any approvals are needed, especially on properties with known wetlands or environmental constraints.",

@@ -445,9 +445,9 @@ export default function HowLongDoesAsphaltDrivewayLastPage() {
           </div>
           <p className="text-center text-sm text-gray-warm mt-8">
             Northeast Paving serves{" "}
-            <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark">New London</Link>,{" "}
-            <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark">Groton</Link>,{" "}
-            <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark">Waterford</Link>,{" "}
+            <Link href="/service-areas/asphalt-paving-new-london-ct" className="text-blue hover:text-blue-dark">New London</Link>,{" "}
+            <Link href="/service-areas/asphalt-paving-groton-ct" className="text-blue hover:text-blue-dark">Groton</Link>,{" "}
+            <Link href="/service-areas/asphalt-paving-waterford-ct" className="text-blue hover:text-blue-dark">Waterford</Link>,{" "}
             and{" "}
             <Link href="/service-areas" className="text-blue hover:text-blue-dark">25+ towns across Southeastern CT</Link>.
           </p>

@@ -3,9 +3,14 @@ import type { LocationData } from "./locations";
 export const locationsBatch1: LocationData[] = [
   {
     town: "East Lyme",
-    slug: "east-lyme-ct",
+    slug: "asphalt-paving-east-lyme-ct",
     description:
       "Asphalt paving, sealcoating, and site work for homes and businesses in coastal East Lyme.",
+    population: 19168,
+    county: "New London County",
+    lat: 41.3537,
+    lng: -72.2279,
+    proximity: "15 min from HQ",
     intro: [
       "East Lyme is a coastal Connecticut town of roughly 19,000 residents stretching from the shores of Long Island Sound northward into the wooded hills of southeastern New London County. The town encompasses the village of Niantic, whose compact downtown and sandy beaches draw summer visitors from across the state, as well as the more inland Flanders neighborhood where Route 161 serves as the primary commercial corridor. East Lyme's identity is shaped by its proximity to the water — Rocky Neck State Park anchors the eastern shoreline with its crescent beach and tidal salt marsh, while Niantic Bay and its boardwalk give the town a quintessential New England seaside character that residents fiercely protect. The town balances its quiet residential neighborhoods with a growing commercial presence along the I-95 corridor, making it one of the more economically diverse communities between New London and Old Saybrook.",
       "Northeast Paving has been serving East Lyme homeowners and businesses for over 30 years, and our crews know the town's roads and neighborhoods as well as any local. We have completed hundreds of residential driveway projects in the Flanders neighborhood, where post-war ranch homes and split-levels line streets like Society Road, Boston Post Road, and Upper Pattagansett Road. Many of these properties sit on sandy, well-drained soils that are forgiving for paving — but the proximity to salt air means surfaces degrade faster than they would even ten miles inland. We regularly return to Flanders homeowners on two- and three-year sealcoating cycles to keep their driveways looking sharp and structurally sound.",
@@ -46,10 +51,24 @@ export const locationsBatch1: LocationData[] = [
       "Licensed, insured, and W.B.E. certified for residential, commercial, and municipal projects"
     ],
     neighbors: [
-      { name: "Waterford", slug: "waterford-ct" },
-      { name: "Salem", slug: "salem-ct" },
-      { name: "Old Lyme", slug: "old-lyme-ct" },
-      { name: "Niantic", slug: "niantic-ct" }
+      { name: "Waterford", slug: "asphalt-paving-waterford-ct" },
+      { name: "Salem", slug: "asphalt-paving-salem-ct" },
+      { name: "Old Lyme", slug: "asphalt-paving-old-lyme-ct" },
+      { name: "Niantic", slug: "asphalt-paving-niantic-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in East Lyme CT?",
+        answer: "Driveway paving costs in East Lyme typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your East Lyme property."
+      },
+      {
+        question: "What is the best time to pave a driveway in East Lyme?",
+        answer: "The best time for driveway paving in East Lyme, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in East Lyme CT?",
+        answer: "East Lyme may require permits for new driveway construction or significant modifications. Check with the East Lyme Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Most residential driveway paving projects in East Lyme do not require a permit, but any work that changes the footprint of your driveway, adds impervious surface, or involves grading near wetlands or coastal areas may trigger review by the East Lyme Building Department or the Inland Wetlands Commission. Commercial paving projects and new construction typically require site plan approval. We recommend contacting the East Lyme Building Department before starting any project to confirm whether permits are needed for your specific property.",
@@ -60,9 +79,14 @@ export const locationsBatch1: LocationData[] = [
   },
   {
     town: "Essex",
-    slug: "essex-ct",
+    slug: "asphalt-paving-essex-ct",
     description:
       "Expert paving and excavation for Essex's historic properties and village businesses.",
+    population: 6733,
+    county: "Middlesex County",
+    lat: 41.3526,
+    lng: -72.3884,
+    proximity: "25 min from HQ",
     intro: [
       "Essex is a small Connecticut River town of approximately 6,700 residents that has earned a reputation far beyond its size — Connecticut Magazine once named it the Best Small Town in America, and visitors who stroll down Main Street past the white clapboard storefronts and the Griswold Inn quickly understand why. The town comprises three villages: Essex Village along the river, Centerbrook slightly inland, and Ivoryton to the west, each with its own distinct personality. Essex Village is the postcard — a compact grid of 18th- and 19th-century homes stepping down to the Connecticut River waterfront, where the Connecticut River Museum sits at the foot of Main Street and the Essex Yacht Club hosts regattas through the summer. Centerbrook is the workaday heart of town with its manufacturing heritage, while Ivoryton retains the cultural energy of its historic playhouse and the quiet charm of its village green.",
       "Northeast Paving has been serving Essex property owners for more than three decades, and we approach every project in this town with an awareness of its historic character and the high expectations of its residents. In Essex Village, where homes along Main Street, North Main Street, and Prospect Street date to the Colonial and Federal periods, driveway paving requires a sensitivity that not every contractor brings. Many of these properties have narrow, curving driveways bordered by mature landscaping, stone walls, and historic outbuildings — our crews work carefully to protect these features, using smaller equipment when necessary and placing steel plates to distribute loads over delicate root zones. The finished product needs to complement the property, not overwhelm it.",
@@ -107,10 +131,24 @@ export const locationsBatch1: LocationData[] = [
       "Aesthetic finishing options including Belgian block edging and stamped apron treatments"
     ],
     neighbors: [
-      { name: "Old Saybrook", slug: "old-saybrook-ct" },
-      { name: "Old Lyme", slug: "old-lyme-ct" },
-      { name: "Lyme", slug: "lyme-ct" },
-      { name: "East Haddam", slug: "east-haddam-ct" }
+      { name: "Old Saybrook", slug: "asphalt-paving-old-saybrook-ct" },
+      { name: "Old Lyme", slug: "asphalt-paving-old-lyme-ct" },
+      { name: "Lyme", slug: "asphalt-paving-lyme-ct" },
+      { name: "East Haddam", slug: "asphalt-paving-east-haddam-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Essex CT?",
+        answer: "Driveway paving costs in Essex typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Essex property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Essex?",
+        answer: "The best time for driveway paving in Essex, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Essex CT?",
+        answer: "Essex may require permits for new driveway construction or significant modifications. Check with the Essex Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Paving projects in Essex may require review by the Essex Building Department, particularly if the work changes the impervious surface area on the property or involves grading near wetlands or watercourses. Properties within the Essex Village Historic District should check with the Essex Historic District Commission, as exterior changes — including driveway modifications — may require a Certificate of Appropriateness. We recommend contacting the Essex Building Department early in the planning process to determine what approvals are needed.",
@@ -121,9 +159,14 @@ export const locationsBatch1: LocationData[] = [
   },
   {
     town: "Groton",
-    slug: "groton-ct",
+    slug: "asphalt-paving-groton-ct",
     description:
       "Full-service asphalt paving and maintenance for Groton's residential, commercial, and military properties.",
+    population: 38411,
+    county: "New London County",
+    lat: 41.3501,
+    lng: -72.0784,
+    proximity: "5 min from HQ",
     intro: [
       "Groton is the largest town in New London County by population, home to roughly 39,000 residents spread across a geography that includes everything from the dense urban core of Groton City to the windswept peninsula of Groton Long Point. The town's identity is inseparable from the Naval Submarine Base New London — the first and primary submarine base of the United States Navy — which occupies a massive footprint along the Thames River and drives much of the local economy. Pfizer's global research headquarters in the eastern part of town adds another major institutional presence, and the combination of military, pharmaceutical, and tourism industries (Mystic Seaport and Mystic Aquarium sit partly within Groton's borders) gives the town an economic diversity that few Connecticut communities can match. Groton is a working town with real infrastructure demands, and its pavement takes a beating.",
       "Northeast Paving has been one of Groton's most active paving contractors for over three decades. Our residential work spans every corner of the town — from the modest ranch-style homes along Brandegee Avenue and Eastern Point Road in Groton City to the larger properties in the Pleasant Valley and Noank neighborhoods. Groton's residential streets were largely built out in the mid-20th century during the submarine base expansion, and many driveways from that era are now on their second or third paving cycle. We handle full-depth removals, subbase rehabilitation, and new asphalt installation for homeowners who are ready to invest in a driveway that will last another twenty-plus years. In neighborhoods like Poquonnock Bridge and along Meridian Street, where homes sit on clay-heavy soils, we pay particular attention to drainage and subbase depth to prevent the heaving and settling that plague poorly built driveways in this part of town.",
@@ -164,10 +207,24 @@ export const locationsBatch1: LocationData[] = [
       "Proven expertise with Groton's diverse soil conditions — clay, sand, and fill"
     ],
     neighbors: [
-      { name: "New London", slug: "new-london-ct" },
-      { name: "Ledyard", slug: "ledyard-ct" },
-      { name: "Stonington", slug: "stonington-ct" },
-      { name: "Mystic", slug: "mystic-ct" }
+      { name: "New London", slug: "asphalt-paving-new-london-ct" },
+      { name: "Ledyard", slug: "asphalt-paving-ledyard-ct" },
+      { name: "Stonington", slug: "asphalt-paving-stonington-ct" },
+      { name: "Mystic", slug: "asphalt-paving-mystic-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Groton CT?",
+        answer: "Driveway paving costs in Groton typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Groton property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Groton?",
+        answer: "The best time for driveway paving in Groton, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Groton CT?",
+        answer: "Groton may require permits for new driveway construction or significant modifications. Check with the Groton Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Groton requires permits for most site work that alters grading, drainage, or impervious surface coverage. Residential driveway repaving in the same footprint generally does not require a permit, but widening a driveway, adding a parking pad, or any work near wetlands or coastal resources will likely trigger review by the Groton Building Department or the Groton Inland Wetlands Commission. Commercial paving projects require site plan approval from the Groton Planning and Zoning Commission. We recommend contacting the Groton Building Department to confirm requirements for your specific project.",
@@ -178,9 +235,14 @@ export const locationsBatch1: LocationData[] = [
   },
   {
     town: "Ledyard",
-    slug: "ledyard-ct",
+    slug: "asphalt-paving-ledyard-ct",
     description:
       "Reliable paving, grading, and material delivery for Ledyard's rural and suburban properties.",
+    population: 14900,
+    county: "New London County",
+    lat: 41.4398,
+    lng: -72.0140,
+    proximity: "15 min from HQ",
     intro: [
       "Ledyard is a town of contrasts — a quiet, predominantly rural community of about 15,000 residents that also happens to sit adjacent to Foxwoods Resort Casino, one of the largest casino complexes in the Western Hemisphere. The town stretches across rolling, wooded hills in the interior of New London County, with Ledyard Center serving as the modest civic heart and the villages of Gales Ferry along the Thames River and Bill Hill to the south giving the town its geographic diversity. Away from the casino corridor, Ledyard feels distinctly country — stone walls line winding roads, horse farms and hayfields break up the forest cover, and homes sit on multi-acre lots connected to town roads by long gravel or asphalt driveways. The Ledyard Fairgrounds host the annual agricultural fair that has been a community tradition for generations, and Colonel Ledyard Cemetery on the hilltop above Gales Ferry is a quiet reminder of the town's Revolutionary War heritage.",
       "Northeast Paving has been serving Ledyard property owners for over 30 years, and we understand the particular needs of this community better than any contractor driving in from the coast or the cities. Many Ledyard driveways are 200, 400, even 600 feet long — far longer than typical suburban driveways — and these extended runs create both cost and engineering considerations that require experience to navigate. We help Ledyard homeowners evaluate whether full asphalt paving, gravel installation, recycled asphalt millings, or a combination approach makes the most sense for their property, their budget, and their maintenance preferences. A long driveway through the woods is a very different project from a short suburban run, and we bring the honest, consultative approach that Ledyard residents appreciate.",
@@ -221,11 +283,25 @@ export const locationsBatch1: LocationData[] = [
       "Licensed, insured, and W.B.E. certified for residential and commercial projects"
     ],
     neighbors: [
-      { name: "Groton", slug: "groton-ct" },
-      { name: "North Stonington", slug: "north-stonington-ct" },
-      { name: "Montville", slug: "montville-ct" },
-      { name: "Salem", slug: "salem-ct" },
-      { name: "Preston", slug: "preston-ct" }
+      { name: "Groton", slug: "asphalt-paving-groton-ct" },
+      { name: "North Stonington", slug: "asphalt-paving-north-stonington-ct" },
+      { name: "Montville", slug: "asphalt-paving-montville-ct" },
+      { name: "Salem", slug: "asphalt-paving-salem-ct" },
+      { name: "Preston", slug: "asphalt-paving-preston-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Ledyard CT?",
+        answer: "Driveway paving costs in Ledyard typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Ledyard property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Ledyard?",
+        answer: "The best time for driveway paving in Ledyard, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Ledyard CT?",
+        answer: "Ledyard may require permits for new driveway construction or significant modifications. Check with the Ledyard Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Ledyard generally does not require permits for straightforward residential driveway repaving, but projects that involve new driveway construction, changes to drainage patterns, or work near wetlands or watercourses may require approval from the Ledyard Building Department or the Ledyard Inland Wetlands and Watercourses Commission. New driveway cuts onto town roads require an encroachment permit from the Ledyard Highway Department. We recommend checking with the Ledyard Building Department before beginning any project to confirm whether permits are required.",
@@ -236,9 +312,14 @@ export const locationsBatch1: LocationData[] = [
   },
   {
     town: "Lyme",
-    slug: "lyme-ct",
+    slug: "asphalt-paving-lyme-ct",
     description:
       "Quality paving and site work for Lyme's rural estates and historic properties.",
+    population: 2406,
+    county: "New London County",
+    lat: 41.3973,
+    lng: -72.3437,
+    proximity: "20 min from HQ",
     intro: [
       "Lyme is one of the smallest and most deliberately preserved towns in Connecticut, with a population of roughly 2,400 residents occupying a landscape of forested hills, tidal coves, and quiet country roads that has changed remarkably little in the past century. The town sits between the Connecticut River to the west and the Eight Mile River to the east, and its terrain ranges from the gentle riverside meadows along Hamburg Cove — one of the most beautiful anchorages on the Connecticut River — to the rugged uplands of Nehantic State Forest in the eastern hills. Lyme's fame as an art colony dates to the early 20th century, when American Impressionist painters gathered at the Florence Griswold boarding house in neighboring Old Lyme, but the artistic and conservation-minded spirit took root on both sides of the town line. Today, Lyme is fiercely protective of its rural character, with large-lot zoning, minimal commercial development, and a community that values open space and natural beauty above all else.",
       "Northeast Paving has been privileged to work on properties throughout Lyme for over 30 years, and we approach every project here with an understanding that this town demands a lighter touch than most. Lyme driveways are often long — sometimes exceeding a quarter mile — winding through mature hardwood forest, crossing stone walls, and climbing or descending grades that would be impractical in a more developed community. These are not driveways that can be designed on paper and built in a day; they require site visits, careful grade analysis, and often creative solutions for drainage, turning areas, and turnarounds. We have built and rebuilt driveways along Bill Hill Road, Beaver Brook Road, Sterling City Road, and Hamburg Road, and each one presented its own unique set of challenges rooted in the specific terrain and character of the property.",
@@ -279,11 +360,25 @@ export const locationsBatch1: LocationData[] = [
       "Over 30 years of trusted relationships with Lyme property owners and town officials"
     ],
     neighbors: [
-      { name: "Old Lyme", slug: "old-lyme-ct" },
-      { name: "East Lyme", slug: "east-lyme-ct" },
-      { name: "Salem", slug: "salem-ct" },
-      { name: "Essex", slug: "essex-ct" },
-      { name: "East Haddam", slug: "east-haddam-ct" }
+      { name: "Old Lyme", slug: "asphalt-paving-old-lyme-ct" },
+      { name: "East Lyme", slug: "asphalt-paving-east-lyme-ct" },
+      { name: "Salem", slug: "asphalt-paving-salem-ct" },
+      { name: "Essex", slug: "asphalt-paving-essex-ct" },
+      { name: "East Haddam", slug: "asphalt-paving-east-haddam-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Lyme CT?",
+        answer: "Driveway paving costs in Lyme typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Lyme property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Lyme?",
+        answer: "The best time for driveway paving in Lyme, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Lyme CT?",
+        answer: "Lyme may require permits for new driveway construction or significant modifications. Check with the Lyme Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Lyme's zoning and wetlands regulations may require permits or approvals for driveway construction and significant repaving projects, particularly those near wetlands, watercourses, or within the coastal boundary. The Lyme Inland Wetlands and Conservation Commission reviews activities within regulated areas, and the Lyme Zoning Commission may need to approve new driveway locations or expansions. Even routine repaving projects should be discussed with the Lyme Building Official to confirm whether any approvals are needed, especially on properties with known wetlands or environmental constraints.",

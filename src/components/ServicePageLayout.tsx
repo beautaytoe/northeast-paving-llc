@@ -7,18 +7,18 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
 const serviceAreaLinks = [
-  { name: "New London", slug: "new-london-ct" },
-  { name: "Groton", slug: "groton-ct" },
-  { name: "Waterford", slug: "waterford-ct" },
-  { name: "Mystic", slug: "mystic-ct" },
-  { name: "East Lyme", slug: "east-lyme-ct" },
-  { name: "Old Saybrook", slug: "old-saybrook-ct" },
-  { name: "Stonington", slug: "stonington-ct" },
-  { name: "Ledyard", slug: "ledyard-ct" },
-  { name: "Montville", slug: "montville-ct" },
-  { name: "Norwich", slug: "norwich-ct" },
-  { name: "Colchester", slug: "colchester-ct" },
-  { name: "East Haddam", slug: "east-haddam-ct" },
+  { name: "New London", slug: "asphalt-paving-new-london-ct" },
+  { name: "Groton", slug: "asphalt-paving-groton-ct" },
+  { name: "Waterford", slug: "asphalt-paving-waterford-ct" },
+  { name: "Mystic", slug: "asphalt-paving-mystic-ct" },
+  { name: "East Lyme", slug: "asphalt-paving-east-lyme-ct" },
+  { name: "Old Saybrook", slug: "asphalt-paving-old-saybrook-ct" },
+  { name: "Stonington", slug: "asphalt-paving-stonington-ct" },
+  { name: "Ledyard", slug: "asphalt-paving-ledyard-ct" },
+  { name: "Montville", slug: "asphalt-paving-montville-ct" },
+  { name: "Norwich", slug: "asphalt-paving-norwich-ct" },
+  { name: "Colchester", slug: "asphalt-paving-colchester-ct" },
+  { name: "East Haddam", slug: "asphalt-paving-east-haddam-ct" },
 ];
 
 const allServices = [

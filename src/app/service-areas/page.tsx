@@ -8,8 +8,45 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Service Areas — Southeastern CT Paving",
   description:
-    "Northeast Paving serves 25+ towns in Southeastern CT including New London, Groton, Waterford, Mystic, East Lyme, and Old Saybrook. Call 860-447-1518.",
+    "Northeast Paving serves 25+ towns in Southeastern CT including New London, Groton, Waterford, Mystic, East Lyme, and Norwich. Call 860-447-1518.",
 };
+
+const regions = [
+  {
+    title: "Coastal & Shoreline Towns",
+    slugs: [
+      "asphalt-paving-east-lyme-ct", "asphalt-paving-niantic-ct",
+      "asphalt-paving-old-lyme-ct", "asphalt-paving-old-saybrook-ct",
+      "asphalt-paving-waterford-ct", "asphalt-paving-groton-ct",
+      "asphalt-paving-stonington-ct", "asphalt-paving-mystic-ct",
+      "asphalt-paving-essex-ct",
+    ],
+  },
+  {
+    title: "Thames River Valley",
+    slugs: [
+      "asphalt-paving-new-london-ct", "asphalt-paving-norwich-ct",
+      "asphalt-paving-montville-ct", "asphalt-paving-preston-ct",
+      "asphalt-paving-ledyard-ct", "asphalt-paving-lisbon-ct",
+      "asphalt-paving-bozrah-ct",
+    ],
+  },
+  {
+    title: "Rural & Inland Towns",
+    slugs: [
+      "asphalt-paving-north-stonington-ct", "asphalt-paving-griswold-ct",
+      "asphalt-paving-voluntown-ct", "asphalt-paving-salem-ct",
+      "asphalt-paving-franklin-ct", "asphalt-paving-sprague-ct",
+      "asphalt-paving-lyme-ct",
+    ],
+  },
+  {
+    title: "Connecticut River Towns",
+    slugs: [
+      "asphalt-paving-colchester-ct", "asphalt-paving-east-haddam-ct",
+    ],
+  },
+];
 
 export default function ServiceAreasPage() {
   return (
@@ -39,24 +76,36 @@ export default function ServiceAreasPage() {
         </div>
       </section>
 
-      {/* Location Grid */}
-      <section className="py-16 md:py-24 bg-gray-light">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <h2 className="font-heading text-3xl font-bold uppercase tracking-wide text-charcoal mb-10 text-center">
-            Towns We Serve
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {locations.map((loc) => (
-              <LocationCard
-                key={loc.slug}
-                town={loc.town}
-                slug={loc.slug}
-                description={loc.description}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Regions */}
+      {regions.map((region, i) => {
+        const regionLocations = region.slugs
+          .map((slug) => locations.find((l) => l.slug === slug))
+          .filter(Boolean);
+        return (
+          <section
+            key={region.title}
+            className={i % 2 === 0 ? "py-16 md:py-20 bg-gray-light" : "py-16 md:py-20 bg-white"}
+          >
+            <div className="max-w-7xl mx-auto px-4 lg:px-8">
+              <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide text-charcoal mb-8">
+                {region.title}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {regionLocations.map((loc) => (
+                  <LocationCard
+                    key={loc!.slug}
+                    town={loc!.town}
+                    slug={loc!.slug}
+                    description={loc!.description}
+                    county={loc!.county}
+                    population={loc!.population}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
       {/* CTA */}
       <section className="bg-charcoal text-white py-16 px-4">

@@ -8,25 +8,28 @@ export interface NeighborTown {
   slug: string;
 }
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 export interface LocationData {
   town: string;
   slug: string;
   description: string;
-  /** Rich intro paragraphs about the town — population, character, what it's known for */
+  population: number;
+  county: string;
+  lat: number;
+  lng: number;
+  proximity: string;
   intro: string[];
-  /** Specific neighborhoods, roads, areas where paving work is common */
   neighborhoods: string[];
-  /** Real local landmarks/institutions with links to their actual websites */
   landmarkLinks: ExternalLink[];
-  /** Common paving challenges specific to this area */
   localChallenges: string[];
-  /** Why residents choose us — specific to this town */
   whyChooseUs: string[];
-  /** Adjacent towns with internal links */
   neighbors: NeighborTown[];
-  /** Local regulations or permits info (optional) */
+  faqs: FAQItem[];
   permitsInfo?: string;
-  /** Link to town building department or government website */
   townWebsite?: ExternalLink;
 }
 

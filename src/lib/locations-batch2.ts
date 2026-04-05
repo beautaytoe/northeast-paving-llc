@@ -3,9 +3,14 @@ import type { LocationData } from "./locations";
 export const locationsBatch2: LocationData[] = [
   {
     town: "Montville",
-    slug: "montville-ct",
+    slug: "asphalt-paving-montville-ct",
     description:
       "Professional asphalt paving, sealcoating, and commercial site work for Montville homes and businesses along the Route 32 corridor.",
+    population: 21100,
+    county: "New London County",
+    lat: 41.4737,
+    lng: -72.1512,
+    proximity: "10 min from HQ",
     intro: [
       "Northeast Paving has been providing professional asphalt paving and site work services to the town of Montville, CT for over 30 years. Montville is a growing suburban community of approximately 21,000 residents spread across several distinct villages, including the bustling center of Uncasville and the quieter hamlet of Oakdale. The town sits along the Thames River in southeastern Connecticut and has experienced significant commercial growth in recent decades, driven in large part by the development of the Mohegan Sun Casino complex along the Route 2A corridor. That growth has translated into sustained demand for quality paving services — from new commercial parking lots and access roads to residential driveways in Montville's expanding housing developments.",
       "Montville's geography is shaped by the Thames River valley and the rolling terrain that rises west of Route 32, the town's primary north-south commercial artery. The Route 32 corridor stretches through the heart of Montville, linking Uncasville to the town's northern neighborhoods and serving as the address for dozens of retail businesses, restaurants, auto dealerships, and service companies. Properties along this busy road require durable, well-maintained pavement that can withstand heavy daily traffic and frequent turning movements. Northeast Paving has completed numerous commercial paving projects along Route 32, from full parking lot installations to patching and sealcoating programs that keep business lots looking sharp and functioning safely.",
@@ -52,11 +57,25 @@ export const locationsBatch2: LocationData[] = [
       "Proven track record along the Route 32 corridor where dozens of commercial property owners rely on our annual maintenance programs",
     ],
     neighbors: [
-      { name: "New London", slug: "new-london-ct" },
-      { name: "Salem", slug: "salem-ct" },
-      { name: "Ledyard", slug: "ledyard-ct" },
-      { name: "Waterford", slug: "waterford-ct" },
-      { name: "Norwich", slug: "norwich-ct" },
+      { name: "New London", slug: "asphalt-paving-new-london-ct" },
+      { name: "Salem", slug: "asphalt-paving-salem-ct" },
+      { name: "Ledyard", slug: "asphalt-paving-ledyard-ct" },
+      { name: "Waterford", slug: "asphalt-paving-waterford-ct" },
+      { name: "Norwich", slug: "asphalt-paving-norwich-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Montville CT?",
+        answer: "Driveway paving costs in Montville typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Montville property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Montville?",
+        answer: "The best time for driveway paving in Montville, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Montville CT?",
+        answer: "Montville may require permits for new driveway construction or significant modifications. Check with the Montville Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Montville requires a driveway permit for new driveway installations or significant modifications to existing driveway aprons connecting to town roads. Applications are handled through the Montville Public Works Department. Commercial paving projects may also require site plan approval from the Planning and Zoning Commission, particularly for new construction or changes to existing lot layouts. Northeast Paving assists Montville clients with understanding permit requirements and can coordinate with town offices on your behalf.",
@@ -67,9 +86,14 @@ export const locationsBatch2: LocationData[] = [
   },
   {
     town: "Mystic",
-    slug: "mystic-ct",
+    slug: "asphalt-paving-mystic-ct",
     description:
       "Expert paving services preserving Mystic's historic waterfront charm while protecting commercial and residential properties from coastal weathering.",
+    population: 4500,
+    county: "New London County",
+    lat: 41.3543,
+    lng: -71.9665,
+    proximity: "15 min from HQ",
     intro: [
       "Northeast Paving is proud to serve the iconic village of Mystic, CT — one of New England's most beloved coastal destinations and one of our most rewarding communities to work in. Mystic is not a standalone municipality but rather a historic village that straddles the border between the towns of Groton and Stonington, centered on the Mystic River and its famous Bascule Bridge. This unique geography means that paving projects in Mystic may fall under the jurisdiction of either Groton or Stonington, and our team's familiarity with both towns' permitting processes and road standards is a genuine advantage for Mystic property owners. With over 30 years of experience in southeastern Connecticut, we understand Mystic's character — its carefully preserved 19th-century streetscapes, its tourism-driven economy, and the demands that coastal weather places on every square foot of pavement.",
       "Mystic's identity is inseparable from its waterfront. The Mystic Seaport Museum, one of the nation's premier maritime museums, draws hundreds of thousands of visitors annually and anchors the eastern side of the village. Across the river, downtown Mystic's Main Street and West Main Street are lined with independent shops, galleries, restaurants, and inns that depend on well-maintained storefronts, walkways, and parking areas to welcome guests. The Mystic Aquarium, located just north of Interstate 95, is another major draw that generates significant traffic in the surrounding commercial area. And Olde Mistick Village, the open-air shopping complex on Coogan Boulevard, features dozens of specialty retailers and restaurants with extensive parking lots that require regular maintenance and periodic resurfacing. Northeast Paving has served commercial properties throughout all of these areas, delivering pavement that holds up under heavy tourist-season traffic while maintaining the aesthetic standards that Mystic businesses expect.",
@@ -116,18 +140,37 @@ export const locationsBatch2: LocationData[] = [
       "Complete service from excavation through sealcoating — one contractor, one relationship, one standard of quality for every Mystic project",
     ],
     neighbors: [
-      { name: "Groton", slug: "groton-ct" },
-      { name: "Stonington", slug: "stonington-ct" },
-      { name: "Ledyard", slug: "ledyard-ct" },
+      { name: "Groton", slug: "asphalt-paving-groton-ct" },
+      { name: "Stonington", slug: "asphalt-paving-stonington-ct" },
+      { name: "Ledyard", slug: "asphalt-paving-ledyard-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Mystic CT?",
+        answer: "Driveway paving costs in Mystic typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Mystic property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Mystic?",
+        answer: "The best time for driveway paving in Mystic, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Mystic CT?",
+        answer: "Mystic may require permits for new driveway construction or significant modifications. Check with the Mystic Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Because Mystic spans two municipalities, paving permits depend on which side of the Mystic River your property sits. Projects on the western (Groton) side require permits through the Town of Groton's Building Department, while projects on the eastern (Stonington) side go through Stonington's Building Official. Driveway apron permits are typically required for new installations connecting to town roads in both jurisdictions. Commercial projects may require site plan review. Northeast Paving handles these details for our Mystic clients, ensuring the correct permits are pulled before work begins.",
   },
   {
     town: "New London",
-    slug: "new-london-ct",
+    slug: "asphalt-paving-new-london-ct",
     description:
       "Your hometown paving contractor — headquartered at 419 Montauk Ave in New London, delivering 30+ years of residential, commercial, and municipal paving excellence.",
+    population: 27367,
+    county: "New London County",
+    lat: 41.3557,
+    lng: -72.0995,
+    proximity: "Hometown - HQ",
     intro: [
       "New London is home. Northeast Paving is headquartered at 419 Montauk Avenue in New London, CT, and this city of approximately 27,000 residents is the community we know best, serve most frequently, and care about most deeply. For over 30 years, we've been paving driveways, parking lots, municipal roads, and commercial sites throughout every neighborhood in New London — from the dense, historic downtown waterfront district to the tree-lined residential streets near Connecticut College, from the bustling commercial corridors along Route 1 to the coastal properties overlooking Long Island Sound at Ocean Beach Park. When you hire Northeast Paving for a New London project, you're hiring your neighbors. We drive these streets every day, we understand this city's infrastructure challenges intimately, and we take personal pride in making New London look its best.",
       "New London's urban fabric presents paving challenges that differ markedly from suburban and rural communities. The downtown core features narrow streets laid out in the colonial era, dense building footprints with limited staging areas, and a mix of surface types including asphalt, concrete, brick, and Belgian block. Working in downtown New London requires compact equipment, tight scheduling to minimize disruption to businesses and pedestrians, and coordination with city utilities whose lines run beneath nearly every street. Northeast Paving's crews have decades of experience navigating these constraints. We've completed projects adjacent to the New London waterfront, along Bank Street and State Street, and throughout the Hodges Square and Shaw's Cove areas — always delivering quality pavement within the city's unique working conditions.",
@@ -176,9 +219,23 @@ export const locationsBatch2: LocationData[] = [
       "Deep relationships with New London city departments, utility companies, and permitting offices that streamline project coordination and approvals",
     ],
     neighbors: [
-      { name: "Waterford", slug: "waterford-ct" },
-      { name: "Groton", slug: "groton-ct" },
-      { name: "Montville", slug: "montville-ct" },
+      { name: "Waterford", slug: "asphalt-paving-waterford-ct" },
+      { name: "Groton", slug: "asphalt-paving-groton-ct" },
+      { name: "Montville", slug: "asphalt-paving-montville-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in New London CT?",
+        answer: "Driveway paving costs in New London typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your New London property."
+      },
+      {
+        question: "What is the best time to pave a driveway in New London?",
+        answer: "The best time for driveway paving in New London, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in New London CT?",
+        answer: "New London may require permits for new driveway construction or significant modifications. Check with the New London Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "The City of New London requires driveway permits for new driveway construction or significant modifications to existing driveway aprons connecting to city streets. Permits are obtained through the New London Department of Public Works. Commercial paving projects, particularly those involving changes to site drainage or lot layout, may require site plan review by the Planning and Zoning Commission. Street opening permits are required for any work that connects to or affects city roadways. As a New London-based contractor, Northeast Paving maintains close working relationships with all relevant city departments and handles permit coordination as a standard part of our service.",
@@ -189,9 +246,14 @@ export const locationsBatch2: LocationData[] = [
   },
   {
     town: "Niantic",
-    slug: "niantic-ct",
+    slug: "asphalt-paving-niantic-ct",
     description:
       "Dependable paving and sealcoating for Niantic's coastal village homes, beach properties, and Main Street businesses — built to withstand shoreline weather.",
+    population: 3200,
+    county: "New London County",
+    lat: 41.3254,
+    lng: -72.1935,
+    proximity: "10 min from HQ",
     intro: [
       "Northeast Paving provides top-quality asphalt paving, sealcoating, and maintenance services to the charming seaside village of Niantic, CT. Niantic is a village within the town of East Lyme, occupying the eastern portion of the town along the shores of Niantic Bay and Long Island Sound. With its walkable Main Street, iconic Niantic Bay Boardwalk, beautiful public beaches, and friendly small-town atmosphere, Niantic has become one of southeastern Connecticut's most desirable communities for families and retirees alike. Northeast Paving has been serving Niantic property owners for over 30 years, and we understand the specific challenges that this coastal village's environment presents to asphalt pavement — as well as the aesthetic standards that Niantic's proud homeowners and business owners maintain.",
       "Niantic's Main Street is the heart of the village, lined with independent shops, restaurants, cafes, and professional offices that give the community its distinctive character. These small businesses depend on well-maintained storefronts, sidewalks, and parking areas to attract both local residents and the seasonal visitors who flock to Niantic's beaches and waterfront attractions. Northeast Paving works with Main Street business owners to keep their parking lots and access areas in top condition through regular sealcoating, crack filling, and periodic resurfacing. We understand the importance of scheduling commercial paving work to minimize disruption to business operations — particularly during Niantic's busy summer season when visitor traffic peaks and every parking space counts.",
@@ -234,9 +296,23 @@ export const locationsBatch2: LocationData[] = [
       "Complete residential service from full driveway reconstruction to annual maintenance, tailored to each Niantic property's specific coastal exposure level",
     ],
     neighbors: [
-      { name: "East Lyme", slug: "east-lyme-ct" },
-      { name: "Waterford", slug: "waterford-ct" },
-      { name: "Old Lyme", slug: "old-lyme-ct" },
+      { name: "East Lyme", slug: "asphalt-paving-east-lyme-ct" },
+      { name: "Waterford", slug: "asphalt-paving-waterford-ct" },
+      { name: "Old Lyme", slug: "asphalt-paving-old-lyme-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Niantic CT?",
+        answer: "Driveway paving costs in Niantic typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Niantic property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Niantic?",
+        answer: "The best time for driveway paving in Niantic, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Niantic CT?",
+        answer: "Niantic may require permits for new driveway construction or significant modifications. Check with the Niantic Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Niantic falls under the Town of East Lyme's permitting jurisdiction. Driveway permits for new installations or modifications to existing aprons connecting to town roads are required through the East Lyme Building Department. Commercial projects may need site plan review from East Lyme's Planning and Zoning Commission. Properties in flood zones near the Niantic shoreline may have additional requirements. Northeast Paving helps Niantic clients navigate these requirements and ensures all permits are in place before work begins.",
@@ -247,9 +323,14 @@ export const locationsBatch2: LocationData[] = [
   },
   {
     town: "North Stonington",
-    slug: "north-stonington-ct",
+    slug: "asphalt-paving-north-stonington-ct",
     description:
       "Paving, gravel driveways, and rural site work for North Stonington's farms, estates, and country properties — built for durability on long rural drives.",
+    population: 5149,
+    county: "New London County",
+    lat: 41.4540,
+    lng: -71.8729,
+    proximity: "25 min from HQ",
     intro: [
       "Northeast Paving serves the rural town of North Stonington, CT with a comprehensive range of paving, grading, gravel installation, and material delivery services specifically suited to the community's agricultural character and spacious country properties. North Stonington is one of the least densely populated towns in southeastern Connecticut, home to approximately 5,300 residents spread across roughly 54 square miles of rolling farmland, forested hillsides, and quiet country roads. This is a community where properties are measured in acres rather than square feet, where driveways can stretch a quarter mile from the road to the house, and where the working landscape of farms, horse properties, and rural homesteads defines the character of daily life. Northeast Paving has been serving North Stonington for over 30 years, and we've developed deep expertise in the specific paving and site work challenges that rural properties present.",
       "For many North Stonington property owners, the driveway is the single largest paved surface on the property — and often the most challenging to build and maintain correctly. A typical North Stonington driveway may run 500 to 1,500 feet from the town road to the residence, traversing slopes, crossing drainage swales, and winding through wooded areas where tree roots and leaf debris create ongoing maintenance concerns. Asphalt is an excellent choice for these long rural driveways when properly installed, but the cost of paving such distances makes gravel and recycled asphalt millings attractive alternatives that Northeast Paving installs frequently in North Stonington. Our gravel driveway installations use carefully graded aggregate base layers topped with compacted process gravel that sheds water, resists rutting, and provides a solid driving surface year-round. For property owners who want the benefits of asphalt at the approach and parking area with gravel for the longer run, we design and install hybrid driveways that optimize both budget and performance.",
@@ -292,10 +373,24 @@ export const locationsBatch2: LocationData[] = [
       "Honest, straightforward pricing with no surprises — we understand the value of a dollar in a working rural community and we deliver accordingly",
     ],
     neighbors: [
-      { name: "Stonington", slug: "stonington-ct" },
-      { name: "Ledyard", slug: "ledyard-ct" },
-      { name: "Salem", slug: "salem-ct" },
-      { name: "Voluntown", slug: "voluntown-ct" },
+      { name: "Stonington", slug: "asphalt-paving-stonington-ct" },
+      { name: "Ledyard", slug: "asphalt-paving-ledyard-ct" },
+      { name: "Salem", slug: "asphalt-paving-salem-ct" },
+      { name: "Voluntown", slug: "asphalt-paving-voluntown-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in North Stonington CT?",
+        answer: "Driveway paving costs in North Stonington typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your North Stonington property."
+      },
+      {
+        question: "What is the best time to pave a driveway in North Stonington?",
+        answer: "The best time for driveway paving in North Stonington, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in North Stonington CT?",
+        answer: "North Stonington may require permits for new driveway construction or significant modifications. Check with the North Stonington Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "North Stonington requires a driveway permit for new driveway installations connecting to town roads, obtained through the Road Foreman or Selectman's office. Given the town's rural character, many projects involve private roads or long driveways entirely on private property, which typically have fewer permitting requirements. Wetland setback regulations apply to properties near Wyassup Lake, streams, and mapped wetland areas — the North Stonington Inland Wetlands Commission reviews projects within regulated areas. Northeast Paving advises North Stonington clients on applicable requirements and coordinates with town offices as needed.",

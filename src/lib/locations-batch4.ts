@@ -3,9 +3,14 @@ import type { LocationData } from "./locations";
 export const locationsBatch4: LocationData[] = [
   {
     town: "Norwich",
-    slug: "norwich-ct",
+    slug: "asphalt-paving-norwich-ct",
     description:
       "Full-service asphalt paving, sealcoating, excavation, and site work for Norwich's urban neighborhoods, suburban developments, commercial corridors, and industrial properties — the Rose of New England.",
+    population: 40125,
+    county: "New London County",
+    lat: 41.5243,
+    lng: -72.0759,
+    proximity: "15 min from HQ",
     intro: [
       "Norwich, Connecticut — the Rose of New England — is the largest city in southeastern Connecticut, home to approximately 40,000 residents and built at one of the most geographically dramatic locations in the state: the confluence of the Yantic and Shetucket Rivers, which merge to form the Thames. Northeast Paving has been providing professional asphalt paving, sealcoating, grading, excavation, and material delivery services to Norwich property owners for over 30 years, and no community in our service area presents a wider range of paving demands than this one. Norwich encompasses densely built urban streets in the downtown core, sprawling suburban neighborhoods along its outer corridors, aging industrial sites along the riverbanks, and quiet rural-residential pockets in its northern reaches. Each of these environments requires a different approach to base preparation, drainage engineering, material selection, and project logistics, and our decades of experience working across Norwich's diverse landscape mean we bring the right expertise to every project regardless of its scale or setting.",
       "Downtown Norwich has undergone significant revitalization in recent years, and the city's historic commercial core along Broadway, Main Street, and the Chelsea Parade area is experiencing renewed investment that often begins with the ground beneath people's feet. Parking lots that haven't been resurfaced in decades, commercial driveways crumbling under years of neglected maintenance, and municipal sidewalk and curbing projects all create steady demand for a paving contractor who can work efficiently in an urban environment. Northeast Paving has completed numerous projects in downtown Norwich and the surrounding Norwichtown area, navigating tight job sites, coordinating with adjacent businesses, and delivering finished surfaces that contribute to the neighborhood's ongoing renewal. Our commercial paving services for Norwich businesses include full-depth lot construction, mill-and-overlay resurfacing, sealcoating and crack repair maintenance programs, ADA-compliant curb ramp installations, and line striping — everything a Norwich commercial property needs to present a professional, safe, and inviting appearance.",
@@ -50,11 +55,25 @@ export const locationsBatch4: LocationData[] = [
       "Licensed, insured, and W.B.E. certified — qualified for private, commercial, and municipal paving projects throughout the City of Norwich",
     ],
     neighbors: [
-      { name: "Montville", slug: "montville-ct" },
-      { name: "Lisbon", slug: "lisbon-ct" },
-      { name: "Bozrah", slug: "bozrah-ct" },
-      { name: "Franklin", slug: "franklin-ct" },
-      { name: "Preston", slug: "preston-ct" },
+      { name: "Montville", slug: "asphalt-paving-montville-ct" },
+      { name: "Lisbon", slug: "asphalt-paving-lisbon-ct" },
+      { name: "Bozrah", slug: "asphalt-paving-bozrah-ct" },
+      { name: "Franklin", slug: "asphalt-paving-franklin-ct" },
+      { name: "Preston", slug: "asphalt-paving-preston-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Norwich CT?",
+        answer: "Driveway paving costs in Norwich typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Norwich property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Norwich?",
+        answer: "The best time for driveway paving in Norwich, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Norwich CT?",
+        answer: "Norwich may require permits for new driveway construction or significant modifications. Check with the Norwich Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Norwich requires a zoning permit for new driveway installations and significant modifications to existing driveways, including widening or changes to curb cuts on city streets. Commercial parking lot projects typically require site plan review through the Norwich Planning Commission, and properties within flood zones along the city's three rivers are subject to additional regulations under the city's Flood Damage Prevention ordinance. Driveway apron connections to city-maintained roads require coordination with the Norwich Department of Public Works. Northeast Paving is thoroughly familiar with Norwich's permitting process and can guide property owners through the requirements for their specific project.",
@@ -65,9 +84,14 @@ export const locationsBatch4: LocationData[] = [
   },
   {
     town: "Preston",
-    slug: "preston-ct",
+    slug: "asphalt-paving-preston-ct",
     description:
       "Professional paving, gravel driveway installation, grading, and excavation services for Preston's rural properties, Route 2 corridor businesses, and lakeside homes near the Foxwoods casino region.",
+    population: 4726,
+    county: "New London County",
+    lat: 41.5265,
+    lng: -71.9927,
+    proximity: "20 min from HQ",
     intro: [
       "Preston, Connecticut is a small, predominantly rural town of approximately 4,700 residents tucked between Norwich and the Foxwoods Resort Casino corridor in the eastern hills of New London County. Northeast Paving has been serving Preston homeowners and businesses for over 30 years, and we have a deep familiarity with the town's quiet country roads, long residential driveways, lakeside properties, and the growing commercial activity along the Route 2 corridor that connects Norwich to the Mashantucket Pequot reservation and beyond. Preston's character is decidedly rural — spread across roughly 30 square miles of rolling hills, mixed forests, and small village centers, the town lacks any dense commercial district and instead relies on its location along the Route 2 artery for commercial services. This rural character shapes the paving work we do here: longer driveways with significant grade changes, properties with challenging access for equipment, soils that vary dramatically from sandy glacial deposits to heavy clay within the span of a single lot, and homeowners who prize durability and value over unnecessary extras.",
       "Preston City, the town's primary village center, sits at the intersection of Route 2 and Route 164 and represents the closest thing Preston has to a traditional New England downtown. The small cluster of municipal buildings, the Preston Public Library, and a handful of commercial properties create a modest civic center surrounded by residential neighborhoods where homes range from historic farmsteads to mid-century ranches to contemporary builds on wooded lots. Northeast Paving has completed residential driveway projects throughout Preston City and the surrounding neighborhoods, tailoring our approach to each property's specific conditions. Some Preston driveways are straightforward suburban installations — 50 feet of flat approach to a two-car garage. Others are quarter-mile-long ribbons of asphalt climbing through woods and across streams, requiring culvert installation, retaining wall coordination, and grade engineering that would challenge contractors without our level of excavation and site-work experience.",
@@ -106,10 +130,24 @@ export const locationsBatch4: LocationData[] = [
       "Licensed, insured, and W.B.E. certified — trusted by Preston homeowners, commercial property owners, and municipal departments",
     ],
     neighbors: [
-      { name: "Ledyard", slug: "ledyard-ct" },
-      { name: "Norwich", slug: "norwich-ct" },
-      { name: "Griswold", slug: "griswold-ct" },
-      { name: "North Stonington", slug: "north-stonington-ct" },
+      { name: "Ledyard", slug: "asphalt-paving-ledyard-ct" },
+      { name: "Norwich", slug: "asphalt-paving-norwich-ct" },
+      { name: "Griswold", slug: "asphalt-paving-griswold-ct" },
+      { name: "North Stonington", slug: "asphalt-paving-north-stonington-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Preston CT?",
+        answer: "Driveway paving costs in Preston typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Preston property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Preston?",
+        answer: "The best time for driveway paving in Preston, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Preston CT?",
+        answer: "Preston may require permits for new driveway construction or significant modifications. Check with the Preston Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Preston requires a zoning permit for new driveway construction, and driveway connections to town-maintained roads need approval from the town's road department. Properties near Amos Lake and Hallville Pond may be subject to Inland Wetlands Commission review if paving work falls within regulated setback areas. Preston's zoning regulations include impervious surface coverage limits in certain zones that can affect the size and layout of new driveways and parking areas. Northeast Paving can advise Preston property owners on the permitting requirements for their specific project location.",
@@ -120,9 +158,14 @@ export const locationsBatch4: LocationData[] = [
   },
   {
     town: "Griswold",
-    slug: "griswold-ct",
+    slug: "asphalt-paving-griswold-ct",
     description:
       "Trusted asphalt paving, sealcoating, grading, and excavation for Griswold's village neighborhoods, rural properties, state forest communities, and the Jewett City commercial district.",
+    population: 11402,
+    county: "New London County",
+    lat: 41.5843,
+    lng: -71.9268,
+    proximity: "25 min from HQ",
     intro: [
       "Griswold, Connecticut is a town of approximately 11,400 residents in the northeastern corner of New London County, encompassing the dense borough of Jewett City and a wide surrounding area of rural-residential neighborhoods, farmland, and expansive state forestland. Northeast Paving has been providing professional asphalt paving, sealcoating, excavation, grading, and material delivery services to Griswold property owners for over 30 years, and we appreciate the town's distinctive split personality — part compact New England mill village, part deep-woods rural countryside. Jewett City, the borough at Griswold's center, sits along the Quinebaug River and retains the dense street grid and compact commercial district of its textile-manufacturing past. The surrounding town of Griswold fans outward into rolling hills, forested tracts, and the vast Pachaug State Forest that covers much of the town's eastern half. These two environments demand fundamentally different paving approaches, and Northeast Paving brings the experience and equipment to handle both with equal confidence.",
       "Jewett City's commercial district along Main Street and Route 138 represents Griswold's primary business center, with a mix of small retail shops, professional offices, restaurants, banks, and service businesses that serve both Griswold residents and the surrounding rural communities. The parking lots and commercial driveways in this district were in many cases originally built decades ago during the borough's manufacturing heyday, and many have reached the end of their service life. Northeast Paving provides complete commercial repaving services in Jewett City, from the initial assessment and removal of failed pavement through base repair, new hot-mix asphalt installation, sealcoating, and line striping. We work efficiently within Jewett City's compact layout, managing equipment staging and material delivery in the tight quarters that come with working in a traditional New England village center. For businesses that can't afford to close during repaving, we offer phased construction approaches that keep at least partial parking available throughout the project.",
@@ -166,10 +209,24 @@ export const locationsBatch4: LocationData[] = [
       "Licensed, insured, and W.B.E. certified — trusted by Griswold homeowners, Jewett City business owners, and municipal departments for projects of every scale",
     ],
     neighbors: [
-      { name: "Preston", slug: "preston-ct" },
-      { name: "Voluntown", slug: "voluntown-ct" },
-      { name: "Lisbon", slug: "lisbon-ct" },
-      { name: "North Stonington", slug: "north-stonington-ct" },
+      { name: "Preston", slug: "asphalt-paving-preston-ct" },
+      { name: "Voluntown", slug: "asphalt-paving-voluntown-ct" },
+      { name: "Lisbon", slug: "asphalt-paving-lisbon-ct" },
+      { name: "North Stonington", slug: "asphalt-paving-north-stonington-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Griswold CT?",
+        answer: "Driveway paving costs in Griswold typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Griswold property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Griswold?",
+        answer: "The best time for driveway paving in Griswold, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Griswold CT?",
+        answer: "Griswold may require permits for new driveway construction or significant modifications. Check with the Griswold Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Griswold requires a zoning permit for new driveway construction and modifications to existing driveway curb cuts. Within the Jewett City borough, commercial parking lot projects may require site plan review through the Planning and Zoning Commission. Properties near wetlands, watercourses, or within the Pachaug State Forest buffer areas may be subject to Inland Wetlands Commission review. Driveway connections to town-maintained roads need approval from the town's road foreman. Northeast Paving is familiar with Griswold's permitting requirements and can help property owners navigate the approval process before work begins.",
@@ -180,9 +237,14 @@ export const locationsBatch4: LocationData[] = [
   },
   {
     town: "Lisbon",
-    slug: "lisbon-ct",
+    slug: "asphalt-paving-lisbon-ct",
     description:
       "Reliable asphalt paving, sealcoating, grading, and material delivery for Lisbon's growing commercial corridor, rural residential properties, and village neighborhoods at the crossroads of Route 12 and Route 138.",
+    population: 4338,
+    county: "New London County",
+    lat: 41.5762,
+    lng: -72.0105,
+    proximity: "20 min from HQ",
     intro: [
       "Lisbon, Connecticut is a small town of approximately 4,300 residents that sits at a significant crossroads in eastern New London County — the junction of Route 12 and Route 138, which has given this otherwise quiet rural community an outsized commercial presence for its population. Northeast Paving has been providing professional paving, sealcoating, excavation, grading, and material delivery services to Lisbon property owners for over 30 years, and we've watched this town evolve from a primarily agricultural community into one with a growing commercial corridor that serves residents from across the surrounding region. Lisbon Landing, the shopping center complex at the Route 12 and Route 138 intersection, anchors the town's commercial identity and has attracted additional retail, restaurant, and service businesses to the area. But step away from this commercial node and Lisbon quickly reveals its true character: winding rural roads, working farms, wooded hillsides, and the kind of quiet New England residential landscape where neighbors know each other and properties are measured in acres rather than square feet.",
       "The Lisbon Landing commercial area represents the town's most concentrated paving demand. The parking lots serving the shopping center and its surrounding businesses handle significant daily traffic volumes drawn from Lisbon, Norwich, Griswold, Sprague, and the other small towns in this part of the state. These commercial surfaces take heavy punishment from constant vehicle movement, delivery truck loading, and the seasonal application of salt and sand that accelerates surface deterioration. Northeast Paving provides comprehensive commercial paving services to Lisbon Landing businesses and the broader Route 12/Route 138 commercial corridor, including full-depth parking lot construction for new businesses, mill-and-overlay resurfacing for existing lots, sealcoating programs that extend pavement life, crack sealing and pothole repair for ongoing maintenance, and ADA-compliant accessibility improvements. We understand that commercial paving in Lisbon needs to happen on schedule and within budget, because the businesses along this corridor depend on customer access every day.",
@@ -221,10 +283,24 @@ export const locationsBatch4: LocationData[] = [
       "Based in nearby New London with fast response times for estimates, scheduled work, and emergency repairs throughout Lisbon",
     ],
     neighbors: [
-      { name: "Norwich", slug: "norwich-ct" },
-      { name: "Griswold", slug: "griswold-ct" },
-      { name: "Sprague", slug: "sprague-ct" },
-      { name: "Franklin", slug: "franklin-ct" },
+      { name: "Norwich", slug: "asphalt-paving-norwich-ct" },
+      { name: "Griswold", slug: "asphalt-paving-griswold-ct" },
+      { name: "Sprague", slug: "asphalt-paving-sprague-ct" },
+      { name: "Franklin", slug: "asphalt-paving-franklin-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Lisbon CT?",
+        answer: "Driveway paving costs in Lisbon typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Lisbon property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Lisbon?",
+        answer: "The best time for driveway paving in Lisbon, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Lisbon CT?",
+        answer: "Lisbon may require permits for new driveway construction or significant modifications. Check with the Lisbon Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Lisbon requires a zoning permit for new driveway construction and may require Planning and Zoning Commission review for commercial paving projects including new parking lots and significant lot expansions. Driveway connections to town-maintained roads need approval from the town's road department, and properties near watercourses or wetlands may require Inland Wetlands Commission review. Lisbon's zoning regulations include impervious surface coverage limits in certain residential zones that can affect driveway sizing. Northeast Paving can advise Lisbon property owners on the specific permits needed for their project.",
@@ -235,9 +311,14 @@ export const locationsBatch4: LocationData[] = [
   },
   {
     town: "Bozrah",
-    slug: "bozrah-ct",
+    slug: "asphalt-paving-bozrah-ct",
     description:
       "Expert paving, gravel driveway installation, grading, and excavation for Bozrah's rural homesteads, lakeside properties near Gardner Lake, and agricultural parcels in this quiet New London County community.",
+    population: 2627,
+    county: "New London County",
+    lat: 41.5454,
+    lng: -72.1710,
+    proximity: "15 min from HQ",
     intro: [
       "Bozrah, Connecticut is one of the smallest and most quietly rural communities in New London County — a town of approximately 2,600 residents where working farms, wooded hillsides, open meadows, and a genuine agricultural character persist in a region that has seen many of its neighbors transform into bedroom communities and commercial corridors. Northeast Paving has been providing professional paving, grading, excavation, and material delivery services to Bozrah property owners for over 30 years, and we have a particular affection for this kind of community. Bozrah doesn't need a massive paving operation that specializes in highway interchange construction. Bozrah needs a contractor who understands long rural driveways, the challenges of working on properties with limited access, soils that change character across the span of a single lot, and homeowners who want their paving investment to last for decades without unnecessary expense. That's exactly what Northeast Paving delivers — craftsmanship scaled to the community, with the professional expertise to handle any residential or agricultural paving challenge Bozrah can present.",
       "Bozrah's town center, clustered around the intersection of Bozrah Street and Fitchville Road, represents the civic heart of the community — the town hall, Bozrah Congregational Church, the Fields Memorial Library, and a handful of properties that give this crossroads settlement its New England village character. Radiating outward from this modest center, Bozrah's residential properties spread across a landscape of gentle hills and stream-cut valleys that create the picturesque rural setting the town's residents cherish. Many Bozrah homes sit on lots of 2 acres or more, connected to town roads by driveways that range from 100 feet to well over a quarter mile in length. These driveways are the primary paving projects we undertake in Bozrah, and each one requires individual assessment for soil conditions, grade changes, drainage requirements, tree proximity, and the specific access challenges that come with navigating equipment along narrow, wooded approaches. Northeast Paving has the excavation equipment, paving machines, and experienced crews to handle even the most remote and challenging Bozrah driveway installation or replacement.",
@@ -276,10 +357,24 @@ export const locationsBatch4: LocationData[] = [
       "Based in nearby New London with reliable response times for Bozrah estimates, scheduled work, and the personalized service that a small-town community deserves",
     ],
     neighbors: [
-      { name: "Norwich", slug: "norwich-ct" },
-      { name: "Salem", slug: "salem-ct" },
-      { name: "Franklin", slug: "franklin-ct" },
-      { name: "Montville", slug: "montville-ct" },
+      { name: "Norwich", slug: "asphalt-paving-norwich-ct" },
+      { name: "Salem", slug: "asphalt-paving-salem-ct" },
+      { name: "Franklin", slug: "asphalt-paving-franklin-ct" },
+      { name: "Montville", slug: "asphalt-paving-montville-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Bozrah CT?",
+        answer: "Driveway paving costs in Bozrah typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Bozrah property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Bozrah?",
+        answer: "The best time for driveway paving in Bozrah, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Bozrah CT?",
+        answer: "Bozrah may require permits for new driveway construction or significant modifications. Check with the Bozrah Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Bozrah requires a zoning permit for new driveway construction and significant driveway modifications. Properties within the Gardner Lake watershed or near other watercourses and wetlands may require review by the Bozrah Inland Wetlands and Watercourses Commission before earth-disturbing work can begin. Bozrah's rural zoning includes minimum setback and coverage requirements that can affect driveway placement and width on smaller lots. Driveway connections to town roads require coordination with the Bozrah highway department. Northeast Paving can help Bozrah property owners understand the permitting requirements for their specific property and project scope.",

@@ -96,10 +96,10 @@ export default function ServicesPage() {
               25+ towns in Southeastern Connecticut
             </Link>
             , including{" "}
-            <Link href="/service-areas/new-london-ct" className="text-blue hover:text-blue-dark transition-colors">New London</Link>,{" "}
-            <Link href="/service-areas/groton-ct" className="text-blue hover:text-blue-dark transition-colors">Groton</Link>,{" "}
-            <Link href="/service-areas/waterford-ct" className="text-blue hover:text-blue-dark transition-colors">Waterford</Link>,{" "}
-            <Link href="/service-areas/mystic-ct" className="text-blue hover:text-blue-dark transition-colors">Mystic</Link>, and more.
+            <Link href="/service-areas/asphalt-paving-new-london-ct" className="text-blue hover:text-blue-dark transition-colors">New London</Link>,{" "}
+            <Link href="/service-areas/asphalt-paving-groton-ct" className="text-blue hover:text-blue-dark transition-colors">Groton</Link>,{" "}
+            <Link href="/service-areas/asphalt-paving-waterford-ct" className="text-blue hover:text-blue-dark transition-colors">Waterford</Link>,{" "}
+            <Link href="/service-areas/asphalt-paving-mystic-ct" className="text-blue hover:text-blue-dark transition-colors">Mystic</Link>, and more.
           </p>
         </div>
       </section>

@@ -3,9 +3,14 @@ import type { LocationData } from "./locations";
 export const locationsBatch3: LocationData[] = [
   {
     town: "Old Lyme",
-    slug: "old-lyme-ct",
+    slug: "asphalt-paving-old-lyme-ct",
     description:
       "Premium asphalt paving, sealcoating, and site work for Old Lyme's historic estates, shoreline properties, and art colony community.",
+    population: 7603,
+    county: "New London County",
+    lat: 41.3168,
+    lng: -72.3254,
+    proximity: "20 min from HQ",
     intro: [
       "Old Lyme, Connecticut is one of New England's most distinguished small towns — a community of approximately 7,600 residents where American Impressionist painting was born and where the Connecticut shoreline meets the mouth of the Lieutenant River. Northeast Paving has been providing professional asphalt paving, sealcoating, grading, and excavation services to Old Lyme homeowners and businesses for over 30 years, and we understand that working in this community means respecting a legacy that stretches back centuries. Old Lyme's identity is inseparable from its artistic heritage. The Florence Griswold Museum, once the boarding house where Childe Hassam, Willard Metcalf, and other painters gathered in the early 1900s, anchors a town that has always placed extraordinary value on beauty, craftsmanship, and preservation. When Old Lyme property owners invest in their driveways, walkways, and parking areas, they expect work that reflects those same standards — clean edges, proper grading, surfaces that complement rather than detract from the surrounding landscape.",
       "The Old Lyme Historic District, centered along Lyme Street, contains some of the finest residential architecture in southeastern Connecticut. Captains' houses, colonial estates, and carefully preserved antique homes line this corridor, each with driveways and grounds that require a contractor who understands the weight of working alongside irreplaceable structures. Northeast Paving has completed numerous projects within and around the Historic District, always taking care to protect mature landscaping, stone walls, and historically significant features during our work. We coordinate with property owners on material choices, timing, and equipment placement to minimize disruption to these sensitive environments. Our crews are trained to treat every Old Lyme property with the care it deserves, whether that means hand-raking edges near heritage plantings or scheduling work around the quiet rhythms of this residential community.",
@@ -56,10 +61,24 @@ export const locationsBatch3: LocationData[] = [
       "Full-service capabilities including asphalt paving, sealcoating, crack repair, grading, excavation, drainage installation, and gravel or milling surfaces — Old Lyme property owners get everything they need from one trusted contractor",
     ],
     neighbors: [
-      { name: "Lyme", slug: "lyme-ct" },
-      { name: "East Lyme", slug: "east-lyme-ct" },
-      { name: "Essex", slug: "essex-ct" },
-      { name: "Old Saybrook", slug: "old-saybrook-ct" },
+      { name: "Lyme", slug: "asphalt-paving-lyme-ct" },
+      { name: "East Lyme", slug: "asphalt-paving-east-lyme-ct" },
+      { name: "Essex", slug: "asphalt-paving-essex-ct" },
+      { name: "Old Saybrook", slug: "asphalt-paving-old-saybrook-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Old Lyme CT?",
+        answer: "Driveway paving costs in Old Lyme typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Old Lyme property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Old Lyme?",
+        answer: "The best time for driveway paving in Old Lyme, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Old Lyme CT?",
+        answer: "Old Lyme may require permits for new driveway construction or significant modifications. Check with the Old Lyme Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Old Lyme requires a zoning permit for new driveway construction and significant driveway modifications, particularly within the Historic District where additional review may apply. Driveway apron work within the town road right-of-way requires an encroachment permit from the Public Works department. Properties within flood zones near the shoreline or Lieutenant River may be subject to additional requirements under the town's Inland Wetlands and Watercourses regulations. Northeast Paving is familiar with Old Lyme's permitting process and can help property owners understand what approvals are needed before work begins.",
@@ -70,9 +89,14 @@ export const locationsBatch3: LocationData[] = [
   },
   {
     town: "Old Saybrook",
-    slug: "old-saybrook-ct",
+    slug: "asphalt-paving-old-saybrook-ct",
     description:
       "Trusted asphalt paving, sealcoating, and site work for Old Saybrook's coastal homes, Main Street businesses, and waterfront properties at the Connecticut River's mouth.",
+    population: 10242,
+    county: "Middlesex County",
+    lat: 41.2918,
+    lng: -72.3762,
+    proximity: "25 min from HQ",
     intro: [
       "Old Saybrook sits at one of Connecticut's most storied locations — the point where the Connecticut River meets Long Island Sound — and its approximately 10,200 residents live in a town that blends colonial history, coastal living, and small-town commercial vitality in equal measure. Northeast Paving has been providing professional asphalt paving, sealcoating, excavation, and grading services to Old Saybrook for over 30 years, and we consider this community one of our most valued service areas. Old Saybrook's character demands a paving contractor who understands that every driveway, parking lot, and access road contributes to the town's overall appearance and livability. From the waterfront properties at Saybrook Point to the bustling shops along Main Street, from Harvey's Beach to the residential neighborhoods radiating out from the town center, our work in Old Saybrook reflects our commitment to quality craftsmanship that lasts.",
       "Main Street Old Saybrook is the commercial heart of this community, lined with independent shops, restaurants, professional offices, and the beloved Katharine Hepburn Cultural Arts Center that draws visitors from across the region. The parking lots, access drives, and walkways serving these businesses take a beating from constant foot and vehicle traffic, delivery trucks, and the corrosive effects of coastal weather and winter salt application. Northeast Paving provides comprehensive commercial paving services to Main Street businesses and the broader Old Saybrook commercial district, including full-depth parking lot construction, overlay repaving, sealcoating programs, crack repair, and ADA-compliant accessibility improvements. We understand that commercial paving work in Old Saybrook needs to happen efficiently — businesses can't afford extended closures — and we schedule our projects to minimize disruption to daily operations.",
@@ -120,9 +144,23 @@ export const locationsBatch3: LocationData[] = [
       "Convenient proximity from our New London headquarters — Old Saybrook customers get fast estimates, reliable scheduling, and emergency repair response when they need it",
     ],
     neighbors: [
-      { name: "Essex", slug: "essex-ct" },
-      { name: "Old Lyme", slug: "old-lyme-ct" },
+      { name: "Essex", slug: "asphalt-paving-essex-ct" },
+      { name: "Old Lyme", slug: "asphalt-paving-old-lyme-ct" },
       { name: "Westbrook", slug: "westbrook-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Old Saybrook CT?",
+        answer: "Driveway paving costs in Old Saybrook typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Old Saybrook property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Old Saybrook?",
+        answer: "The best time for driveway paving in Old Saybrook, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Old Saybrook CT?",
+        answer: "Old Saybrook may require permits for new driveway construction or significant modifications. Check with the Old Saybrook Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Old Saybrook requires zoning permits for new driveway installations and may require site plan review for commercial parking lot projects. Properties within the Coastal Area Management zone — which includes much of Old Saybrook's shoreline — may be subject to additional review under the Connecticut Coastal Management Act. Driveway connections to town roads require approval from the Public Works department, and impervious surface limits may apply in certain zones. Northeast Paving can advise Old Saybrook property owners on the permitting requirements for their specific project and location.",
@@ -133,9 +171,14 @@ export const locationsBatch3: LocationData[] = [
   },
   {
     town: "Salem",
-    slug: "salem-ct",
+    slug: "asphalt-paving-salem-ct",
     description:
       "Reliable paving, grading, gravel installation, and material delivery for Salem's rural properties, farms, and lakeside homes.",
+    population: 4151,
+    county: "New London County",
+    lat: 41.4893,
+    lng: -72.2743,
+    proximity: "20 min from HQ",
     intro: [
       "Salem, Connecticut is one of the most genuinely rural communities in the southeastern part of the state — a small town of approximately 4,200 residents where working farms, horse properties, dense woodlands, and quiet lakeside homes define the landscape far more than commercial development or suburban sprawl. Northeast Paving has been providing professional paving, grading, excavation, and material delivery services to Salem property owners for over 30 years, and we have a particular appreciation for the practical challenges and opportunities that come with working in a community like this. Salem doesn't need a paving contractor who specializes in shopping mall parking lots. Salem needs a contractor who understands long rural driveways, unpredictable terrain, seasonal road conditions, and property owners who value durability and honest workmanship over flash.",
       "Gardner Lake, Salem's centerpiece, is one of the largest natural lakes in Connecticut and draws seasonal visitors and year-round residents alike. The properties surrounding Gardner Lake range from modest summer cottages to substantial year-round homes, and their driveways and access roads face particular challenges from the lakeside environment — moisture, sloping terrain, runoff that flows toward the water, and heavy seasonal traffic that tests pavement well beyond typical residential loads. Northeast Paving has paved, repaved, and maintained driveways throughout the Gardner Lake area, always with attention to proper drainage that protects both the property and the lake's water quality. We understand that any grading or paving work near Gardner Lake requires careful stormwater management to prevent sediment and runoff from reaching the water, and we engineer our projects accordingly.",
@@ -182,12 +225,26 @@ export const locationsBatch3: LocationData[] = [
       "Fair, honest pricing with no surprises — Salem property owners appreciate our straightforward approach and detailed written estimates",
     ],
     neighbors: [
-      { name: "East Lyme", slug: "east-lyme-ct" },
-      { name: "Montville", slug: "montville-ct" },
-      { name: "Ledyard", slug: "ledyard-ct" },
-      { name: "Lyme", slug: "lyme-ct" },
-      { name: "Colchester", slug: "colchester-ct" },
-      { name: "Bozrah", slug: "bozrah-ct" },
+      { name: "East Lyme", slug: "asphalt-paving-east-lyme-ct" },
+      { name: "Montville", slug: "asphalt-paving-montville-ct" },
+      { name: "Ledyard", slug: "asphalt-paving-ledyard-ct" },
+      { name: "Lyme", slug: "asphalt-paving-lyme-ct" },
+      { name: "Colchester", slug: "asphalt-paving-colchester-ct" },
+      { name: "Bozrah", slug: "asphalt-paving-bozrah-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Salem CT?",
+        answer: "Driveway paving costs in Salem typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Salem property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Salem?",
+        answer: "The best time for driveway paving in Salem, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Salem CT?",
+        answer: "Salem may require permits for new driveway construction or significant modifications. Check with the Salem Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Salem's zoning regulations require permits for new driveway construction, and driveways connecting to town roads need approval from the Road Foreman. Properties near Gardner Lake and other water bodies may be subject to Inland Wetlands Commission review, particularly if work involves grading or soil disturbance within regulated setback areas. Salem's agricultural zones may have specific driveway width and surface requirements. Northeast Paving can help Salem property owners navigate the town's permitting process, which is typically straightforward given the rural nature of most projects.",
@@ -198,9 +255,14 @@ export const locationsBatch3: LocationData[] = [
   },
   {
     town: "Stonington",
-    slug: "stonington-ct",
+    slug: "asphalt-paving-stonington-ct",
     description:
       "Premium asphalt paving, sealcoating, and site work for Stonington's historic borough, coastal neighborhoods, and Pawcatuck village properties.",
+    population: 18545,
+    county: "New London County",
+    lat: 41.3354,
+    lng: -71.9065,
+    proximity: "20 min from HQ",
     intro: [
       "Stonington, Connecticut encompasses approximately 18,500 residents across one of southeastern Connecticut's most diverse and historically significant communities. From the iconic Stonington Borough — a narrow peninsula jutting into Fisher's Island Sound where 18th and 19th century homes line streets barely wider than a cart path — to the village of Pawcatuck along the Rhode Island border, from the world-renowned Mystic waterfront to the vineyards and farmland of the town's northern reaches, Stonington presents a breadth of paving environments that few Connecticut towns can match. Northeast Paving has been serving Stonington property owners for over 30 years, and our deep familiarity with this community's neighborhoods, regulations, and expectations is why Stonington residents continue to choose us for their most important paving projects.",
       "Stonington Borough is arguably the most challenging and rewarding environment for paving work in all of southeastern Connecticut. This densely built historic neighborhood features homes dating to the 1700s and 1800s, with narrow streets, shared driveways, limited staging areas, and a preservation-conscious community that scrutinizes every modification to the built environment. Northeast Paving has successfully completed projects throughout the Borough, working within tight confines while protecting neighboring properties, historic stonework, and the character-defining features that make this neighborhood irreplaceable. Our smaller equipment options, hand-finishing capabilities, and experienced operators allow us to deliver quality paving in spaces where larger contractors simply cannot maneuver. Stonington Borough residents trust us because we've proven we can work in their world without damaging it.",
@@ -253,9 +315,23 @@ export const locationsBatch3: LocationData[] = [
       "Complete service range from new construction paving and repaving to sealcoating, crack repair, grading, excavation, drainage installation, and gravel or milling surfaces — one trusted contractor for all Stonington paving needs",
     ],
     neighbors: [
-      { name: "Groton", slug: "groton-ct" },
-      { name: "North Stonington", slug: "north-stonington-ct" },
-      { name: "Mystic", slug: "mystic-ct" },
+      { name: "Groton", slug: "asphalt-paving-groton-ct" },
+      { name: "North Stonington", slug: "asphalt-paving-north-stonington-ct" },
+      { name: "Mystic", slug: "asphalt-paving-mystic-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Stonington CT?",
+        answer: "Driveway paving costs in Stonington typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Stonington property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Stonington?",
+        answer: "The best time for driveway paving in Stonington, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Stonington CT?",
+        answer: "Stonington may require permits for new driveway construction or significant modifications. Check with the Stonington Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "The Town of Stonington requires zoning permits for new driveway construction and significant modifications. Within Stonington Borough, additional historic district review may apply to visible site changes. Properties in coastal and flood zones are subject to Coastal Area Management Act review and FEMA floodplain regulations. Driveway connections to town roads require a highway encroachment permit from the Public Works department. Commercial parking lot projects may require site plan approval from the Planning and Zoning Commission. Northeast Paving is familiar with Stonington's permitting landscape and can guide property owners through the approval process for their specific project.",
@@ -266,9 +342,14 @@ export const locationsBatch3: LocationData[] = [
   },
   {
     town: "Waterford",
-    slug: "waterford-ct",
+    slug: "asphalt-paving-waterford-ct",
     description:
       "Comprehensive asphalt paving, sealcoating, and site work for Waterford's residential neighborhoods, commercial districts, and waterfront properties — right next door to our New London headquarters.",
+    population: 19571,
+    county: "New London County",
+    lat: 41.3418,
+    lng: -72.1351,
+    proximity: "5 min from HQ",
     intro: [
       "Waterford, Connecticut is Northeast Paving's closest neighbor — literally. Our New London headquarters at 419 Montauk Avenue sits just minutes from the Waterford town line, and this proximity has made Waterford one of our most deeply served communities over the past three decades. With approximately 19,500 residents, Waterford is a substantial town that combines established residential neighborhoods, significant commercial and retail development, cultural institutions of national importance, and miles of Long Island Sound waterfront. We've paved driveways, parking lots, and access roads in virtually every corner of Waterford, and our familiarity with this community goes beyond professional expertise — these are our neighbors, our customers, our friends, and the businesses we patronize ourselves.",
       "Waterford's commercial landscape is anchored by the Crystal Mall area and the Route 1 corridor, which together represent one of southeastern Connecticut's most active retail and business zones. The parking lots, access drives, and service roads serving these commercial properties endure punishing daily traffic from thousands of vehicles, heavy delivery trucks, and the thermal stress of vast unshaded asphalt surfaces baking in summer sun. Northeast Paving has maintained and repaved parking areas for numerous Waterford businesses along this corridor, and we understand the specific demands of high-traffic commercial pavement — heavier base courses, thicker asphalt lifts, proper drainage to prevent ponding, and maintenance schedules that keep surfaces safe and presentable year-round. For Waterford's business owners, a well-maintained parking lot isn't just aesthetics; it's the first impression customers get and a direct reflection of the business behind it.",
@@ -321,9 +402,23 @@ export const locationsBatch3: LocationData[] = [
       "Complete service range from small residential driveway sealcoating to large-scale commercial parking lot construction — Waterford property owners get everything they need from one contractor they know and trust",
     ],
     neighbors: [
-      { name: "New London", slug: "new-london-ct" },
-      { name: "East Lyme", slug: "east-lyme-ct" },
-      { name: "Montville", slug: "montville-ct" },
+      { name: "New London", slug: "asphalt-paving-new-london-ct" },
+      { name: "East Lyme", slug: "asphalt-paving-east-lyme-ct" },
+      { name: "Montville", slug: "asphalt-paving-montville-ct" },
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Waterford CT?",
+        answer: "Driveway paving costs in Waterford typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Waterford property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Waterford?",
+        answer: "The best time for driveway paving in Waterford, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Waterford CT?",
+        answer: "Waterford may require permits for new driveway construction or significant modifications. Check with the Waterford Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Waterford requires zoning permits for new driveway construction and significant driveway modifications, including changes to driveway width or location. Commercial parking lot projects typically require site plan approval from the Planning and Zoning Commission, and larger projects may trigger stormwater management requirements under the town's regulations and the CT DEEP General Permit for stormwater discharge. Driveway aprons within the town road right-of-way require an encroachment permit from the Department of Public Works. Properties in coastal flood zones are subject to additional review. Northeast Paving is thoroughly familiar with Waterford's permitting requirements — as the town's closest professional paving contractor, we've navigated this process for countless Waterford customers.",

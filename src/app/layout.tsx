@@ -20,12 +20,13 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://northeastpavingllc.com"),
   title: {
-    default: "Northeast Paving LLC | Asphalt Paving in Southeastern CT",
+    default: "Northeast Paving LLC | Asphalt Paving Southeastern CT",
     template: "%s | Northeast Paving LLC",
   },
   description:
-    "Southeast Connecticut's trusted paving contractor for 30+ years. Asphalt paving, sealcoating, grading & excavation. Licensed, insured & W.B.E. certified. Call 860-447-1518.",
+    "Southeastern CT's trusted paving contractor for 30+ years. Asphalt paving, sealcoating, grading & excavation. Licensed, insured & W.B.E. certified. Call 860-447-1518.",
   keywords: [
     "paving company near me CT",
     "driveway paving new london CT",
@@ -37,6 +38,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Northeast Paving LLC",
+    images: [
+      {
+        url: "/images/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "Northeast Paving LLC — Asphalt Paving in Southeastern Connecticut",
+      },
+    ],
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  alternates: {
+    canonical: "/",
   },
 };
 
@@ -50,7 +68,26 @@ export default function RootLayout({
       lang="en"
       className={`${oswald.variable} ${sourceSans.variable} h-full antialiased`}
     >
+      <head>
+        {/* GTM — Replace GTM-XXXXXXX with real container ID */}
+        <Script id="gtm" strategy="afterInteractive">{`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-XXXXXXX');
+        `}</Script>
+      </head>
       <body className="min-h-full flex flex-col font-body text-charcoal bg-white">
+        {/* GTM noscript — Replace GTM-XXXXXXX with real container ID */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -1,9 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
-import { Phone, CheckCircle, MapPin, HardHat, Layers, Shovel, Truck, PackageOpen, ExternalLink as ExternalLinkIcon } from "lucide-react";
+import { Phone, CheckCircle, MapPin, HardHat, Layers, Shovel, Truck, PackageOpen, ExternalLink as ExternalLinkIcon, Users, MapPinned, Clock } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import FAQAccordion from "@/components/FAQAccordion";
+import GHLForm from "@/components/GHLForm";
 import type { LocationData } from "@/lib/locations";
 
 const services = [
@@ -34,6 +35,11 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
       postalCode: "06320",
       addressCountry: "US",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: location.lat,
+      longitude: location.lng,
+    },
     areaServed: {
       "@type": "City",
       name: `${location.town}, CT`,
@@ -43,9 +49,19 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
     openingHours: "Mo-Fr 07:00-17:00",
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: location.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+
   return (
     <>
-      <SchemaMarkup schema={jsonLd} />
+      <SchemaMarkup schema={[jsonLd, faqSchema]} />
 
       <BreadcrumbNav
         items={[
@@ -87,7 +103,27 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
         </div>
       </section>
 
-      {/* Intro — About the Town */}
+      {/* Stats Bar */}
+      <section className="bg-blue text-white py-4">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-3 gap-4 text-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2">
+              <MapPinned className="w-4 h-4 opacity-80" />
+              <span className="text-xs sm:text-sm font-semibold uppercase tracking-wide">{location.county}</span>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2">
+              <Users className="w-4 h-4 opacity-80" />
+              <span className="text-xs sm:text-sm font-semibold uppercase tracking-wide">Pop. {location.population.toLocaleString()}+</span>
+            </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2">
+              <Clock className="w-4 h-4 opacity-80" />
+              <span className="text-xs sm:text-sm font-semibold uppercase tracking-wide">{location.proximity}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-6">
@@ -98,8 +134,6 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
               {paragraph}
             </p>
           ))}
-
-          {/* Outbound links to local landmarks */}
           {location.landmarkLinks.length > 0 && (
             <div className="mt-6 p-5 bg-gray-light rounded-lg">
               <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-3">
@@ -107,13 +141,7 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {location.landmarkLinks.map((link) => (
-                  <a
-                    key={link.url}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-blue hover:text-blue-dark transition-colors"
-                  >
+                  <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue hover:text-blue-dark transition-colors">
                     <ExternalLinkIcon className="w-3.5 h-3.5 shrink-0" />
                     {link.text}
                   </a>
@@ -124,15 +152,14 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
         </div>
       </section>
 
-      {/* Neighborhoods & Common Paving Areas */}
+      {/* Neighborhoods & Challenges */}
       <section className="py-16 md:py-24 bg-gray-light">
         <div className="max-w-3xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-6">
             Paving Throughout {location.town}
           </h2>
           <p className="text-gray-warm leading-relaxed mb-6">
-            We provide paving services throughout {location.town}, including
-            these neighborhoods and areas:
+            We provide paving services throughout {location.town}, including these neighborhoods and areas:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
             {location.neighborhoods.map((area) => (
@@ -142,33 +169,18 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
               </div>
             ))}
           </div>
-
-          {/* Local Paving Challenges */}
           <h3 className="font-heading text-xl font-bold uppercase tracking-wide text-charcoal mb-4">
             Paving Challenges in {location.town}
           </h3>
           {location.localChallenges.map((challenge, i) => (
-            <p key={i} className="text-gray-warm leading-relaxed mb-3">
-              {challenge}
-            </p>
+            <p key={i} className="text-gray-warm leading-relaxed mb-3">{challenge}</p>
           ))}
-
-          {/* Permits info */}
           {location.permitsInfo && (
             <div className="mt-6 p-5 bg-white rounded-lg border border-gray-200">
-              <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-2">
-                Local Permits & Regulations
-              </h3>
-              <p className="text-gray-warm leading-relaxed text-sm">
-                {location.permitsInfo}
-              </p>
+              <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-2">Local Permits & Regulations</h3>
+              <p className="text-gray-warm leading-relaxed text-sm">{location.permitsInfo}</p>
               {location.townWebsite && (
-                <a
-                  href={location.townWebsite.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 mt-3 text-sm text-blue hover:text-blue-dark transition-colors font-medium"
-                >
+                <a href={location.townWebsite.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-3 text-sm text-blue hover:text-blue-dark transition-colors font-medium">
                   <ExternalLinkIcon className="w-3.5 h-3.5" />
                   {location.townWebsite.text}
                 </a>
@@ -178,7 +190,7 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
         </div>
       </section>
 
-      {/* Services Available */}
+      {/* Services */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-10 text-center">
@@ -186,17 +198,11 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {services.map((service) => (
-              <Link
-                key={service.href}
-                href={service.href}
-                className="flex items-center gap-4 bg-white rounded-lg p-5 hover:shadow-md hover:border-blue/30 border border-gray-200 transition-all"
-              >
+              <Link key={service.href} href={service.href} className="flex items-center gap-4 bg-white rounded-lg p-5 hover:shadow-md hover:border-blue/30 border border-gray-200 transition-all">
                 <div className="w-10 h-10 bg-blue/10 rounded-lg flex items-center justify-center shrink-0">
                   <service.icon className="w-5 h-5 text-blue" />
                 </div>
-                <span className="font-heading text-base font-bold uppercase tracking-wide text-charcoal">
-                  {service.title}
-                </span>
+                <span className="font-heading text-base font-bold uppercase tracking-wide text-charcoal">{service.title}</span>
               </Link>
             ))}
           </div>
@@ -220,8 +226,33 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
         </div>
       </section>
 
-      {/* Serving Nearby Communities */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* FAQs */}
+      {location.faqs.length > 0 && (
+        <section className="py-16 md:py-24 bg-white">
+          <div className="max-w-3xl mx-auto px-4 lg:px-8">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-10 text-center">
+              Frequently Asked Questions
+            </h2>
+            <FAQAccordion items={location.faqs} />
+          </div>
+        </section>
+      )}
+
+      {/* GHL Form */}
+      <section className="bg-charcoal text-white py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-center mb-8">
+            Get a Free Paving Estimate in{" "}
+            <span className="text-blue">{location.town}</span>
+          </h2>
+          <div className="bg-white rounded-lg p-6">
+            <GHLForm />
+          </div>
+        </div>
+      </section>
+
+      {/* Nearby Communities */}
+      <section className="py-16 md:py-24 bg-gray-light">
         <div className="max-w-3xl mx-auto px-4 lg:px-8 text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-4">
             Serving {location.town} & Nearby Communities
@@ -232,11 +263,7 @@ export default function LocationPageLayout({ location }: LocationPageLayoutProps
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {location.neighbors.map((neighbor) => (
-              <Link
-                key={neighbor.slug}
-                href={`/service-areas/${neighbor.slug}`}
-                className="bg-gray-light hover:bg-blue/10 text-charcoal hover:text-blue px-4 py-2 rounded-md transition-colors font-medium text-sm"
-              >
+              <Link key={neighbor.slug} href={`/service-areas/${neighbor.slug}`} className="bg-white hover:bg-blue/10 text-charcoal hover:text-blue px-4 py-2 rounded-md transition-colors font-medium text-sm">
                 {neighbor.name}, CT →
               </Link>
             ))}

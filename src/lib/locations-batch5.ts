@@ -3,9 +3,14 @@ import type { LocationData } from "./locations";
 export const locationsBatch5: LocationData[] = [
   {
     town: "Franklin",
-    slug: "franklin-ct",
+    slug: "asphalt-paving-franklin-ct",
     description:
       "Asphalt paving, gravel driveways, and farm road maintenance for Franklin's rural properties and agricultural land.",
+    population: 1922,
+    county: "New London County",
+    lat: 41.6057,
+    lng: -72.1528,
+    proximity: "20 min from HQ",
     intro: [
       "Franklin is one of Connecticut's smallest and most genuinely rural towns, home to roughly 1,900 residents spread across a landscape of rolling farmland, quiet woods, and stone-walled pastures in the heart of New London County. There is no town center in any commercial sense — Franklin's civic identity radiates from the Franklin Town Green, a classic New England common surrounded by a handful of historic structures, the town hall, and the Congregational church. Route 32 runs north-south through town as the primary connector, linking Franklin to Norwich to the south and Willimantic to the north, but step off that corridor and you are immediately in deep country. Farm stands, hay fields, horse paddocks, and homes set hundreds of feet back from narrow town roads define the character of this community. Franklin has never chased growth or development; it has instead preserved an agricultural and residential quietude that its residents treasure and that newcomers from busier towns find increasingly appealing.",
       "Northeast Paving has been serving Franklin property owners for over 30 years, and our work here reflects the specific realities of a very small, very rural town. The vast majority of our Franklin projects are residential driveways — and these are not the short, flat runs you find in suburban developments. Franklin driveways are often 300, 500, or even 800 feet long, winding through trees and across fields to reach homes that sit well back from the road. Many of these driveways were originally built as simple farm lanes with minimal subbase, and over decades of use they have settled, rutted, and deteriorated to the point where a proper rebuild is the only lasting solution. We help Franklin homeowners evaluate their options honestly — full asphalt paving, compacted recycled millings, gravel reconstruction, or hybrid approaches that pave the most visible and heavily used sections while using more economical materials for the remainder.",
@@ -46,10 +51,24 @@ export const locationsBatch5: LocationData[] = [
       "Licensed, insured, and W.B.E. certified with a reputation built one Franklin driveway at a time"
     ],
     neighbors: [
-      { name: "Norwich", slug: "norwich-ct" },
-      { name: "Bozrah", slug: "bozrah-ct" },
-      { name: "Lisbon", slug: "lisbon-ct" },
-      { name: "Sprague", slug: "sprague-ct" }
+      { name: "Norwich", slug: "asphalt-paving-norwich-ct" },
+      { name: "Bozrah", slug: "asphalt-paving-bozrah-ct" },
+      { name: "Lisbon", slug: "asphalt-paving-lisbon-ct" },
+      { name: "Sprague", slug: "asphalt-paving-sprague-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Franklin CT?",
+        answer: "Driveway paving costs in Franklin typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Franklin property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Franklin?",
+        answer: "The best time for driveway paving in Franklin, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Franklin CT?",
+        answer: "Franklin may require permits for new driveway construction or significant modifications. Check with the Franklin Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Franklin generally does not require permits for straightforward residential driveway repaving in the existing footprint. However, new driveway construction, changes to drainage patterns, or work within regulated wetland or watercourse buffer areas may require approval from the Franklin Inland Wetlands Commission or the Franklin Building Official. New driveway cuts onto town roads require coordination with the Franklin Highway Department. We recommend contacting the Town of Franklin offices before beginning any project to confirm whether permits or approvals are needed.",
@@ -60,9 +79,14 @@ export const locationsBatch5: LocationData[] = [
   },
   {
     town: "Sprague",
-    slug: "sprague-ct",
+    slug: "asphalt-paving-sprague-ct",
     description:
       "Professional paving, sealcoating, and infrastructure repair for Sprague's villages and post-industrial properties.",
+    population: 2984,
+    county: "New London County",
+    lat: 41.6034,
+    lng: -72.0664,
+    proximity: "25 min from HQ",
     intro: [
       "Sprague is a compact New London County town of approximately 2,900 residents whose identity is shaped by its industrial past and the rivers that powered it. The town encompasses two distinct villages — Baltic and Hanover — connected by the Shetucket River, which flows through the center of Sprague and historically drove the textile mills that gave these villages their economic purpose. Baltic, the larger and more densely settled of the two, grew up around the Baltic Mill complex and retains the tight street grid, worker housing, and mixed-use character of a classic New England mill village. Hanover, smaller and slightly more rural, sits to the south along the river with its own historic fabric and community identity. Routes 97 and 207 serve as the primary transportation corridors, connecting Sprague to Norwich to the south, Willimantic to the northwest, and the smaller towns that ring it on all sides.",
       "Northeast Paving has been working in Sprague for over three decades, and we understand the particular needs of a post-industrial town where much of the built environment dates to the late 19th and early 20th centuries. In Baltic village, the residential streets are lined with mill-era worker cottages, duplexes, and triple-deckers built on compact lots with short driveways — or in some cases, shared driveways serving multiple units. These older properties often have pavement that has been patched and overlaid multiple times over the decades, resulting in layers of failing asphalt over inadequate or nonexistent subbase. Our approach on these projects is typically full-depth removal — stripping away the accumulated layers, evaluating and correcting the subbase, and installing new asphalt on a properly prepared foundation. This costs more upfront than another overlay, but it delivers a surface that will perform for twenty years rather than five.",
@@ -99,9 +123,23 @@ export const locationsBatch5: LocationData[] = [
       "Over 30 years of reliable service from our nearby New London base — a contractor Sprague residents trust"
     ],
     neighbors: [
-      { name: "Norwich", slug: "norwich-ct" },
-      { name: "Lisbon", slug: "lisbon-ct" },
-      { name: "Franklin", slug: "franklin-ct" }
+      { name: "Norwich", slug: "asphalt-paving-norwich-ct" },
+      { name: "Lisbon", slug: "asphalt-paving-lisbon-ct" },
+      { name: "Franklin", slug: "asphalt-paving-franklin-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Sprague CT?",
+        answer: "Driveway paving costs in Sprague typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Sprague property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Sprague?",
+        answer: "The best time for driveway paving in Sprague, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Sprague CT?",
+        answer: "Sprague may require permits for new driveway construction or significant modifications. Check with the Sprague Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Most residential driveway repaving in Sprague does not require a permit when the work stays within the existing driveway footprint. However, new driveway construction, expansion of impervious surfaces, and any work near the Shetucket River or other watercourses may require review by the Sprague Building Department or the Sprague Inland Wetlands Commission. Projects on or adjacent to former industrial properties may involve additional environmental review. We recommend contacting the Town of Sprague before starting any project to confirm permit requirements for your specific property.",
@@ -112,9 +150,14 @@ export const locationsBatch5: LocationData[] = [
   },
   {
     town: "Voluntown",
-    slug: "voluntown-ct",
+    slug: "asphalt-paving-voluntown-ct",
     description:
       "Driveway paving, gravel road construction, and material delivery for Voluntown's remote rural properties and state forest communities.",
+    population: 2603,
+    county: "New London County",
+    lat: 41.5851,
+    lng: -71.8590,
+    proximity: "30 min from HQ",
     intro: [
       "Voluntown is one of Connecticut's most remote and undeveloped towns — a deeply rural community of roughly 2,600 residents tucked into the far eastern corner of New London County, hard against the Rhode Island border. The town's defining geographic feature is Pachaug State Forest, the largest state forest in Connecticut, which occupies a vast swath of Voluntown's territory and gives the town a wild, heavily forested character that is unlike anywhere else in the state. Beachdale Pond, one of several water bodies within and bordering the forest, provides recreational access, while the surrounding woods attract hikers, hunters, and nature enthusiasts year-round. Routes 138 and 49 intersect in Voluntown Center, forming the modest crossroads that constitutes the town's civic core — a small cluster of municipal buildings, a general store, and a few establishments that serve this scattered, self-reliant community. Voluntown was originally granted to Connecticut veterans of King Philip's War in the 17th century, and the town's name is literally a contraction of Volunteer Town — a fitting origin for a place where independence and self-sufficiency remain core values.",
       "Northeast Paving has served Voluntown property owners for over 30 years, and we are one of the few professional paving contractors who regularly makes the drive into this corner of the state. Many Voluntown residents have told us that contractors from larger towns either decline to travel this far or quote inflated prices to compensate for the drive time. As a New London-based company with deep roots in all of eastern Connecticut's rural communities, we treat Voluntown with the same priority and pricing we extend to towns five minutes from our yard. Our crews know Voluntown's roads — the winding stretches of Wylie School Road, the forested corridors along Ten Rod Road, the gravel lanes branching off Route 49 toward properties nestled in the woods near the state forest boundary. We have completed hundreds of projects in this area, from simple gravel driveway regrading to full asphalt installations on properties where the homeowner is ready to upgrade from decades of stone and dirt.",
@@ -155,9 +198,23 @@ export const locationsBatch5: LocationData[] = [
       "Over 30 years of trusted service in eastern Connecticut's most rural communities"
     ],
     neighbors: [
-      { name: "Griswold", slug: "griswold-ct" },
-      { name: "North Stonington", slug: "north-stonington-ct" },
-      { name: "Preston", slug: "preston-ct" }
+      { name: "Griswold", slug: "asphalt-paving-griswold-ct" },
+      { name: "North Stonington", slug: "asphalt-paving-north-stonington-ct" },
+      { name: "Preston", slug: "asphalt-paving-preston-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Voluntown CT?",
+        answer: "Driveway paving costs in Voluntown typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Voluntown property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Voluntown?",
+        answer: "The best time for driveway paving in Voluntown, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Voluntown CT?",
+        answer: "Voluntown may require permits for new driveway construction or significant modifications. Check with the Voluntown Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Voluntown's rural character means many driveway projects proceed without permits, but new driveway construction, work that alters drainage patterns, and any activity near wetlands, watercourses, or Pachaug State Forest boundaries may require approval from the Voluntown Inland Wetlands Commission or coordination with the Connecticut DEEP. New driveway cuts onto town roads require a permit from the Voluntown Highway Department. Properties bordering state forest land should verify boundary lines before beginning any work. We recommend contacting the Voluntown Town Hall to confirm requirements for your specific project.",
@@ -168,9 +225,14 @@ export const locationsBatch5: LocationData[] = [
   },
   {
     town: "Colchester",
-    slug: "colchester-ct",
+    slug: "asphalt-paving-colchester-ct",
     description:
       "Full-service paving, sealcoating, and site work for Colchester's growing suburban neighborhoods and commercial corridors.",
+    population: 16068,
+    county: "New London County",
+    lat: 41.5754,
+    lng: -72.3321,
+    proximity: "25 min from HQ",
     intro: [
       "Colchester is one of the larger and more dynamically growing towns in New London County, with a population of approximately 16,000 residents spread across a landscape that transitions from the compact village center around the Colchester Town Green to the increasingly suburban residential developments along Route 2 and Route 16, and then outward into the rural farmland and forest that still characterizes the town's periphery. The Town Green, anchored by the Colchester Hayward Volunteer Fire Company and surrounded by shops, restaurants, and civic buildings along Main Street, serves as the community's gathering place and the heart of its identity. Colchester has experienced significant residential growth over the past three decades, with new subdivisions filling in the wooded parcels between the village center and the outlying areas, attracting families from Hartford and the shoreline communities who are drawn to the town's strong schools, moderate housing costs, and easy access to Route 2.",
       "Northeast Paving has been active in Colchester for over 30 years, and our project history here mirrors the town's evolution from a quiet rural community to a growing suburban center. In the older neighborhoods surrounding the Town Green and along Route 85, we handle driveway resurfacing and reconstruction for mid-century homes where original pavement has reached the end of its useful life. These properties typically have standard suburban driveways — 40 to 80 feet long with moderate grades — that are well suited to our full-depth reclamation and overlay services. Many homeowners in these established neighborhoods are on their second or third driveway surface, and they appreciate our honest assessment of whether an overlay will suffice or whether the subbase has deteriorated to the point where full removal and reconstruction is the smarter long-term investment.",
@@ -211,10 +273,24 @@ export const locationsBatch5: LocationData[] = [
       "Licensed, insured, and W.B.E. certified for residential, commercial, and municipal projects"
     ],
     neighbors: [
-      { name: "Salem", slug: "salem-ct" },
-      { name: "East Haddam", slug: "east-haddam-ct" },
-      { name: "Bozrah", slug: "bozrah-ct" },
-      { name: "Montville", slug: "montville-ct" }
+      { name: "Salem", slug: "asphalt-paving-salem-ct" },
+      { name: "East Haddam", slug: "asphalt-paving-east-haddam-ct" },
+      { name: "Bozrah", slug: "asphalt-paving-bozrah-ct" },
+      { name: "Montville", slug: "asphalt-paving-montville-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in Colchester CT?",
+        answer: "Driveway paving costs in Colchester typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your Colchester property."
+      },
+      {
+        question: "What is the best time to pave a driveway in Colchester?",
+        answer: "The best time for driveway paving in Colchester, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in Colchester CT?",
+        answer: "Colchester may require permits for new driveway construction or significant modifications. Check with the Colchester Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "Colchester requires permits for new driveway construction, significant changes to driveway footprint or grading, and any site work that affects drainage patterns or impervious surface coverage. Residential driveway repaving in the existing footprint typically does not require a permit, but homeowners should confirm with the Colchester Building Department, particularly for properties near wetlands, watercourses, or flood zones. Commercial paving projects generally require site plan approval from the Colchester Planning and Zoning Commission. The Colchester Building Department is responsive and helpful — we recommend contacting them early in the planning process.",
@@ -225,9 +301,14 @@ export const locationsBatch5: LocationData[] = [
   },
   {
     town: "East Haddam",
-    slug: "east-haddam-ct",
+    slug: "asphalt-paving-east-haddam-ct",
     description:
       "Expert paving and site work for East Haddam's scenic properties, historic villages, and tourism-driven businesses.",
+    population: 9126,
+    county: "Middlesex County",
+    lat: 41.4627,
+    lng: -72.4612,
+    proximity: "30 min from HQ",
     intro: [
       "East Haddam is one of Connecticut's most scenic and culturally rich towns, home to approximately 9,100 residents spread across a landscape that unfolds along the eastern bank of the Connecticut River and extends inland through wooded hills, rocky gorges, and quiet farmland. The town is anchored by two distinct village centers — East Haddam village, perched above the river crossing where the historic swing bridge connects to Haddam, and Moodus, a denser village settlement a few miles inland that was historically a manufacturing center and retains its own commercial district and community identity. East Haddam's fame extends well beyond its borders thanks to two landmark attractions: Gillette Castle State Park, the medieval-inspired stone castle built by actor William Gillette on a bluff high above the Connecticut River, and the Goodspeed Opera House, a Victorian masterpiece rising from the riverbank in East Haddam village that has been launching Broadway-bound musicals since its restoration in the 1960s. Devil's Hopyard State Park, with its dramatic Chapman Falls and rocky hemlock gorge, adds another dimension to the town's extraordinary natural character.",
       "Northeast Paving has been serving East Haddam property owners for over 30 years, and working in this town requires an appreciation for its unique blend of scenic beauty, historic preservation, and practical infrastructure needs. In East Haddam village, where 18th- and 19th-century homes line the roads overlooking the Connecticut River, driveway projects demand the kind of careful, character-sensitive approach that not every contractor brings. These properties often have narrow, irregular driveways that follow terrain established centuries ago, bordered by stone walls, specimen trees, and historic outbuildings that must be protected during construction. Our crews work with smaller equipment when necessary, hand-finish edges along sensitive borders, and consult with homeowners on surface treatments and edging options that complement rather than detract from the historic character of their properties.",
@@ -272,10 +353,24 @@ export const locationsBatch5: LocationData[] = [
       "Over 30 years serving East Haddam and the surrounding Connecticut River valley towns"
     ],
     neighbors: [
-      { name: "Essex", slug: "essex-ct" },
-      { name: "Lyme", slug: "lyme-ct" },
-      { name: "Colchester", slug: "colchester-ct" },
-      { name: "Salem", slug: "salem-ct" }
+      { name: "Essex", slug: "asphalt-paving-essex-ct" },
+      { name: "Lyme", slug: "asphalt-paving-lyme-ct" },
+      { name: "Colchester", slug: "asphalt-paving-colchester-ct" },
+      { name: "Salem", slug: "asphalt-paving-salem-ct" }
+    ],
+    faqs: [
+      {
+        question: "How much does driveway paving cost in East Haddam CT?",
+        answer: "Driveway paving costs in East Haddam typically range from $3 to $7 per square foot depending on size, base condition, and access. Contact us for a free on-site estimate specific to your East Haddam property."
+      },
+      {
+        question: "What is the best time to pave a driveway in East Haddam?",
+        answer: "The best time for driveway paving in East Haddam, CT is from late April through November when temperatures stay above 50°F. We recommend scheduling your project in spring or early fall for ideal conditions."
+      },
+      {
+        question: "Do I need a permit for driveway paving in East Haddam CT?",
+        answer: "East Haddam may require permits for new driveway construction or significant modifications. Check with the East Haddam Building Department or contact us — we can guide you through the local permitting process."
+      },
     ],
     permitsInfo:
       "East Haddam requires permits for new driveway construction, changes to driveway footprint, and site work that alters grading or drainage patterns. Residential driveway repaving in the existing footprint generally does not require a permit, but properties within the East Haddam village historic area or near regulated wetlands and watercourses should confirm requirements with the East Haddam Building Department. The East Haddam Inland Wetlands and Watercourses Commission reviews projects within regulated buffer areas, and commercial projects may require site plan approval from the Planning and Zoning Commission. The proximity of many East Haddam properties to the Connecticut River means coastal area management reviews may also apply. Contact the East Haddam Building Department early in your planning process to determine what approvals are needed.",

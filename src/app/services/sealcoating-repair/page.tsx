@@ -113,6 +113,7 @@ export default function SealcoatingRepairPage() {
           "For best results, we recommend sealcoating every 2–3 years. New asphalt should cure for 6–12 months before its first sealcoat. Regular maintenance dramatically extends pavement life — a well-maintained driveway can last 25–30 years versus 15 or fewer without sealcoating.",
         ],
       }}
+      warrantyText="Our sealcoating comes with a satisfaction guarantee. If the finished surface doesn't meet our standards or yours, we'll reapply at no additional cost. We use only commercial-grade sealant products applied at proper thickness for maximum protection and longevity."
       slug="sealcoating-repair"
       heroImage="/images/gallery/parking-lot-sealcoating-ct-01.webp"
       serviceCitySlug="sealcoating"

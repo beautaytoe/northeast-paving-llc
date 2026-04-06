@@ -7,6 +7,9 @@ import {
   Truck,
   PackageOpen,
   Phone,
+  Shield,
+  Award,
+  BadgeCheck,
 } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
@@ -101,6 +104,51 @@ export default function ServicesPage() {
             <Link href="/service-areas/asphalt-paving-waterford-ct" className="text-blue hover:text-blue-dark transition-colors">Waterford</Link>,{" "}
             <Link href="/service-areas/asphalt-paving-mystic-ct" className="text-blue hover:text-blue-dark transition-colors">Mystic</Link>, and more.
           </p>
+        </div>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-4 lg:px-8">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide text-charcoal mb-10 text-center">
+            Why Northeast Paving
+          </h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link href="/about" className="group text-center bg-gray-light hover:bg-blue/5 rounded-lg p-6 transition-colors">
+              <div className="w-12 h-12 bg-blue/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                <HardHat className="w-6 h-6 text-blue" />
+              </div>
+              <h3 className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal group-hover:text-blue transition-colors">
+                30+ Years Experience
+              </h3>
+            </Link>
+            <Link href="/about" className="group text-center bg-gray-light hover:bg-blue/5 rounded-lg p-6 transition-colors">
+              <div className="w-12 h-12 bg-blue/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Shield className="w-6 h-6 text-blue" />
+              </div>
+              <h3 className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal group-hover:text-blue transition-colors">
+                CT Licensed &amp; Insured
+              </h3>
+              <p className="text-xs text-gray-warm mt-1">Reg. #571106</p>
+            </Link>
+            <Link href="/why-choose-us" className="group text-center bg-gray-light hover:bg-blue/5 rounded-lg p-6 transition-colors">
+              <div className="w-12 h-12 bg-blue/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Award className="w-6 h-6 text-blue" />
+              </div>
+              <h3 className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal group-hover:text-blue transition-colors">
+                Certified W.B.E.
+              </h3>
+            </Link>
+            <Link href="/free-estimate" className="group text-center bg-gray-light hover:bg-blue/5 rounded-lg p-6 transition-colors">
+              <div className="w-12 h-12 bg-blue/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Phone className="w-6 h-6 text-blue" />
+              </div>
+              <h3 className="font-heading text-sm font-bold uppercase tracking-wide text-charcoal group-hover:text-blue transition-colors">
+                Free Estimates
+              </h3>
+              <p className="text-xs text-gray-warm mt-1">860-447-1518</p>
+            </Link>
+          </div>
         </div>
       </section>
 

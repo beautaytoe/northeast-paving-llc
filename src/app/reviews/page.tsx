@@ -6,7 +6,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Customer Reviews & Testimonials",
   description:
-    "Read reviews from Northeast Paving LLC customers across Southeastern CT. 5-star rated paving contractor. 30+ years experience. Call 860-447-1518.",
+    "Read customer reviews of Northeast Paving LLC. Trusted asphalt paving contractor in Southeastern CT — driveways, parking lots, sealcoating. 30+ years of satisfied clients.",
 };
 
 const reviews = [

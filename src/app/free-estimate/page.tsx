@@ -6,7 +6,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Get a Free Paving Estimate — Southeastern CT",
   description:
-    "Request a free, no-obligation estimate for asphalt paving, sealcoating, grading, or material delivery in Southeastern CT. Call 860-447-1518.",
+    "Request a free paving estimate from Northeast Paving LLC. Driveways, parking lots, sealcoating & excavation in Southeastern CT. Call 860-447-1518 or submit online.",
 };
 
 const benefits = [

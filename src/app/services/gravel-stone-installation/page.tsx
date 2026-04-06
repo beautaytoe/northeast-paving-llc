@@ -104,6 +104,16 @@ export default function GravelStoneInstallationPage() {
             "In many cases, yes. A well-compacted gravel base can serve as the foundation for future asphalt paving. We install gravel with this potential in mind, so you have the option to pave later without starting from scratch.",
         },
       ]}
+      decisionContent={{
+        title: "What to Expect: Gravel Driveway Costs, Materials & Maintenance",
+        paragraphs: [
+          "Gravel and stone driveway installation in Connecticut typically costs less than asphalt, making it a popular choice for rural properties and long driveways. Pricing depends on driveway length, material type (processed gravel, crushed stone, or recycled asphalt millings), and whether excavation and base work are needed. We provide free estimates with material recommendations based on your specific site and usage.",
+          "Not all gravel is the same. We recommend processed gravel or 3/4\" crushed stone for driveways because they compact well and provide a stable driving surface. Recycled asphalt millings are an affordable, eco-friendly alternative that compact almost as hard as fresh asphalt. For decorative applications, we offer river stone and other specialty materials. We'll help you pick the right product for your needs and budget.",
+          "A proper gravel driveway starts with excavation to remove topsoil and organic material, followed by a compacted sub-base layer, then your finish stone. We grade for drainage and compact each layer with heavy equipment — not just dumped and spread. This multi-layer approach prevents sinking, rutting, and washout that plague poorly installed gravel driveways.",
+          "Gravel driveways benefit from occasional regrading (typically every 1–2 years) and periodic top-dressing with fresh material. We offer maintenance services for existing gravel driveways including grading, adding material, and improving drainage. A well-maintained gravel driveway can last indefinitely at a fraction of the cost of asphalt.",
+        ],
+      }}
+      warrantyText="We guarantee proper installation with correct base preparation, compaction, and grading. If your new gravel surface develops drainage issues or settling within the first year due to our workmanship, we'll return to repair it at no cost."
       slug="gravel-stone-installation"
       heroImage="/images/gallery/gravel-stone-base-installation-ct-01.webp"
       serviceCitySlug="gravel-stone"

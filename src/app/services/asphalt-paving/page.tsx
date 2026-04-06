@@ -113,6 +113,7 @@ export default function AsphaltPavingPage() {
           "We stand behind our workmanship. Every job is completed to industry standards with proper base preparation, material thickness, and compaction. We walk you through maintenance recommendations so your new pavement lasts as long as possible.",
         ],
       }}
+      warrantyText="We stand behind every paving job with a workmanship guarantee. If any issues arise from our installation within the first year, we'll return to make it right — no questions asked. We also walk you through a maintenance plan to help your new pavement last 20+ years."
       slug="asphalt-paving"
       heroImage="/images/gallery/residential-driveway-paving-ct-01.webp"
       serviceCitySlug="driveway-paving"

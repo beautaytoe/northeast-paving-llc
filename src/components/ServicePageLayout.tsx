@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, ShieldCheck } from "lucide-react";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import CTABanner from "@/components/CTABanner";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
@@ -60,6 +60,8 @@ interface ServicePageLayoutProps {
   serviceCitySlug?: string;
   /** Optional decision support content section */
   decisionContent?: DecisionContent;
+  /** Optional warranty/guarantee callout */
+  warrantyText?: string;
 }
 
 export default function ServicePageLayout({
@@ -75,6 +77,7 @@ export default function ServicePageLayout({
   heroImage,
   serviceCitySlug,
   decisionContent,
+  warrantyText,
 }: ServicePageLayoutProps) {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -239,8 +242,27 @@ export default function ServicePageLayout({
         </section>
       )}
 
+      {/* Warranty Callout */}
+      {warrantyText && (
+        <section className={`py-8 ${decisionContent ? "bg-white" : "bg-gray-light"}`}>
+          <div className="max-w-3xl mx-auto px-4 lg:px-8">
+            <div className="bg-blue-50 border-l-4 border-blue rounded-r-lg p-6 flex gap-4 items-start">
+              <ShieldCheck className="w-6 h-6 text-blue shrink-0 mt-0.5" />
+              <div>
+                <h3 className="font-heading text-lg font-bold uppercase tracking-wide text-charcoal mb-2">
+                  Our Guarantee
+                </h3>
+                <p className="text-gray-warm leading-relaxed text-sm">
+                  {warrantyText}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
-      <section className={`py-16 md:py-24 ${decisionContent ? "bg-white" : "bg-gray-light"}`}>
+      <section className={`py-16 md:py-24 ${decisionContent || warrantyText ? "bg-white" : "bg-gray-light"}`}>
         <div className="max-w-3xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-10 text-center">
             Frequently Asked Questions

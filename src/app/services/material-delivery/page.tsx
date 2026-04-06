@@ -104,6 +104,16 @@ export default function MaterialDeliveryPage() {
             "Yes, we offer competitive pricing on bulk orders. The more you need, the better your per-yard or per-ton rate. Contact us for a quote on larger quantities.",
         },
       ]}
+      decisionContent={{
+        title: "What to Expect: Delivery Options, Pricing & Scheduling",
+        paragraphs: [
+          "We deliver a full range of materials across Southeastern Connecticut: screened topsoil, mulch (natural, black, and red), processed gravel, crushed stone (various sizes), recycled asphalt millings, sand, and fill. Whether you need a single truckload for a residential project or multiple loads for a commercial site, we handle it.",
+          "Delivery pricing depends on material type, volume, and distance from our New London yard. We price by the truckload (typically 10–15 cubic yards per load) and can provide exact quotes over the phone. Minimum delivery quantities may apply for longer hauls. No hidden fees — the price we quote includes delivery to your site.",
+          "We typically schedule deliveries within 1–3 business days of your order, and same-day delivery is often available. Our drivers need reasonable access — a standard dump truck requires about 10 feet of width and overhead clearance. Let us know about any tight driveways, low-hanging wires, or soft ground conditions so we can plan the right truck for your site.",
+          "We work with both homeowners tackling weekend projects and contractors who need reliable, on-time deliveries to keep job sites moving. Repeat customers and contractors get priority scheduling. Call 860-447-1518 to place an order or get a quote.",
+        ],
+      }}
+      warrantyText="We guarantee accurate material quantities and on-time delivery. If we deliver the wrong material or short your order, we'll make it right immediately at no extra charge. Our drivers take care to protect your property during delivery."
       slug="material-delivery"
       heroImage="/images/gallery/northeast-paving-delivery-truck-ct.webp"
     />

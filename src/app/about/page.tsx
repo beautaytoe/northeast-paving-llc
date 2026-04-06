@@ -9,7 +9,7 @@ import { aboutImages, heroImages } from "@/lib/images";
 export const metadata: Metadata = {
   title: "About Us — 30+ Years of Paving Excellence",
   description:
-    "Learn about Northeast Paving LLC — Southeastern CT's trusted paving contractor for over 30 years. Women-owned, licensed, insured. Call 860-447-1518.",
+    "Family-owned paving contractor with 30+ years in Southeastern CT. Licensed, insured & W.B.E. certified. Driveways, parking lots, sealcoating & site work. Call 860-447-1518.",
 };
 
 const milestones = [
@@ -175,6 +175,55 @@ export default function AboutPage() {
               <Phone className="w-5 h-5" />
               860-447-1518
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership & Credentials */}
+      <section className="py-16 md:py-24 bg-gray-light">
+        <div className="max-w-3xl mx-auto px-4 lg:px-8">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-8">
+            Leadership &amp; Credentials
+          </h2>
+          <div className="space-y-5 text-gray-warm leading-relaxed">
+            <p>
+              Northeast Paving is a family-owned business with over 30 years of
+              experience serving{" "}
+              <Link href="/service-areas" className="text-blue hover:underline">
+                Southeastern Connecticut
+              </Link>
+              . As a Connecticut Department of Consumer Protection registered
+              contractor (Reg. #571106) and a State of Connecticut Certified
+              Women&apos;s Business Enterprise (W.B.E.), we meet the highest
+              standards of professional accountability.
+            </p>
+            <p>
+              Our team includes experienced paving operators, skilled laborers,
+              and CDL-licensed drivers — many of whom have been with us for over
+              a decade. We invest in ongoing training, modern equipment, and
+              industry best practices to deliver consistent quality on every
+              job.
+            </p>
+            <p>
+              We&apos;re active members of the local business community and
+              proud to serve the towns where we live and work. From residential
+              driveways in{" "}
+              <Link
+                href="/service-areas/asphalt-paving-groton-ct"
+                className="text-blue hover:underline"
+              >
+                Groton
+              </Link>{" "}
+              to commercial parking lots in{" "}
+              <Link
+                href="/service-areas/asphalt-paving-norwich-ct"
+                className="text-blue hover:underline"
+              >
+                Norwich
+              </Link>
+              , our reputation is built on showing up, doing the job right, and
+              standing behind our work.
+            </p>
           </div>
         </div>
       </section>

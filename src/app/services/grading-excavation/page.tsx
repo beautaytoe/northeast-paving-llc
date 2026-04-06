@@ -104,6 +104,16 @@ export default function GradingExcavationPage() {
             "A typical residential lot can be graded in 1-2 days. Larger commercial sites may take a week or more depending on scope, soil conditions, and weather. We'll provide a timeline with your estimate.",
         },
       ]}
+      decisionContent={{
+        title: "What to Expect: Excavation Costs, Timeline & Site Prep",
+        paragraphs: [
+          "Excavation costs in Connecticut depend heavily on the scope — a simple driveway dig-out runs significantly less than a full commercial site clearing. Key factors include soil conditions (ledge rock in Southeastern CT is common and adds cost), depth of excavation, volume of material to be removed, and whether fill or gravel base needs to be brought in. We provide free on-site assessments because no two sites are the same.",
+          "A residential driveway excavation typically takes 1–2 days. Larger commercial site work — grading a parking lot, installing drainage, or preparing a building pad — can take a week or more depending on acreage and complexity. We coordinate with utility locates and local permitting before any digging begins.",
+          "Proper drainage is the single most important factor in pavement longevity. We grade every site to direct water away from structures and pavement edges, install catch basins and culverts where needed, and verify slope with laser-guided equipment. Skipping this step is the #1 reason driveways and parking lots fail prematurely.",
+          "Excavation work in Connecticut can be done year-round in most conditions, though frozen ground in winter may add time and cost. Spring and fall are ideal. We avoid excavating during heavy rain periods to prevent erosion and ensure proper compaction of sub-base materials.",
+        ],
+      }}
+      warrantyText="We guarantee proper grade and drainage on every excavation project. If water doesn't flow the way we said it would, we'll come back and fix it. Proper site prep is the foundation of everything we do — we don't cut corners underground where it matters most."
       slug="grading-excavation"
       heroImage="/images/gallery/excavation-site-work-ct-01.webp"
       serviceCitySlug="grading-excavation"

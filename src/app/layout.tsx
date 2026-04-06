@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Northeast Paving LLC",
   },
   description:
-    "Southeastern CT's trusted paving contractor for 30+ years. Asphalt paving, sealcoating, grading & excavation. Licensed, insured & W.B.E. certified. Call 860-447-1518.",
+    "Northeast Paving LLC — licensed asphalt paving contractor serving 25+ towns in Southeastern CT. Driveways, parking lots, sealcoating & excavation. 30+ years experience. Free estimates.",
   keywords: [
     "paving company near me CT",
     "driveway paving new london CT",
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  // TODO: Replace with real Google Search Console verification code after domain DNS is pointed
   verification: {
-    /* Replace VERIFICATION_CODE_HERE with the real Google Search Console code */
-    google: "VERIFICATION_CODE_HERE",
+    google: "",
   },
 };
 

@@ -16,7 +16,7 @@ import BreadcrumbNav from "@/components/BreadcrumbNav";
 export const metadata: Metadata = {
   title: "Why Choose Us — Your Trusted Paving Contractor",
   description:
-    "Discover why Northeast Paving LLC is Southeastern CT's preferred paving contractor. 30+ years experience, W.B.E. certified, licensed & insured. Call 860-447-1518.",
+    "Why choose Northeast Paving? 30+ years experience, CT licensed & insured, W.B.E. certified, and serving 25+ towns in Southeastern Connecticut. Free estimates.",
 };
 
 const differentiators = [

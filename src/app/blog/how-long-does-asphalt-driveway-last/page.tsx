@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   title: "How Long Does an Asphalt Driveway Last? | Expert Guide",
@@ -12,6 +13,20 @@ export const metadata: Metadata = {
 export default function HowLongDoesAsphaltDrivewayLastPage() {
   return (
     <>
+      <SchemaMarkup schema={{
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: "How Long Does an Asphalt Driveway Last?",
+        description: "Learn how long an asphalt driveway lasts (20-30 years), what factors affect lifespan, and how CT homeowners can extend pavement life with proper maintenance.",
+        datePublished: "2026-03-15",
+        dateModified: "2026-03-15",
+        author: { "@type": "Organization", name: "Northeast Paving, LLC" },
+        publisher: {
+          "@type": "Organization",
+          name: "Northeast Paving, LLC",
+          logo: { "@type": "ImageObject", url: "https://northeastpavingllc.com/images/brand/northeast-paving-logo.webp" },
+        },
+      }} />
       <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "How Long Does an Asphalt Driveway Last?" }]} />
 
       {/* Article Header */}

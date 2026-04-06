@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   title: "Asphalt vs Concrete Driveway — Which Is Best?",
@@ -12,6 +13,20 @@ export const metadata: Metadata = {
 export default function AsphaltVsConcreteDrivewayPage() {
   return (
     <>
+      <SchemaMarkup schema={{
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: "Asphalt vs Concrete Driveway — Which Is Best?",
+        description: "Compare asphalt and concrete driveways: cost, durability, maintenance, and CT climate performance. Find out which driveway material is right for your home.",
+        datePublished: "2026-02-28",
+        dateModified: "2026-02-28",
+        author: { "@type": "Organization", name: "Northeast Paving, LLC" },
+        publisher: {
+          "@type": "Organization",
+          name: "Northeast Paving, LLC",
+          logo: { "@type": "ImageObject", url: "https://northeastpavingllc.com/images/brand/northeast-paving-logo.webp" },
+        },
+      }} />
       <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Asphalt vs. Concrete Driveway" }]} />
 
       {/* Article Header */}

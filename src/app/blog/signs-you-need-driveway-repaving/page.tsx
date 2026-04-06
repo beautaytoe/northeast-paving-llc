@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   title: "5 Signs You Need Driveway Repaving | Northeast Paving",
@@ -12,6 +13,20 @@ export const metadata: Metadata = {
 export default function SignsYouNeedDrivewayRepavingPage() {
   return (
     <>
+      <SchemaMarkup schema={{
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: "5 Signs You Need Driveway Repaving",
+        description: "Learn the 5 warning signs your driveway needs repaving: cracking, potholes, drainage issues, fading, and age. Expert advice from CT paving professionals.",
+        datePublished: "2026-01-22",
+        dateModified: "2026-01-22",
+        author: { "@type": "Organization", name: "Northeast Paving, LLC" },
+        publisher: {
+          "@type": "Organization",
+          name: "Northeast Paving, LLC",
+          logo: { "@type": "ImageObject", url: "https://northeastpavingllc.com/images/brand/northeast-paving-logo.webp" },
+        },
+      }} />
       <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "5 Signs You Need Driveway Repaving" }]} />
 
       {/* Hero */}

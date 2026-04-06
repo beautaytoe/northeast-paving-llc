@@ -56,6 +56,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    /* Replace VERIFICATION_CODE_HERE with the real Google Search Console code */
+    google: "VERIFICATION_CODE_HERE",
+  },
 };
 
 export default function RootLayout({

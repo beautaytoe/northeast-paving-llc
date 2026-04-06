@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   title: "When to Sealcoat Your Driveway | Complete Guide",
@@ -12,6 +13,20 @@ export const metadata: Metadata = {
 export default function WhenToSealcoatDrivewayPage() {
   return (
     <>
+      <SchemaMarkup schema={{
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: "When to Sealcoat Your Driveway",
+        description: "Learn when to sealcoat your asphalt driveway, how often to reseal, the best season for sealcoating in CT, and signs your pavement needs protection. Expert tips.",
+        datePublished: "2026-02-10",
+        dateModified: "2026-02-10",
+        author: { "@type": "Organization", name: "Northeast Paving, LLC" },
+        publisher: {
+          "@type": "Organization",
+          name: "Northeast Paving, LLC",
+          logo: { "@type": "ImageObject", url: "https://northeastpavingllc.com/images/brand/northeast-paving-logo.webp" },
+        },
+      }} />
       <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "When to Sealcoat Your Driveway" }]} />
 
       {/* Article */}

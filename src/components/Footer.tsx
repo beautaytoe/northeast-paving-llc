@@ -20,31 +20,16 @@ const companyLinks = [
 ];
 
 const serviceAreas = [
-  "New London",
-  "Groton",
-  "Waterford",
-  "Mystic",
+  "Colchester",
   "East Lyme",
-  "Old Saybrook",
-  "Stonington",
+  "Groton",
   "Ledyard",
   "Montville",
-  "Niantic",
-  "Old Lyme",
-  "Essex",
-  "Salem",
-  "North Stonington",
-  "Lyme",
+  "Mystic",
+  "New London",
   "Norwich",
-  "Preston",
-  "Griswold",
-  "Lisbon",
-  "Bozrah",
-  "Franklin",
-  "Sprague",
-  "Voluntown",
-  "Colchester",
-  "East Haddam",
+  "Stonington",
+  "Waterford",
 ];
 
 export default function Footer() {
@@ -134,7 +119,7 @@ export default function Footer() {
               href="/service-areas"
               className="inline-block mt-3 text-sm text-blue hover:text-blue-light transition-colors font-medium"
             >
-              View All Areas →
+              View All 25+ Towns →
             </Link>
           </div>
         </div>

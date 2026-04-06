@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Phone, Award, Shield, Users, Clock, MapPin } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
-import { aboutImages, heroImages } from "@/lib/images";
+import { aboutImages } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "About Us — 30+ Years of Paving Excellence",
@@ -48,8 +48,8 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative bg-charcoal text-white py-16 md:py-24 overflow-hidden">
         <Image
-          src={heroImages.pavingCrew.src}
-          alt={heroImages.pavingCrew.alt}
+          src="/images/gallery/road-paving-southeastern-ct-01.webp"
+          alt="Road paving crew at work in Southeastern Connecticut"
           fill
           priority
           className="object-cover opacity-20"

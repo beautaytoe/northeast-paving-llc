@@ -12,7 +12,7 @@ import ServiceCard from "@/components/ServiceCard";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import CTABanner from "@/components/CTABanner";
 import SchemaMarkup from "@/components/SchemaMarkup";
-import { heroImages } from "@/lib/images";
+
 
 const localBusinessSchema = {
   "@context": "https://schema.org",

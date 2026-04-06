@@ -7,26 +7,6 @@ export interface SiteImage {
   height?: number;
 }
 
-// ── Hero / Promo ──────────────────────────────────────────────
-export const heroImages = {
-  pavingCrew: {
-    src: "/images/hero/asphalt-paving-crew-southeastern-ct.webp",
-    alt: "Northeast Paving asphalt paving crew working on a project in Southeastern Connecticut",
-  },
-  asphaltMaintenance: {
-    src: "/images/hero/asphalt-maintenance-waterford-ct.webp",
-    alt: "Asphalt driveway maintenance and sealcoating services in Waterford CT",
-  },
-  whyChooseUs: {
-    src: "/images/hero/why-choose-northeast-paving-ct.webp",
-    alt: "Why choose Northeast Paving — trusted paving contractor in Connecticut",
-  },
-  drivewayCheck: {
-    src: "/images/hero/driveway-condition-check-ct.webp",
-    alt: "Check your driveway condition — free paving estimates in Southeastern CT",
-  },
-} as const;
-
 // ── About ─────────────────────────────────────────────────────
 export const aboutImages = {
   waterfordTeam: {
@@ -252,10 +232,6 @@ export const galleryImages = {
     {
       src: "/images/gallery/gravel-stone-base-installation-ct-02.webp",
       alt: "Crushed stone base preparation for paving project in Salem CT",
-    },
-    {
-      src: "/images/gallery/gravel-stone-base-installation-ct-03.webp",
-      alt: "Gravel driveway with proper drainage grading in Lyme Connecticut",
     },
     {
       src: "/images/gallery/gravel-stone-base-installation-ct-04.webp",

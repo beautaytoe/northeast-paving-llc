@@ -4,7 +4,7 @@ import GHLForm from "@/components/GHLForm";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Paving Contractor in SE Connecticut",
+  title: "Contact Northeast Paving | Free Estimate | New London CT",
   description:
     "Contact Northeast Paving LLC for asphalt paving, sealcoating, and site work in Southeastern CT. Call 860-447-1518 or fill out our contact form.",
 };

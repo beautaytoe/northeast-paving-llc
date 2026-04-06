@@ -6,7 +6,7 @@ import { locations } from "@/lib/locations";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 
 export const metadata: Metadata = {
-  title: "Service Areas — Southeastern CT Paving",
+  title: "Paving Service Areas in Southeastern CT | 25+ Towns",
   description:
     "Northeast Paving serves 25+ towns in Southeastern CT including New London, Groton, Waterford, Mystic, East Lyme, and Norwich. Call 860-447-1518.",
 };

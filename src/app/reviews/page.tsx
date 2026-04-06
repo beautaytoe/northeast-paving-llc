@@ -101,36 +101,8 @@ export default function ReviewsPage() {
     reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
   ).toFixed(1);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Northeast Paving, LLC",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: avgRating,
-      reviewCount: reviews.length,
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: reviews.map((r) => ({
-      "@type": "Review",
-      author: { "@type": "Person", name: r.name },
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: r.rating,
-        bestRating: "5",
-      },
-      reviewBody: r.text,
-    })),
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
       <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Reviews" }]} />
 
       {/* Hero */}

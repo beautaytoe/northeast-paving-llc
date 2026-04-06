@@ -22,7 +22,7 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL("https://northeastpavingllc.com"),
   title: {
-    default: "Northeast Paving LLC | Asphalt Paving Southeastern CT",
+    default: "Asphalt Paving Contractor New London County CT | 30+ Yrs | Northeast Paving",
     template: "%s | Northeast Paving LLC",
   },
   description:

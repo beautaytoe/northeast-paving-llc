@@ -40,6 +40,11 @@ interface Benefit {
   description: string;
 }
 
+interface DecisionContent {
+  title: string;
+  paragraphs: string[];
+}
+
 interface ServicePageLayoutProps {
   heroTitle: string;
   heroHighlight: string;
@@ -53,6 +58,8 @@ interface ServicePageLayoutProps {
   heroImage?: string;
   /** Slug used for service+city pages (e.g. "driveway-paving") */
   serviceCitySlug?: string;
+  /** Optional decision support content section */
+  decisionContent?: DecisionContent;
 }
 
 export default function ServicePageLayout({
@@ -67,6 +74,7 @@ export default function ServicePageLayout({
   slug,
   heroImage,
   serviceCitySlug,
+  decisionContent,
 }: ServicePageLayoutProps) {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -215,8 +223,24 @@ export default function ServicePageLayout({
         </div>
       </section>
 
+      {/* Decision Support Content */}
+      {decisionContent && (
+        <section className="py-16 md:py-24 bg-gray-light">
+          <div className="max-w-3xl mx-auto px-4 lg:px-8">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-6">
+              {decisionContent.title}
+            </h2>
+            {decisionContent.paragraphs.map((paragraph, i) => (
+              <p key={i} className="text-gray-warm leading-relaxed mb-4">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
-      <section className="py-16 md:py-24 bg-gray-light">
+      <section className={`py-16 md:py-24 ${decisionContent ? "bg-white" : "bg-gray-light"}`}>
         <div className="max-w-3xl mx-auto px-4 lg:px-8">
           <h2 className="font-heading text-3xl md:text-4xl font-bold uppercase tracking-wide text-charcoal mb-10 text-center">
             Frequently Asked Questions

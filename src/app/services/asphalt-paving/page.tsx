@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Asphalt Paving Services — Driveways & Parking Lots",
+  title: "Driveway & Parking Lot Paving | New London County CT | Free Estimate",
   description:
     "Professional asphalt paving for driveways, parking lots, and roads in Southeastern CT. Residential, commercial & municipal. 30+ years experience. Call 860-447-1518.",
 };
@@ -104,6 +104,15 @@ export default function AsphaltPavingPage() {
             "We offer competitive pricing and can discuss payment arrangements for larger projects. Contact us for details specific to your project.",
         },
       ]}
+      decisionContent={{
+        title: "What to Expect: Pricing, Timeline & Seasonal Factors",
+        paragraphs: [
+          "Asphalt paving costs in Connecticut typically range from $3 to $7 per square foot for residential driveways, depending on factors like driveway size, existing surface condition, required excavation depth, and site access. Larger commercial parking lots may see different pricing due to scale. We provide free, detailed estimates so you know exactly what to expect before any work begins.",
+          "A standard residential driveway takes 1–2 days to complete, including site prep, base installation, and paving. Larger or more complex projects may take longer. We schedule work to minimize disruption and always communicate timelines upfront.",
+          "The best season for asphalt paving in Connecticut runs from April through November, when temperatures stay consistently above 50°F. This ensures proper compaction and curing. We monitor weather closely and will reschedule if rain is expected during your project — asphalt should never be laid on a wet surface. If unexpected rain occurs, we take immediate steps to protect fresh pavement and resume when conditions allow.",
+          "We stand behind our workmanship. Every job is completed to industry standards with proper base preparation, material thickness, and compaction. We walk you through maintenance recommendations so your new pavement lasts as long as possible.",
+        ],
+      }}
       slug="asphalt-paving"
       heroImage="/images/gallery/residential-driveway-paving-ct-01.webp"
       serviceCitySlug="driveway-paving"

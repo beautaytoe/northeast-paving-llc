@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Sealcoating & Asphalt Repair Services",
+  title: "Sealcoating & Asphalt Repair | Southeastern CT | Northeast Paving",
   description:
     "Professional sealcoating, crack repair, and asphalt patching in Southeastern CT. Protect your pavement investment. 30+ years experience. Call 860-447-1518.",
 };
@@ -104,6 +104,15 @@ export default function SealcoatingRepairPage() {
             "Absolutely. We sealcoat parking lots of all sizes and can work around your business schedule, including evenings and weekends, to minimize disruption.",
         },
       ]}
+      decisionContent={{
+        title: "What to Expect: Sealcoating Costs, Timing & Weather",
+        paragraphs: [
+          "Sealcoating costs in Connecticut generally range from $0.15 to $0.30 per square foot for residential driveways, making it one of the most cost-effective ways to extend your pavement's life. Commercial parking lots are priced based on total area and condition. Crack filling and patching are quoted separately based on the extent of damage. We provide free on-site assessments with transparent pricing — no surprises.",
+          "Most residential sealcoating jobs are completed in a single day. You'll need to keep vehicles off the surface for 24–48 hours while the sealant cures. For commercial properties, we can work in sections or schedule after business hours to keep your parking lot accessible.",
+          "Sealcoating requires dry conditions and temperatures above 50°F for at least 24 hours after application. The ideal window in Connecticut runs from May through October. We track the forecast carefully and will reschedule rather than risk a poor result. If unexpected rain falls within the first few hours after application, we'll return to reapply affected areas at no extra cost.",
+          "For best results, we recommend sealcoating every 2–3 years. New asphalt should cure for 6–12 months before its first sealcoat. Regular maintenance dramatically extends pavement life — a well-maintained driveway can last 25–30 years versus 15 or fewer without sealcoating.",
+        ],
+      }}
       slug="sealcoating-repair"
       heroImage="/images/gallery/parking-lot-sealcoating-ct-01.webp"
       serviceCitySlug="sealcoating"
